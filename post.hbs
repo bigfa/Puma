@@ -1,0 +1,56 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+
+    <main class="main-content" role="main">
+        <section class="section-body">
+            <header class="section-header u-textAlignCenter">
+                <h2 class="grap--h2">{{title}}</h2>
+                <div class="block-postMetaWrap">
+                    <time>{{date format="DD MMMM YYYY"}}</time>
+                </div>
+            </header>
+            <div class="post-content grap">
+                {{#if image}}
+                    <p class="with-img"><img src={{image}} /></p>
+                {{/if}}
+                {{content}}
+            </div>
+            <div class="post-tags">
+                {{tags prefix=""}}
+            </div>
+            <div class="author-profile u-textAlignCenter">
+
+                {{! Everything inside the #author tags pulls data from the author }}
+                {{#author}}
+
+                    {{#if image}}
+                        <figure class="author-image">
+                            <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
+                        </figure>
+                    {{/if}}
+
+                    <h3 class="author-name"><a href="{{url}}">{{name}}</a></h3>
+
+                    {{#if bio}}
+                        <p class="author-description">{{bio}}</p>
+                    {{/if}}
+                    <div class="author-meta">
+                        {{#if location}}<span class="author-meta-item"><svg class="icon icon-instagram" height="14" width="14" viewBox="0 0 14 14"><use xlink:href="{{asset "img/svgdefs.svg"}}#icon-location"></use></svg>{{location}}</span>{{/if}}
+                        {{#if website}} <span class="author-meta-item"><svg class="icon icon-twitter" height="14" width="14" viewBox="0 0 14 14"><use xlink:href="{{asset "img/svgdefs.svg"}}#icon-link"></use></svg><a href="{{website}}">{{website}}</a></span>{{/if}}
+                    </div>
+
+                {{/author}}
+
+
+            </div>
+
+        </section>
+    </main>
+
+{{/post}}

@@ -1,0 +1,24 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+
+    <main class="main-content" role="main">
+        <section class="section-body">
+            <header class="section-header u-textAlignCenter">
+                <h2 class="grap--h2">{{title}}</h2>
+                <div class="block-postMetaWrap">
+                    <time>{{date format="DD MMMM YYYY"}}</time>
+                </div>
+            </header>
+            <div class="post-content grap">
+                {{content}}
+            </div>
+        </section>
+    </main>
+
+{{/post}}

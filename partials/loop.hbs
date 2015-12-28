@@ -1,0 +1,26 @@
+{{! Previous/next page links - only displayed on page 2+ }}
+
+
+{{! This is the post loop - each post will be output using this markup }}
+<div class="blockGroup">
+    {{#foreach posts}}
+        <article class="block block--inset block--list">
+            <h2 class="block-title post-featured"><a href="{{url}}">{{{title}}}</a></h2>
+            <div class="block-postMetaWrap u-textAlignCenter">
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+            </div>
+            <div class="block-snippet block-snippet--subtitle grap">
+                {{#if image}}
+                    <p class="with-img"><img src={{image}} /></p>
+                {{/if}}
+                <p>{{excerpt words="26"}}</p>
+
+            </div>
+            <div class="block-footer">
+                By {{author}} .  {{tags prefix=" on "}}
+            </div>
+        </article>
+    {{/foreach}}
+</div>
+{{! Previous/next page links - displayed on every page }}
+{{pagination}}

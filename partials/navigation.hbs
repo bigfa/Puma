@@ -1,0 +1,9 @@
+<nav class="topNav u-textAlignCenter">
+<div class="layoutSingleColumn">
+    <ul class="topNav-items">
+        {{#foreach navigation}}
+            <li class="menu-item nav-{{slug}}{{#if current}} current-menu-item{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+        {{/foreach}}
+    </ul>
+    </div>
+    </nav>

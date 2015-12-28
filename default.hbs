@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}} nav-closed">
+<div class="surface-content">
+    <header class="site-header u-textAlignCenter hasImage {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+        <h1 class="site-title">
+            <a title="" href="{{@blog.url}}">{{@blog.title}}</a>
+        </h1>
+        <p class="site-description">{{@blog.description}}</p>
+        <div class="social-links">
+<span class="social-link">
+<a target="_blank" href="#">
+    <svg class="icon icon-twitter" viewBox="0 0 16 16" width="16" height="16">
+        <use xlink:href="{{asset "img/svgdefs.svg"}}#icon-twitter">
+    </svg>
+</a>
+</span>
+<span class="social-link">
+<a target="_blank" href="#">
+    <svg class="icon icon-sina-weibo" viewBox="0 0 16 16" width="16" height="16">
+        <use xlink:href="{{asset "img/svgdefs.svg"}}#icon-sina-weibo">
+    </svg>
+</a>
+</span>
+<span class="social-link">
+<a target="_blank" href="#">
+    <svg class="icon icon-instagram" viewBox="0 0 16 16" width="16" height="16">
+        <use xlink:href="{{asset "img/svgdefs.svg"}}#icon-instagram">
+    </svg>
+</a>
+</span>
+<span class="social-link">
+<a target="_blank" href="{{@blog.url}}/rss/">
+    <svg class="icon icon-feed2" viewBox="0 0 16 16" width="16" height="16">
+        <use xlink:href="{{asset "img/svgdefs.svg"}}#icon-feed2">
+    </svg>
+</a>
+</span>
+        </div>
+    </header>
+    {{navigation}}
+    {{! Everything else gets inserted here }}
+    {{{body}}}
+    <footer class="site-footer u-textAlignCenter">
+        Puma by <a href="https://fatesinger.com">bigfa</a>. <svg class="icon icon-heart" height="12" width="12" viewBox="0 0 12 12"><use xlink:href="{{asset "img/svgdefs.svg"}}#icon-heart"></use></svg> Blog since 2015.
+    </footer>
+</div>
+
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+
+</body>
+</html>
