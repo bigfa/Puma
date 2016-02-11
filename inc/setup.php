@@ -12,7 +12,7 @@ if ( ! function_exists( 'puma_setup' ) ) :
  */
 
 function puma_setup() {
-    register_nav_menu( 'puma', __( 'Primary Menu', 'Puma' ) );
+    register_nav_menu( 'puma', __( 'Primary Menu', 'puma' ) );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'html5', array(
         'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'

@@ -1,5 +1,5 @@
 <?php
-define('PUMA_VERSION','2.1.2');
+define('PUMA_VERSION','2.1.3');
 
 /**
  * Theme setup additions.
