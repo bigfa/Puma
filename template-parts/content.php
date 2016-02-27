@@ -18,7 +18,7 @@
     <div class="block-footer">
         By <?php the_author();?> . In <?php the_category(',');?>.
         <div class="block-footer-inner">
-            <?php if(function_exists('wpl_get_like_count')) echo wpl_get_like_count(get_the_ID());?> <?php echo __( 'likes', 'puma' );?> . <?php echo get_comments_number();?> <?php echo __( 'replies', 'puma' );?>.
+            <?php if(function_exists('wpl_get_like_count')) echo wpl_get_like_count(get_the_ID()) . __( 'likes', 'puma' ) . ' . ';?><?php echo get_comments_number();?> <?php echo __( 'replies', 'puma' );?>.
         </div>
     </div>
 </article>
