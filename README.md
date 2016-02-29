@@ -54,6 +54,8 @@ new page,the choose custom template.
 If you want to show gravatar in link template,add email in the note blank when you add or edit link.
 
 ## Update logs
+### 2.1.4
++ add function get site created date
 
 ### 2.1.3
 + bug fixed

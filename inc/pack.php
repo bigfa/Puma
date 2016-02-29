@@ -8,7 +8,7 @@
  */
 
 function puma_credit_print(){
-    echo 'Puma by <a href="https://fatesinger.com">bigfa</a>. <span class="icon-heart"></span> Blog since 2015.';
+    echo 'Puma by <a href="https://fatesinger.com">bigfa</a>. <span class="icon-heart"></span> Blog since ' . puma_get_site_created_year() . '.';
 }
 
 add_action('puma_credit','puma_credit_print');
@@ -215,4 +215,17 @@ function get_link_items(){
         $result = get_the_link_items();
     }
     return $result;
+}
+
+/**
+ * Get site created date
+ *
+ * @since Puma 2.1.4
+ *
+ * @return site created year
+ */
+
+function puma_get_site_created_year(){
+    $admin_created = get_userdata(1);
+    return date('Y',strtotime($admin_created->user_registered));
 }
