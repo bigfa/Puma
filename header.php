@@ -12,7 +12,7 @@
     <header class="site-header u-textAlignCenter">
     <div class="header-inner">
         <h1 class="site-title">
-            <a href="<?php echo home_url();?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a>
+            <a href="<?php echo home_url();?>" title="<?php bloginfo( 'name' ); ?>"><?php if ( !get_option('header_logo_image') ) { bloginfo( 'name' ); } else { echo '<img src="' . get_option('header_logo_image') .'">';} ?></a>
         </h1>
         <?php $description = get_bloginfo( 'description', 'display' );
         if ( $description ) : ?>

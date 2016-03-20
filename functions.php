@@ -1,5 +1,5 @@
 <?php
-define('PUMA_VERSION','2.1.4');
+define('PUMA_VERSION','2.1.5');
 
 /**
  * Theme setup additions.
@@ -28,6 +28,12 @@ require get_template_directory() . '/inc/callback.php';
 require get_template_directory() . '/inc/pack.php';
 
 /**
+ * Functional customize additions.
+ */
+
+require get_template_directory() . '/inc/customize.php';
+
+/**
  * Theme update additions.
  */
 
@@ -38,3 +44,4 @@ require get_template_directory() . '/inc/update.php';
  */
 
 require 'inc/tgm-plugin-activation/plugins.php';
+

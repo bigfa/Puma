@@ -8,7 +8,7 @@
  */
 
 function puma_credit_print(){
-    echo 'Puma by <a href="https://fatesinger.com">bigfa</a>. <span class="icon-heart"></span> Blog since ' . puma_get_site_created_year() . '.';
+    echo 'just a <a href="https://fatesinger.com">jimmy</a> theme. <span class="icon-heart"></span> Blog since ' . puma_get_site_created_year() . '.';
 }
 
 add_action('puma_credit','puma_credit_print');
@@ -228,4 +228,41 @@ function get_link_items(){
 function puma_get_site_created_year(){
     $admin_created = get_userdata(1);
     return date('Y',strtotime($admin_created->user_registered));
+}
+
+/**
+ * Theme comment reply mail 
+ * 
+ * @since Puma 2.1.5
+ *
+ */
+
+function puma_comment_relay_mail() {
+    $content = '<table class="body-wrap" style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;line-height:150%;border-spacing:0;background-color:#f7f7f7;width:100%">
+    <tbody>
+    <tr style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
+<td style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif"></td>
+<td class="container" style="padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;display:block !important;margin:0 auto !important;clear:both !important;max-width:610px !important">
+<div class="content" style="font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;padding:15px;max-width:600px;margin:0 auto;display:block;padding-left:5px;padding-right:5px;padding-bottom:5px;padding-top:0px">
+<table class="head-wrap" style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;line-height:150%;border-spacing:0;margin-bottom:10px;margin-top:10px;width:100%">
+<tbody>
+<tr style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
+<td style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif"></td>
+<td class="container header" style="padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;display:block !important;margin:0 auto !important;clear:both !important;max-width:610px !important">
+<div class="content" style="font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;padding:15px;max-width:600px;margin:0 auto;display:block;padding-left:5px;padding-right:5px;padding-bottom:5px;padding-top:0px">
+</td>
+<td style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif"></td>
+</tr>
+</tbody>
+</table>
+<div class="section " style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
+<br style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
+<br style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
+</div>
+</td>
+<td style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif"></td>
+</tr>
+    </tbody>
+    </table>
+    ';
 }
