@@ -5,7 +5,12 @@ function puma_is_get_new(){
         $latest = get_transient('puma_latest');
     } else {
         delete_transient('puma_latest');
-        $response = wp_remote_get( 'https://dev.fatesinger.com/_/api/?action=check_theme_version&theme=puma');
+        $response = wp_remote_get( 'https://dev.fatesinger.com/_/api/?action=check_theme_version&theme=puma',array(
+            'sslverify' => false
+            ));
+        if ( is_wp_error( $response ) ) {
+            return false;
+        }
         $latest = $response['body'];
         set_transient('puma_latest', $latest, 60*60*24 );
     }
