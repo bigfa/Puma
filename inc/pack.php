@@ -8,7 +8,7 @@
  */
 
 function puma_credit_print(){
-    $ouput = 'just a <a href="https://fatesinger.com" target="_blank">bigfa</a> theme. <span class="icon-heart"></span> Blog since ' . puma_get_site_created_year() . '.';
+    $output = 'just a <a href="https://fatesinger.com" target="_blank">bigfa</a> theme. <span class="icon-heart"></span> Blog since ' . puma_get_site_created_year() . '.';
     echo apply_filters( 'puma_footer' , $output );
 }
 

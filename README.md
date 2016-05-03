@@ -54,6 +54,10 @@ new page,the choose custom template.
 If you want to show gravatar in link template,add email in the note blank when you add or edit link.
 
 ## Update logs
+### 2.1.8
++ add sub-menu support
++ change the like btn style
+
 ### 2.1.7
 + add image zoom
 + remove image post-format

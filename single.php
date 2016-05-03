@@ -27,7 +27,7 @@
                     <?php echo puma_get_the_term_list( get_the_ID(), 'post_tag' );?>
                 </div>
                 <div class="postFooterAction u-clearfix">
-                    <?php if(function_exists('wp_postlike')) wp_postlike();?>
+                    <?php if(function_exists('wp_postlike')) wp_postlike(get_the_ID(),'<span class="icon-heart"></span>');?>
                     <div class="share-icons" data-title="<?php the_title();?>" data-url="<?php the_permalink();?>">
                         <span class="icon-wechat" data-type="wechat" title="分享到微信"></span>
                         <span class="icon-twitter" data-type="twitter" title="分享到推特"></span>
