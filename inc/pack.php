@@ -266,3 +266,12 @@ function puma_comment_relay_mail() {
     </table>
     ';
 }
+
+add_filter('the_content', 'puma_fancybox');
+function puma_fancybox ($content)
+{ global $post;
+    $pattern = "/<a(.*?)href=('|\")([^>]*).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>(.*?)<\/a>/i";
+    $replacement = '<a$1href=$2$3.$4$5 class="zoomImg" $6>$7</a>';
+    $content = preg_replace($pattern, $replacement, $content);
+    return $content;
+}

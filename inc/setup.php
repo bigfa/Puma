@@ -22,7 +22,6 @@ function puma_setup() {
     load_theme_textdomain( 'puma', get_template_directory() . '/languages' );
     add_theme_support( 'post-formats', array(
         'status',
-        'image',
     ) );
 }
 
