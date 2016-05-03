@@ -1,5 +1,5 @@
 <?php
-define('PUMA_VERSION','2.1.7');
+define('PUMA_VERSION','2.1.8');
 
 /**
  * Theme setup additions.
@@ -44,4 +44,3 @@ require get_template_directory() . '/inc/update.php';
  */
 
 require 'inc/tgm-plugin-activation/plugins.php';
-
