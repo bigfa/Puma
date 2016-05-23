@@ -1,5 +1,5 @@
 <?php get_header();?>
-    <main class="main-content">
+    <main class="main-content container">
         <header class="archive-header u-textAlignCenter">
             <?php
             the_archive_title( '<h1 class="archive-title">', '</h1>' );

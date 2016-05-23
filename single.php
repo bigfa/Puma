@@ -1,5 +1,5 @@
 <?php get_header();?>
-    <main class="main-content">
+    <main class="main-content container">
         <section class="section-body">
             <?php while ( have_posts() ) : the_post(); ?>
                 <header class="section-header u-textAlignCenter">

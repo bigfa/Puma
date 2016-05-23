@@ -1,5 +1,5 @@
 <?php get_header();?>
-    <main class="main-content">
+    <main class="main-content container">
         <section class="blockGroup">
             <?php if (have_posts()):
                 while (have_posts()): the_post();

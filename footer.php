@@ -1,4 +1,4 @@
-    <footer class="site-footer u-textAlignCenter">
+    <footer class="site-footer u-textAlignCenter container">
         <?php do_action('puma_credit');?>
     </footer>
 </div>

@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class();?>>
 <div class="surface-content">
-    <header class="site-header u-textAlignCenter">
+    <header class="site-header u-textAlignCenter container">
     <div class="header-inner">
         <h1 class="site-title">
             <a href="<?php echo home_url();?>" title="<?php bloginfo( 'name' ); ?>"><?php if ( !get_option('header_logo_image') ) { bloginfo( 'name' ); } else { echo '<img src="' . get_option('header_logo_image') .'">';} ?></a>
@@ -26,7 +26,7 @@
         </div>
     </div>
     </header>
-    <nav class="topNav u-textAlignCenter">
+    <nav class="topNav u-textAlignCenter container">
         <div class="layoutSingleColumn">
             <?php wp_nav_menu( array( 'theme_location' => 'puma','menu_class'=>'topNav-items','container'=>'ul','fallback_cb' => 'link_to_menu_editor')); ?>
         </div>

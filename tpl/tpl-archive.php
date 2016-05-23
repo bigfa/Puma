@@ -4,7 +4,7 @@ Template Name: 文章归档模版
 */
 ?>
 <?php get_header();?>
-    <main class="main-content">
+    <main class="main-conten container">
         <section class="section-body">
             <?php while ( have_posts() ) : the_post(); ?>
                 <header class="section-header u-textAlignCenter">
