@@ -1,4 +1,4 @@
-#WordPress Theme Puma
+# WordPress Theme Puma
 
 [中文版本](https://github.com/bigfa/Puma/blob/master/README_CN.md)
 

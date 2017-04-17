@@ -1,4 +1,4 @@
-#WordPress 主题 Puma
+# WordPress 主题 Puma
 
 [English Version](https://github.com/bigfa/Puma/blob/master/README.md)
 
