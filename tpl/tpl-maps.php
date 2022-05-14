@@ -1,19 +1,17 @@
+<?php
+/*
+Template Name: Marker Pro 地图模版
+*/
+?>
 <?php get_header(); ?>
 <main class="main-content container">
     <section class="section-body">
         <?php while (have_posts()) : the_post(); ?>
             <header class="section-header u-textAlignCenter">
-                <h2 class="grap--h2"><?php the_title(); ?></h2>
+                <h2 class="block-title"><?php the_title(); ?></h2>
             </header>
-            <div class="grap">
-                <?php the_content(); ?>
-            </div>
-            <?php
-            if (comments_open() || get_comments_number()) :
-                comments_template();
-            endif;
-            ?>
         <?php endwhile; ?>
+        <?php if (function_exists('marker_pro_init')) marker_pro_init(); ?>
     </section>
 </main>
 <?php get_footer(); ?>

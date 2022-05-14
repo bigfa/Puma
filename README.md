@@ -8,36 +8,35 @@ Installing and customizing this theme is very easy. All required information are
 
 ## Features
 
-
-+ Ready for latest version of WordPress.
-+ Post format support :Status,Image.
-+ 100% responsive
-+ Author info box below each article.
-+ Custom 404 error page.
-+ Translation Ready.
-+ Cross-Browser Compatibility Chrome, FireFox, Safari, IE9, IE10, IE11, Edge
-+ Image less design
-+ Ajax comment submit
-+ And more…
+-   Ready for latest version of WordPress.
+-   Post format support :Status,Image.
+-   100% responsive
+-   Author info box below each article.
+-   Custom 404 error page.
+-   Translation Ready.
+-   Cross-Browser Compatibility Chrome, FireFox, Safari, IE9, IE10, IE11, Edge
+-   Image less design
+-   Ajax comment submit
+-   And more…
 
 ## Installation
 
-+ Update your WordPress to 4.4 or later.
-+ Download the zip file from the rep.
-+ upload the zip file from the dashboad then active.
+-   Update your WordPress to 4.4 or later.
+-   Download the zip file from the rep.
+-   upload the zip file from the dashboad then active.
 
 ## Configuration
 
 ### super wide image
 
-+ set post thumbnail
-+ use `<p class=”with-img”></p>` tag
-+ insert image with image id
+-   set post thumbnail
+-   use `<p class=”with-img”></p>` tag
+-   insert image with image id
 
 ### Post words break
 
-+ set post thumbnail
-+ use `<!--more-->`
+-   set post thumbnail
+-   use `<!--more-->`
 
 ### Change header banner
 
@@ -54,71 +53,90 @@ new page,the choose custom template.
 If you want to show gravatar in link template,add email in the note blank when you add or edit link.
 
 ## Update logs
+
+### 3.0.4
+
+-   add marker pro support
+
 ### 2.1.9
-+ add post nav background image
+
+-   add post nav background image
 
 ### 2.1.8
-+ add sub-menu support
-+ change the like btn style
+
+-   add sub-menu support
+-   change the like btn style
 
 ### 2.1.7
-+ add image zoom
-+ remove image post-format
-+ bug fixed
+
+-   add image zoom
+-   remove image post-format
+-   bug fixed
 
 ### 2.1.6
-+ fixed getting update error
+
+-   fixed getting update error
 
 ### 2.1.5
-+ add site logo support
+
+-   add site logo support
 
 ### 2.1.4
-+ add function get site created date
+
+-   add function get site created date
 
 ### 2.1.3
-+ bug fixed
+
+-   bug fixed
 
 ### 2.1.2
-+ add translation support
-+ add plugin installer
+
+-   add translation support
+-   add plugin installer
 
 ### 2.1.1
-+ add theme auto update
-+ add instagram template
-+ bug fixed and performance improved
+
+-   add theme auto update
+-   add instagram template
+-   bug fixed and performance improved
 
 ### 2.1.0
-+ add search form and search template
-+ refactory functions.php
-+ remove zoom.js
-+ add social share button
-+ add sticky post icon
-+ redesign the 404 page
-+ bug fixed and performance improved
+
+-   add search form and search template
+-   refactory functions.php
+-   remove zoom.js
+-   add social share button
+-   add sticky post icon
+-   redesign the 404 page
+-   bug fixed and performance improved
 
 ### 2.0.5
 
-+ add post nav
-+ fixed comment avatar rotate bug
+-   add post nav
+-   fixed comment avatar rotate bug
 
 ### 2.0.4
 
-+ add image post format
-+ css hack
-+ fixed empty page when wordpress version lower than 4.4
+-   add image post format
+-   css hack
+-   fixed empty page when wordpress version lower than 4.4
 
 ### 2.0.3
-+ recover comment fields
+
+-   recover comment fields
 
 ### 2.0.2
-+ add term like
+
+-   add term like
 
 ### 2.0.1
-+ add basic wordpress css style
-+ bug fixed
+
+-   add basic wordpress css style
+-   bug fixed
 
 ### 2.0.0
-+ init
+
+-   init
 
 ## Buy me a cup of coffee or 10
 
