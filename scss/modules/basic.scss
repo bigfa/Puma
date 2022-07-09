@@ -1,12 +1,10 @@
 @font-face {
-    font-family: dinmedium;
-    src: url(../fonts/din-medium-webfont.eot);
-    src: url(../fonts/din-medium-webfont.eot?#iefix) format('embedded-opentype'),
-        url(../fonts/din-medium-webfont.woff) format('woff'),
-        url(../fonts/din-medium-webfont.ttf) format('truetype'),
-        url(../fonts/din-medium-webfont.svg#dinmedium) format('svg');
-    font-weight: 400;
+    font-family: 'dinmedium';
+    src: url('../fonts/mplusrounded1c-regular-webfont.woff2') format('woff2'),
+        url('../fonts/mplusrounded1c-regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 body {

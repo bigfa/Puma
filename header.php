@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,minimal-ui" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <?php wp_head(); ?>
-    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/build/img/favicon.png" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/build/images/favicon.png" type="image/vnd.microsoft.icon">
 </head>
 
 <body <?php body_class(); ?>>
