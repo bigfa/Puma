@@ -1,0 +1,335 @@
+@import 'node_modules/normalize.scss/normalize.scss';
+
+:root {
+    --text-main-color: rgba(0, 0, 0, 0.8);
+    --primary-color: #27ae60;
+}
+
+@import 'modules/basic.scss';
+
+.site-header {
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url(../images/banner.jpg);
+    background-position: 50%;
+    background-size: cover;
+    box-sizing: border-box;
+    color: hsla(0, 0%, 100%, 0.97);
+    padding: 140px 40px;
+    position: relative;
+    &:before {
+        background-color: rgba(0, 0, 0, 0.1);
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header-inner {
+        position: relative;
+    }
+    .site-title {
+        font-size: 32px;
+    }
+    .site-description {
+        font-size: 14px;
+    }
+}
+
+.topNav {
+    text-align: center;
+    &-items {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 14px;
+        line-height: 50px;
+        .menu-item {
+            color: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-right: 8px;
+            margin-left: 8px;
+            position: relative;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.main-content {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.block {
+    &--list {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        padding: 40px 0;
+        position: relative;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+        a {
+            transition: 0.5s;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    &-postMetaWrap {
+        color: rgba(0, 0, 0, 0.44);
+        font-family: dinmedium;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    &-footer {
+        border-left: 2px solid rgba(0, 0, 0, 0.05);
+        color: rgba(0, 0, 0, 0.44);
+        font-size: 12px;
+        padding-left: 10px;
+    }
+}
+
+.posts-nav {
+    padding: 30px 0;
+    text-align: center;
+    .page-numbers {
+        background-color: #fafafa;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+        color: rgba(0, 0, 0, 0.6);
+        display: inline-block;
+        font-size: 12px;
+        margin: 0 5px;
+        padding: 3px 10px;
+        &.current,
+        &:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+        &.current {
+            cursor: not-allowed;
+        }
+    }
+}
+
+.section-body {
+    padding: 40px 0 0;
+}
+
+.site-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.6);
+    font-family: dinmedium;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.post-navigation {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    padding: 3px 0;
+    .meta-nav {
+        color: rgba(0, 0, 0, 0.44);
+        display: block;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .nav-next,
+    .nav-previous {
+        background-position: 50%;
+        background-size: cover;
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+        width: 50%;
+        &:only-child {
+            text-align: center;
+            width: 100%;
+        }
+        a {
+            display: block;
+            position: relative;
+        }
+    }
+
+    .nav-previous {
+        border-right: 1px solid #fff;
+        float: left;
+    }
+    .nav-next {
+        border-left: 1px solid #fff;
+        float: right;
+        text-align: right;
+    }
+}
+
+.postFooterinfo {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    .avatar {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 100%;
+        padding: 4px;
+    }
+    .author-name {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+
+    .author-description {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+    }
+
+    .author-meta {
+        color: rgba(0, 0, 0, 0.44);
+        font-size: 14px;
+        font-style: italic;
+        margin-top: 5px;
+    }
+}
+
+.post-status {
+    margin-bottom: 15px;
+    .avatar {
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        border-radius: 100%;
+        float: left;
+        margin-right: 20px;
+        transition: all 0.5s ease 0s;
+    }
+}
+
+.status-footer {
+    font-family: dinmedium;
+    font-size: 14px;
+    text-align: right;
+    span {
+        background-color: var(--primary-color);
+        border-radius: 3px;
+        color: #fff;
+        display: inline-block;
+        padding: 0 8px;
+    }
+}
+
+.sep:before {
+    content: '·';
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.post--keyword {
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0.44);
+    font-size: 12px;
+    padding: 3px 8px;
+    margin-right: 10px;
+    &s {
+        margin-bottom: 20px;
+    }
+    &:hover {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
+}
+
+.search-form {
+    padding-top: 15px;
+    .search-field {
+        background-color: rgba(0, 0, 0, 0.15);
+        border: 0;
+        border-radius: 3px;
+        padding: 5px 10px;
+        color: rgba(255, 255, 255, 0.8);
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.15);
+        width: 200px;
+        text-align: center;
+        font-size: 12px;
+        &:focus {
+            color: #fff;
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+.more-link {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.44);
+}
+
+@import 'modules/grap.scss';
+@import 'modules/template.scss';
+@import 'modules/comment.scss';
+
+@media (max-width: 600px) {
+    .surface-content {
+        margin: 0;
+    }
+
+    .site-header {
+        padding: 40px 0;
+    }
+
+    .main-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .block--list {
+        padding: 15px 0;
+    }
+
+    .block-title {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .section-body {
+        padding-top: 15px;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .post-navigation {
+        .nav-next,
+        .nav-previous {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .nav-links {
+        div {
+            &:first-child {
+                border-bottom: 1px solid #eee;
+            }
+            &:only-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}

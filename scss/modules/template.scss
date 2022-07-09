@@ -1,0 +1,128 @@
+.archive-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 30px 0;
+    .archive-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
+
+.link {
+    &-title {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.44);
+    }
+
+    &-description {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    &-items {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    &-item {
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+        .avatar {
+            border-radius: 100%;
+        }
+        .sitename {
+            display: block;
+            font-size: 12px;
+        }
+    }
+}
+
+.fancy-ul {
+    margin-bottom: 30px;
+    margin-left: 100px;
+    li:after,
+    li:before {
+        background-color: #fff;
+        border-radius: 100%;
+        content: '';
+        height: 13px;
+        left: -5px;
+        position: absolute;
+        top: 7px;
+        width: 13px;
+    }
+    li:after {
+        background-color: #eee;
+        height: 9px;
+        left: -3px;
+        top: 9px;
+        width: 9px;
+    }
+    li {
+        padding-left: 15px;
+        position: relative;
+        &:hover:after {
+            background-color: var(--primary-color);
+        }
+    }
+}
+
+.archive-year {
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.44);
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
+    padding: 1px 0;
+    position: relative;
+    text-align: center;
+    width: 120px;
+}
+
+.archive-month {
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    &:after,
+    &:before {
+        background-color: #fff;
+        border-radius: 100%;
+        content: '';
+        height: 19px;
+        left: 92px;
+        position: absolute;
+        top: 3px;
+        width: 19px;
+    }
+    &:after {
+        background-color: #eee;
+        height: 15px;
+        left: 94px;
+        top: 5px;
+        width: 15px;
+    }
+}
+
+.fancy-archive {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    position: relative;
+    &:before {
+        background-color: rgba(0, 0, 0, 0.05);
+        bottom: 0;
+        content: '';
+        left: 100px;
+        position: absolute;
+        top: 0;
+        width: 3px;
+    }
+}
+
+.taxonomy-description {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.44);
+}

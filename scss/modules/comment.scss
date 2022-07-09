@@ -1,0 +1,118 @@
+.required {
+    color: #c00;
+}
+
+.comment-notes {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.44);
+}
+
+.reply {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    .comment-reply-link {
+        background-color: var(--primary-color);
+        border-radius: 2px;
+        color: #fff;
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+}
+
+.comment-navigation {
+    padding: 20px 0;
+    text-align: center;
+}
+.comment-reply-title {
+    color: rgba(0, 0, 0, 0.44);
+    font-size: 18px;
+}
+.comment-form {
+    padding: 20px 0;
+    p {
+        margin-bottom: 15px;
+    }
+    label {
+        cursor: pointer;
+        display: block;
+        margin-bottom: 3px;
+    }
+    textarea {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+        box-sizing: border-box;
+        padding: 10px;
+        resize: none;
+        width: 100%;
+    }
+
+    .submit {
+        background-color: #fff;
+        border: 2px solid var(--primary-color);
+        border-radius: 3px;
+        color: var(--primary-color);
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        padding: 3px 15px;
+        transition: 0.5s;
+        &:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+    }
+
+    .comment-form-author input,
+    .comment-form-email input,
+    .comment-form-url input {
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 3px;
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 14px;
+        height: 30px;
+        padding: 0 10px;
+        width: 280px;
+    }
+}
+
+.comments-title {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.comment-body,
+.comments-title {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.comment-body {
+    padding-bottom: 25px;
+    padding-top: 25px;
+    position: relative;
+}
+.comment-meta {
+    font-size: 14px;
+    overflow: hidden;
+    .avatar {
+        border-radius: 100%;
+        float: left;
+        margin-right: 10px;
+        transition: all 0.5s ease 0s;
+    }
+    .says {
+        display: none;
+    }
+    .comment-metadata {
+        color: rgba(0, 0, 0, 0.44);
+        font-size: 12px;
+        font-style: italic;
+    }
+}
+
+.comment-content {
+    margin-top: 10px;
+}
+
+.responsesWrapper {
+    margin-bottom: 30px;
+}
