@@ -1,8 +1,35 @@
 @font-face {
-    font-family: 'dinmedium';
-    src: url('../fonts/mplusrounded1c-regular-webfont.woff2') format('woff2'),
-        url('../fonts/mplusrounded1c-regular-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
@@ -12,8 +39,8 @@ body {
     font: {
         weight: 400;
         style: normal;
-        family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei,
-            Helvetica, Arial, sans-serif;
+        family: 'Open Sans', PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti,
+            WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
         size: 16px;
     }
     text-rendering: optimizeLegibility;
