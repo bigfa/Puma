@@ -6,9 +6,11 @@
     --text-gray-color: rgba(0, 0, 0, 0.6);
     --text-light-color: rgba(0, 0, 0, 0.5);
     --text-border-color: rgba(0, 0, 0, 0.05);
+    --text-border-heavy: rgba(0, 0, 0, 0.15);
     --dark-text-color: rgba(255, 255, 255, 0.6);
     --dark-text-ligth: rgba(255, 255, 255, 0.44);
     --dark-border-color: rgba(255, 255, 255, 0.05);
+    --dark-border-heavy: rgba(255, 255, 255, 0.15);
 }
 
 @import 'modules/basic.scss';
@@ -111,7 +113,7 @@
 }
 
 .site-footer {
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid var(--text-border-heavy);
     color: var(--text-gray-color);
     font-family: Open Sans;
     font-size: 14px;
@@ -120,8 +122,8 @@
     padding-top: 20px;
     text-align: center;
     .puma--dark & {
-        border-color: rgba(255, 255, 255, 0.15);
-        color: rgba(255, 255, 255, 0.6);
+        border-color: var(--dark-border-heavy);
+        color: var(--dark-text-color);
     }
 }
 

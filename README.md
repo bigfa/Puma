@@ -27,6 +27,10 @@ Installing and customizing this theme is very easy. All required information are
 
 ## Configuration
 
+### auto dark mode
+
+edit `functions.php`, set `PUMA_DARKMODE` to `auto`, if set `PUMA_DARKMODE` to `dark`, this theme will always load dark mode, default value is `light`
+
 ### super wide image
 
 - set post thumbnail
@@ -40,7 +44,7 @@ Installing and customizing this theme is very easy. All required information are
 
 ### Change header banner
 
-replace banner.jpg under theme folder build/images, you can also replace favicon the same way.
+replace banner.jpg under theme folder `build/images`, you can also replace favicon the same way.
 
 ### set archive tempalte / link template
 
@@ -49,6 +53,10 @@ new page,the choose custom template.
 If you want to show gravatar in link template,add email in the note blank when you add or edit link.
 
 ## Update logs
+
+### 4.0.1
+
+- add dark mode config
 
 ### 4.0.0
 

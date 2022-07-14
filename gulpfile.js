@@ -23,6 +23,14 @@ function css() {
     );
 }
 
+function dark() {
+    return gulp
+        .src('./scss/dark.scss')
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(gulp.dest('./build/css/'));
+}
+
 function images() {
     return gulp.src('./images/*.{png,jpg,gif,svg}').pipe(gulp.dest('./build/images/'));
 }
@@ -50,13 +58,15 @@ function scripts() {
 function watchFiles() {
     gulp.watch(['./js/app.js'], gulp.series(scripts));
     gulp.watch(['./scss/app.scss', './scss/modules/*'], gulp.series(css));
+    gulp.watch(['./scss/dark.scss'], gulp.series(dark));
 }
 
 // define complex tasks
 const js = gulp.series(scripts);
 const watch = gulp.parallel(watchFiles);
-const build = gulp.parallel(watch, gulp.parallel(css, js, images, fonts));
+const build = gulp.parallel(watch, gulp.parallel(dark, css, js, images, fonts));
 
+exports.dark = dark;
 exports.css = css;
 exports.js = js;
 exports.build = build;

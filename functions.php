@@ -1,5 +1,6 @@
 <?php
-define('PUMA_VERSION', '4.0.0');
+define('PUMA_VERSION', '4.0.1');
+define('PUMA_DARKMODE', 'light');
 
 /**
  * Theme setup additions.

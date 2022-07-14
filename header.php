@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/build/images/favicon.png" type="image/vnd.microsoft.icon">
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(PUMA_DARKMODE == 'dark' ? 'puma--dark' : 'puma--light'); ?>>
     <div class="surface-content">
         <header class="site-header">
             <div class="header-inner">

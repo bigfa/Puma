@@ -82,7 +82,7 @@
 .topNav {
     text-align: center;
     &-items {
-        border-bottom: 1px solid var(--text-border-color);
+        border-bottom: 1px solid var(--text-border-heavy);
         font-size: 14px;
         line-height: 50px;
         .menu-item {
@@ -97,7 +97,7 @@
         }
     }
     .puma--dark &-items {
-        border-color: var(--dark-border-color);
+        border-color: var(--dark-border-heavy);
         .menu-item {
             color: var(--dark-text-ligth);
         }
