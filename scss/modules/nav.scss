@@ -1,0 +1,105 @@
+.posts-nav {
+    padding: 30px 0;
+    text-align: center;
+    .page-numbers {
+        background-color: #fafafa;
+        border: 1px solid var(--text-border-color);
+        border-radius: 3px;
+        color: var(--text-gray-color);
+        display: inline-block;
+        font-size: 12px;
+        margin: 0 5px;
+        padding: 3px 10px;
+
+        &.current,
+        &:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+        &.current {
+            cursor: not-allowed;
+        }
+    }
+
+    .puma--dark & {
+        .page-numbers {
+            background-color: #cacfd2;
+            color: #262626;
+            border: 0;
+            &.current,
+            &:hover {
+                background-color: #3c3c3c;
+                color: var(--dark-text-color);
+            }
+        }
+    }
+}
+
+.post-navigation {
+    border-top: 1px solid var(--text-border-color);
+    overflow: hidden;
+    padding: 3px 0;
+    .meta-nav {
+        color: var(--text-light-color);
+        display: block;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    .nav-next,
+    .nav-previous {
+        background-position: 50%;
+        background-size: cover;
+        box-sizing: border-box;
+        padding: 20px;
+        position: relative;
+        width: 50%;
+        &:only-child {
+            text-align: center;
+            width: 100%;
+        }
+        a {
+            display: block;
+            position: relative;
+        }
+    }
+
+    .nav-previous {
+        float: left;
+    }
+    .nav-next {
+        float: right;
+        text-align: right;
+    }
+
+    .puma--dark & {
+        border-color: var(--dark-border-color);
+        .meta-nav {
+            color: var(--dark-text-ligth);
+        }
+    }
+}
+
+.topNav {
+    text-align: center;
+    &-items {
+        border-bottom: 1px solid var(--text-border-color);
+        font-size: 14px;
+        line-height: 50px;
+        .menu-item {
+            color: var(--text-gray-color);
+            display: inline-block;
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-right: 8px;
+            margin-left: 8px;
+            position: relative;
+            text-transform: uppercase;
+        }
+    }
+    .puma--dark &-items {
+        border-color: var(--dark-border-color);
+        .menu-item {
+            color: var(--dark-text-ligth);
+        }
+    }
+}

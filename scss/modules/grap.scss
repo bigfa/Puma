@@ -3,10 +3,19 @@
         margin: 20px -60px;
         figcaption {
             font-size: 12px;
-            color: rgba(0, 0, 0, 0.5);
+            color: var(--text-gray-color);
             text-align: center;
         }
     }
+
+    .puma--dark & {
+        figure {
+            figcaption {
+                color: var(--dark-text-ligth);
+            }
+        }
+    }
+
     ol,
     p,
     ul {
@@ -60,13 +69,25 @@
     }
 
     h3 {
-        color: rgba(0, 0, 0, 0.44);
+        color: var(--text-light-color);
         font-size: 20px;
     }
 
+    .puma--dark & {
+        h3 {
+            color: var(--dark-text-ligth);
+        }
+    }
+
     h4 {
-        color: rgba(0, 0, 0, 0.6);
+        color: --text-gray-color;
         font-size: 18px;
+    }
+
+    .puma--dark & {
+        h3 {
+            color: var(--dark-text-color);
+        }
     }
 
     hr {
@@ -79,11 +100,19 @@
             content: '...';
             display: inline-block;
             margin-left: 0.6em;
-            color: rgba(0, 0, 0, 0.6);
+            color: var(--text-gray-color);
             position: relative;
             top: -30px;
             font-size: 28px;
             letter-spacing: 0.6em;
+        }
+    }
+
+    .puma--dark & {
+        hr {
+            &:before {
+                color: var(--dark-text-ligth);
+            }
         }
     }
 }

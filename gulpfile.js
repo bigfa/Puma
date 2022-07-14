@@ -12,13 +12,15 @@ const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 
 function css() {
-    return gulp
-        .src('./scss/app.scss')
-        .pipe(plumber())
-        .pipe(sass({ outputStyle: 'compressed' }))
-        .pipe(rename('misc.css'))
-        .pipe(postcss([autoprefixer(), cssnano()]))
-        .pipe(gulp.dest('./build/css/'));
+    return (
+        gulp
+            .src('./scss/app.scss')
+            .pipe(plumber())
+            .pipe(sass({ outputStyle: 'compressed' }))
+            .pipe(rename('misc.css'))
+            //.pipe(postcss([autoprefixer(), cssnano()]))
+            .pipe(gulp.dest('./build/css/'))
+    );
 }
 
 function images() {
@@ -47,7 +49,7 @@ function scripts() {
 // Watch files
 function watchFiles() {
     gulp.watch(['./js/app.js'], gulp.series(scripts));
-    gulp.watch(['./scss/app.scss'], gulp.series(css));
+    gulp.watch(['./scss/app.scss', './scss/modules/*'], gulp.series(css));
 }
 
 // define complex tasks

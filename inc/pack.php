@@ -74,30 +74,6 @@ function puma_get_images($contents)
 
 
 /**
- * Term like button
- *
- *
- * @since Puma 2.1.0
- *
- * @param text prefix
- * @return Term like button
- */
-
-
-function wp_term_like($prefix = null)
-{
-    global $wp_query;
-    if (!is_tax() && !is_category() && !is_tag()) return;
-    $tax = $wp_query->get_queried_object();
-    $id = $tax->term_id;
-    $num = get_term_meta($id, '_term_like', true) ? get_term_meta($id, '_term_like', true) : 0;
-    $active = isset($_COOKIE['_term_like_' . $id]) ? ' is-active' : '';
-    $output = '<button class="button termlike' . $active . '" data-action="termlike" data-action-id="' . $id . '">' . $prefix . '<span class="count">' . $num . '</span></button>';
-    return $output;
-}
-
-
-/**
  * Like to menu manager if a menu is not set up.
  *
  * @since Puma 2.1.0
@@ -197,7 +173,7 @@ function get_the_link_items($id = null)
     if (!empty($bookmarks)) {
         $output .= '<ul class="link-items">';
         foreach ($bookmarks as $bookmark) {
-            $output .=  '<li class="link-item"><a class="link-item-inner effect-apollo" href="' . $bookmark->link_url . '" title="' . $bookmark->link_description . '" target="_blank" >' . get_avatar($bookmark->link_notes, 64) . '<span class="sitename">' . $bookmark->link_name . '<br>' . $bookmark->link_description . '</span></a></li>';
+            $output .=  '<li class="link-item"><a class="link-item-inner effect-apollo" href="' . $bookmark->link_url . '" title="' . $bookmark->link_description . '" target="_blank" >' . get_avatar($bookmark->link_notes, 64) . '<span class="sitename"><strong>' . $bookmark->link_name . '</strong>' . $bookmark->link_description . '</span></a></li>';
         }
         $output .= '</ul>';
     } else {

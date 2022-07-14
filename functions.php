@@ -38,9 +38,3 @@ require get_template_directory() . '/inc/customize.php';
  */
 
 require get_template_directory() . '/inc/update.php';
-
-/**
- * Theme required plugins
- */
-
-require 'inc/tgm-plugin-activation/plugins.php';

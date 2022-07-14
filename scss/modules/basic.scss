@@ -50,7 +50,18 @@ body {
     color: var(--text-main-color);
     line-height: 1.8;
     background-color: #ddd;
+    &.puma--dark {
+        background-color: #3c3c3c;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
+
+//@media (prefers-color-scheme: light) {
+// body {
+//     background-color: #3c3c3c;
+//     color: rgba(255, 255, 255, 0.6);
+// }
+//}
 
 h1,
 h2,
@@ -111,7 +122,7 @@ figcaption {
 input[disabled] {
     cursor: default;
     color: rgba(0, 0, 0, 0.8);
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--text-border-color);
 }
 audio:not([controls]) {
     display: none;
@@ -131,22 +142,6 @@ svg:not(:root) {
     top: -9999px;
 }
 
-.button {
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 999em;
-    box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    height: 37px;
-    padding: 0 16px;
-    text-decoration: none;
-    vertical-align: bottom;
-    white-space: nowrap;
-}
-
 .u-textAlignCenter {
     text-align: center;
 }
@@ -158,6 +153,9 @@ svg:not(:root) {
     background-color: #fff;
     margin: 60px auto;
     max-width: 900px;
+    .puma--dark & {
+        background-color: #262626;
+    }
 }
 
 .back-to-top {
@@ -171,6 +169,16 @@ svg:not(:root) {
     &:hover {
         .icon {
             fill: var(--primary-color);
+        }
+    }
+    .puma--dark & {
+        .icon {
+            fill: rgba(255, 255, 255, 0.8);
+        }
+        &:hover {
+            .icon {
+                fill: rgba(255, 255, 255, 0.9);
+            }
         }
     }
 }

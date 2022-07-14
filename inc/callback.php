@@ -64,30 +64,3 @@ function fa_ajax_comment_err($a)
     echo $a;
     exit;
 }
-
-
-/**
- * Term like callback function.
- *
- * @since Puma 2.0.4
- *
- * @return status and like num with json format
- */
-
-function wp_term_like_callback()
-{
-    $id = $_POST['actionId'];
-    $num = get_term_meta($id, '_term_like', true) ? get_term_meta($id, '_term_like', true) : 0;
-    $domain = ($_SERVER['HTTP_HOST'] != 'localhost') ? $_SERVER['HTTP_HOST'] : false; // make cookies work with localhost
-    $expire = time() + 9999999;
-    setcookie('_term_like_' . $id, $id, $expire, '/', $domain, false);
-    update_term_meta($id, '_term_like', $num + 1);
-    echo json_encode(array(
-        'status' => 200,
-        'data' => $num + 1,
-    ));
-    die;
-}
-
-add_action('wp_ajax_nopriv_termlike', 'wp_term_like_callback');
-add_action('wp_ajax_termlike', 'wp_term_like_callback');
