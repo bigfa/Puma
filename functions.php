@@ -4,6 +4,7 @@ define('PUMA_SETTING_KEY', 'puma_setting');
 define('PUMA_POST_LIKE_KEY', '_postlike');
 define('PUMA_POST_VIEW_KEY', 'views');
 define('PUMA_ARCHIVE_VIEW_KEY', 'views');
+require get_template_directory() . '/inc/setting.php';
 
 /**
  * Functional Package additions.
@@ -23,7 +24,6 @@ require get_template_directory() . '/inc/update.php';
  * Theme setting additions.
  */
 
-require get_template_directory() . '/inc/setting.php';
 require get_template_directory() . '/inc/base.php';
 require get_template_directory() . '/inc/comment.php';
 

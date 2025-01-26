@@ -1,5 +1,7 @@
 # WordPress Theme Puma
 
+![](https://static.fatesinger.com/2025/01/10eb5gy4cj9fvxag.png)
+
 [中文版本](https://github.com/bigfa/Puma/blob/master/README_CN.md)
 
 Puma is clean, unique and minimal content focus Blogging Theme perfect for bloggers. It is responsive means it will fit in various device of different size. It supports all type of post format. It is simple and it’s elegant.Theme options are directly incorporated with WordPress customizer itself.Sylva is suitable for any kind of personal or travel, hobby, tutorial blog.
@@ -21,7 +23,6 @@ Installing and customizing this theme is very easy. All required information are
 
 ## Installation
 
-- Update your WordPress to 4.4 or later.
 - Download the zip file from the rep.
 - upload the zip file from the dashboad then active.
 
@@ -49,6 +50,10 @@ new page,the choose custom template.
 If you want to show gravatar in link template,add email in the note blank when you add or edit link.
 
 ## Update logs
+
+### 5.0.1
+
+- fixed theme auto update error
 
 ### 5.0.0
 

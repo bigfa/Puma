@@ -1,5 +1,7 @@
 # WordPress 主题 Puma
 
+![](https://static.fatesinger.com/2025/01/10eb5gy4cj9fvxag.png)
+
 [English Version](https://github.com/bigfa/Puma/blob/master/README.md)
 
 Puma 是一款简洁的主题，非常适合个人博客。响应式的设计意味着兼容各种设备。同时有多种文章格式。
@@ -21,7 +23,6 @@ Puma 是一款简洁的主题，非常适合个人博客。响应式的设计意
 
 ## 安装
 
-- 升级 WordPress 到 4.4 及以上版本
 - 下载 zip 文件
 - 后台上传安装即可
 
@@ -49,6 +50,10 @@ Puma 是一款简洁的主题，非常适合个人博客。响应式的设计意
 友情链接的头像，则需要在链接的备注中填写 Gravatar 头像邮箱。
 
 ## 更新日志
+
+### 5.0.1
+
+- 修复主题自动更新错误的问题
 
 ### 5.0.0
 
