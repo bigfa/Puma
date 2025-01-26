@@ -8,8 +8,12 @@
         </div>
     </header>
     <div class="block-snippet grap" itemprop="about">
-        <?php if (has_post_thumbnail()) : ?>
-            <p class="with-img"><?php the_post_thumbnail('full'); ?></p>
+        <?php
+        global $pumaSetting;
+        if (has_post_thumbnail() || !$pumaSetting->get_setting('hide_home_cover')) : ?>
+            <p class="with-img">
+                <img src="<?php echo puma_get_background_image(get_the_ID()); ?>" />
+            </p>
             <?php if (post_password_required()) : ?>
                 <?php the_content('Read More.'); ?>
             <?php else : ?>
@@ -27,7 +31,7 @@
     <div class="block-footer">
         By <?php the_author(); ?> . In <?php the_category(','); ?>.
         <div class="block-footer-inner">
-            <?php if (function_exists('wpl_get_like_count')) echo wpl_get_like_count(get_the_ID()) . ' ' . __('likes', 'puma') . ' . '; ?><?php echo get_comments_number(); ?> <?php echo __('replies', 'puma'); ?>.
+            <?php echo get_comments_number(); ?> <?php echo __('replies', 'puma'); ?>.
         </div>
     </div>
 </article>

@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/build/images/favicon.png" type="image/vnd.microsoft.icon">
 </head>
 
-<body <?php body_class(PUMA_DARKMODE == 'dark' ? 'puma--dark' : 'puma--light'); ?>>
+<body <?php body_class(); ?>>
     <div class="surface-content">
         <header class="site-header">
             <div class="header-inner">
@@ -27,6 +27,9 @@
                     <p class="site-description"><?php echo $description; ?></p>
                 <?php endif; ?>
                 <?php echo get_search_form(); ?>
+                <div class=site--footer__sns>
+                    <?php get_template_part('template-parts/sns'); ?>
+                </div>
             </div>
         </header>
         <nav class="topNav">

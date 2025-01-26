@@ -1,0 +1,64 @@
+.site-header {
+    text-align: center;
+    background-color: #f0f0f0;
+    background-image: url(../images/banner.jpg);
+    background-position: 50%;
+    background-size: cover;
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.97);
+    padding: 110px 40px;
+    position: relative;
+    .puma--dark & {
+        color: var(--dark-text-color);
+    }
+    &:before {
+        background-color: rgba(0, 0, 0, 0.1);
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .header-inner {
+        position: relative;
+    }
+    .site-title {
+        font-size: 32px;
+    }
+    .site-description {
+        font-size: 14px;
+    }
+}
+
+.search-form {
+    padding-top: 15px;
+    .search-field {
+        background-color: rgba(0, 0, 0, 0.15);
+        border: 0;
+        border-radius: 3px;
+        padding: 5px 10px;
+        color: rgba(255, 255, 255, 0.8);
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.15);
+        width: 200px;
+        text-align: center;
+        font-size: 12px;
+        &:focus {
+            color: #fff;
+            &::placeholder {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+        &::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    .puma--dark & {
+        .search-field {
+            color: var(--dark-text-color);
+            &:focus {
+                color: var(--dark-text-color);
+            }
+        }
+    }
+}

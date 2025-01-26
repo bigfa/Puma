@@ -27,7 +27,7 @@ Template Name: 文章归档模版
             wp_reset_postdata();
             $output = '';
             foreach ($posts_rebuild as $key => $value) {
-                $output .= '<h3 class="archive-year">' . $key . '</h3>';
+                $output .= '<div data-year="' . $key . '" class="archive-year">';
                 $year = $key;
                 foreach ($value as $key_m => $value_m) {
                     $output .= '<h3 class="archive-month">' . $year . ' - ' . $key_m . '</h3><ul class="fancy-ul">';
@@ -36,6 +36,7 @@ Template Name: 文章归档模版
                     }
                     $output .= '</ul>';
                 }
+                $output .= '</div>';
             }
             echo $output;
             ?>

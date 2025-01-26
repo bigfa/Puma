@@ -34,6 +34,10 @@
     font-display: swap;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     letter-spacing: 0;
     font: {
@@ -49,7 +53,7 @@ body {
     -moz-font-feature-settings: 'liga' on;
     color: var(--text-main-color);
     line-height: 1.8;
-    background-color: #ddd;
+    background-color: #f0f0f0;
     &.puma--dark {
         background-color: #3c3c3c;
         color: rgba(255, 255, 255, 0.6);
@@ -103,11 +107,13 @@ input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
+
 a,
 button,
 input {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 figcaption {
     -webkit-nbsp-mode: normal;
 }
@@ -145,20 +151,31 @@ svg:not(:root) {
 .surface-content {
     background-color: #fff;
     margin: 60px auto;
-    max-width: 900px;
+    max-width: var(--puma-content-width);
+    border-radius: var(--puma-border-radius, 10px);
+    overflow: hidden;
     .puma--dark & {
         background-color: #262626;
     }
 }
 
-.back-to-top {
+.backToTop {
     position: fixed;
-    right: 100px;
+    right: 60px;
     bottom: 50px;
     cursor: pointer;
+    transform: translate3d(200px, 0, 0);
     .icon {
-        fill: rgba(0, 0, 0, 0.8);
+        fill: var(--puma-text-gray);
+        width: 18px;
+        height: 18px;
     }
+    transition: 0.5s;
+
+    &.is-active {
+        transform: translate3d(0, 0, 0);
+    }
+
     &:hover {
         .icon {
             fill: var(--primary-color);
@@ -174,4 +191,22 @@ svg:not(:root) {
             }
         }
     }
+}
+
+.sep {
+    &:before {
+        content: '·';
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+}
+
+.main-content {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.section-body {
+    padding: 30px 0 0;
+    min-height: 30vh;
 }

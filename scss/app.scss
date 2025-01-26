@@ -1,4 +1,6 @@
 @import 'node_modules/normalize.scss/normalize.scss';
+@import 'modules/variable.scss';
+@import 'modules/header';
 
 :root {
     --primary-color: #27ae60;
@@ -13,277 +15,18 @@
     --dark-border-heavy: rgba(255, 255, 255, 0.15);
 }
 
-@import 'modules/basic.scss';
-
-.site-header {
-    text-align: center;
-    background-color: #f0f0f0;
-    background-image: url(../images/banner.jpg);
-    background-position: 50%;
-    background-size: cover;
-    box-sizing: border-box;
-    color: rgba(255, 255, 255, 0.97);
-    padding: 140px 40px;
-    position: relative;
-    .puma--dark & {
-        color: var(--dark-text-color);
-    }
-    &:before {
-        background-color: rgba(0, 0, 0, 0.1);
-        bottom: 0;
-        content: '';
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .header-inner {
-        position: relative;
-    }
-    .site-title {
-        font-size: 32px;
-    }
-    .site-description {
-        font-size: 14px;
-    }
-}
-
-.main-content {
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.block {
-    &--list {
-        border-bottom: 2px solid var(--text-border-color);
-        padding: 40px 0;
-        position: relative;
-        &:last-child {
-            border-bottom: 0;
-        }
-    }
-
-    &-title {
-        font-size: 24px;
-        a {
-            transition: 0.5s;
-            &:hover {
-                color: var(--primary-color);
-            }
-        }
-    }
-
-    &-postMetaWrap {
-        color: var(--text-light-color);
-        font-family: Open Sans;
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
-
-    &-footer {
-        border-left: 2px solid var(--text-border-color);
-        color: var(--text-light-color);
-        font-size: 12px;
-        padding-left: 10px;
-    }
-}
-
-.puma--dark {
-    .block {
-        &-title {
-            a {
-                &:hover {
-                    color: var(--dark-text-ligth);
-                }
-            }
-        }
-        &-postMetaWrap {
-            color: rgba(255, 255, 255, 0.43);
-        }
-
-        &-footer {
-            color: rgba(255, 255, 255, 0.43);
-            border-color: rgba(255, 255, 255, 0.05);
-        }
-    }
-}
-
-.section-body {
-    padding: 40px 0 0;
-}
-
-.site-footer {
-    border-top: 1px solid var(--text-border-heavy);
-    color: var(--text-gray-color);
-    font-family: Open Sans;
-    font-size: 14px;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;
-    .puma--dark & {
-        border-color: var(--dark-border-heavy);
-        color: var(--dark-text-color);
-    }
-}
-
-.postFooterinfo {
-    border-top: 1px solid var(--text-border-color);
-    padding-bottom: 20px;
-    padding-top: 20px;
-
-    .avatar {
-        border: 1px solid var(--text-border-color);
-        border-radius: 100%;
-        padding: 4px;
-    }
-
-    .author-name {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 5px;
-    }
-
-    .author-description {
-        color: var(--text-gray-color);
-        font-size: 14px;
-    }
-
-    .author-meta {
-        color: var(--text-light-color);
-        font-size: 14px;
-        font-style: italic;
-        margin-top: 5px;
-    }
-
-    .puma--dark & {
-        border-color: var(--dark-border-color);
-
-        .avatar {
-            border-color: var(--dark-border-color);
-        }
-
-        .author-meta {
-            color: var(--dark-text-ligth);
-        }
-
-        .author-description {
-            color: var(--dark-text-color);
-        }
-    }
-}
-
-.post-status {
-    margin-bottom: 15px;
-    .avatar {
-        border: 1px solid var(--text-border-color);
-        border-radius: 100%;
-        float: left;
-        margin-right: 20px;
-        transition: all 0.5s ease 0s;
-    }
-    .puma--dark & {
-        .avatar {
-            border-color: var(--dark-border-color);
-        }
-    }
-}
-
-.status-footer {
-    font-family: Open Sans;
-    font-size: 14px;
-    text-align: right;
-    span {
-        background-color: var(--primary-color);
-        border-radius: 3px;
-        color: #fff;
-        display: inline-block;
-        padding: 0 8px;
-    }
-    .puma--dark & {
-        span {
-            background-color: #cacfd2;
-        }
-    }
-}
-
-.sep:before {
-    content: '·';
-    margin-right: 3px;
-    margin-left: 3px;
-}
-
-.post--keyword {
-    border-radius: 3px;
-    color: var(--text-light-color);
-    font-size: 12px;
-    padding: 5px 10px;
-    margin-right: 10px;
-    background-color: #f0f0f0;
-    &s {
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    &:hover {
-        background-color: #ddd;
-    }
-
-    .puma--dark & {
-        color: rgba(255, 255, 255, 0.44);
-        background-color: #3c3c3c;
-        &:hover {
-            background-color: #363636;
-        }
-    }
-}
-
-.search-form {
-    padding-top: 15px;
-    .search-field {
-        background-color: rgba(0, 0, 0, 0.15);
-        border: 0;
-        border-radius: 3px;
-        padding: 5px 10px;
-        color: rgba(255, 255, 255, 0.8);
-        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.15);
-        width: 200px;
-        text-align: center;
-        font-size: 12px;
-        &:focus {
-            color: #fff;
-            &::placeholder {
-                color: rgba(255, 255, 255, 0.8);
-            }
-        }
-        &::placeholder {
-            color: rgba(255, 255, 255, 0.8);
-        }
-    }
-    .puma--dark & {
-        .search-field {
-            color: var(--dark-text-color);
-            &:focus {
-                color: var(--dark-text-color);
-            }
-        }
-    }
-}
-
-.more-link {
-    font-size: 12px;
-    color: var(--text-light-color);
-    .puma--dark & {
-        color: var(--dark-text-ligth);
-    }
-}
+@import 'modules/basic';
+@import 'modules/block';
 
 @import 'modules/grap.scss';
 @import 'modules/template.scss';
 @import 'modules/comment.scss';
 @import 'modules/nav.scss';
+@import 'templates/single';
+@import 'modules/footer';
+
+@import 'templates/term';
+@import 'templates/archive';
 
 @media (max-width: 600px) {
     .surface-content {
@@ -328,7 +71,7 @@
     .nav-links {
         div {
             &:first-child {
-                border-bottom: 1px solid #eee;
+                border-bottom: 1px solid var(--text-border-color);
             }
             &:only-child {
                 border-bottom: 0;

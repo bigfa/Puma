@@ -27,6 +27,7 @@
         "sass": "^1.49.9"
     },
     "dependencies": {
-        "gulp-sass": "^5.1.0"
+        "gulp-sass": "^5.1.0",
+        "gulp-typescript": "^6.0.0-alpha.1"
     }
 }

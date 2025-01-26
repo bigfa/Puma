@@ -1,0 +1,285 @@
+:root {
+    --puma-main-color: #4370f5;
+    --puma-hover-color: #3a5f9a;
+    --puma-text-color: rgba(0, 0, 0, 0.84);
+    --puma-text-light: rgba(0, 0, 0, 0.68);
+    --puma-text-gray: rgba(0, 0, 0, 0.6);
+    --puma-text-gray-lightest: rgba(0, 0, 0, 0.5);
+
+    --puma-background-white: rgba(255, 255, 255, 1);
+    --puma-background-gray: rgba(250, 250, 250, 1);
+    --puma-background-opacity: 0.9;
+    --puma-background-white-opacity: rgba(255, 255, 255, var(--puma-background-opacity));
+
+    --puma-griedent-start: #007cf0;
+    --puma-griedent-end: #00dfd8;
+
+    --puma-border-color: rgba(0, 0, 0, 0.1);
+    --puma-border-color-light: rgba(0, 0, 0, 0.05);
+
+    --block-separator-color: #244654;
+    --article-target-color: #283c50;
+
+    --puma-text-size-small: 14px;
+    --puma-text-size-normal: 16px;
+    --puma-text-size-smallest: 12px;
+
+    --puma-content-width: 900px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .auto {
+        --puma-main-color: rgba(253, 186, 116, 1);
+        --puma-hover-color: rgba(255, 237, 213, 1);
+        --puma-text-color: #a1a1aa;
+        --puma-text-light: rgba(161, 161, 170, 1);
+        --puma-text-gray: rgba(113, 113, 122, 1);
+        --puma-text-gray-lightest: rgba(113, 113, 122, 0.95);
+
+        --puma-background-white: #1e1e1e;
+        --puma-background-gray: #000;
+        --puma-background-white-opacity: rgba(30, 30, 30, var(--puma-background-opacity));
+
+        --puma-griedent-start: #007cf0;
+        --puma-griedent-end: #00dfd8;
+
+        --puma-border-color: rgba(63, 63, 70, 0.6);
+        --puma-border-color-light: rgba(63, 63, 70, 0.4);
+
+        .site--header__center {
+            background-color: rgba(39, 39, 42, 0.9);
+            border-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: saturate(180%) blur(5px);
+            --tw-ring-shadow: 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1);
+            box-shadow: 0 0 #0000, var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+            color: rgba(228, 228, 231, 1);
+        }
+
+        .comment-form .submit {
+            background-color: rgb(63 63 70/1);
+            &:hover {
+                background-color: rgb(82 82 91/1);
+            }
+        }
+
+        .tag--list {
+            a {
+                background-color: rgba(39, 39, 42, 1);
+                color: #71717a;
+                --tw-ring-shadow: 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1);
+                box-shadow: 0 0 #0000, var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+                &:hover {
+                    --tw-ring-shadow: 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.2);
+                }
+            }
+        }
+
+        .post--single__title,
+        .post--item .post--title {
+            color: rgba(244, 244, 245, 1);
+        }
+
+        .main {
+            &::after {
+                display: none;
+            }
+            box-shadow: hsla(240, 5%, 84%, 0.2) 0 0 0 1px;
+        }
+
+        .archive--list .archive--item {
+            &:hover {
+                background: linear-gradient(180deg, #1e1e1e, #121212);
+            }
+        }
+
+        .graph blockquote,
+        .graph ol li::before {
+            background: linear-gradient(180deg, #1e1e1e, #121212);
+        }
+
+        .post--single__related__item,
+        .post--single__related__status,
+        .post--item,
+        .link-item,
+        .post--card {
+            position: relative;
+            &:hover {
+                background: linear-gradient(180deg, #1e1e1e, #121212);
+                &::after {
+                    content: '';
+                    pointer-events: none;
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 12px;
+                    border: 1px solid #333;
+                }
+            }
+        }
+
+        .nav-links .page-numbers.current:after,
+        .nav-links .post-page-numbers.current:after {
+            background-image: none;
+        }
+
+        .doulist-item {
+            background-color: rgba(63, 63, 70, 0.15);
+        }
+
+        .comment-form {
+            input,
+            textarea {
+                background-color: rgba(63, 63, 70, 0.15);
+                border-color: rgb(63 63 70/1);
+            }
+        }
+    }
+}
+
+.dark {
+    --puma-main-color: rgba(253, 186, 116, 1);
+    --puma-hover-color: rgba(255, 237, 213, 1);
+    --puma-text-color: #a1a1aa;
+    --puma-text-light: rgba(161, 161, 170, 1);
+    --puma-text-gray: rgba(113, 113, 122, 1);
+    --puma-text-gray-lightest: rgba(113, 113, 122, 0.95);
+
+    --puma-background-white: #1e1e1e;
+    --puma-background-gray: #000;
+    --puma-background-white-opacity: rgba(30, 30, 30, var(--puma-background-opacity));
+
+    --puma-griedent-start: #007cf0;
+    --puma-griedent-end: #00dfd8;
+
+    --puma-border-color: rgba(63, 63, 70, 0.6);
+    --puma-border-color-light: rgba(63, 63, 70, 0.4);
+
+    .site--header__center {
+        background-color: rgba(39, 39, 42, 0.9);
+        border-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: saturate(180%) blur(5px);
+        --tw-ring-shadow: 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1);
+        box-shadow: 0 0 #0000, var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+        color: rgba(228, 228, 231, 1);
+    }
+
+    .doulist-item {
+        background: rgba(63, 63, 70, 0.15);
+    }
+
+    .comment-form .submit {
+        background-color: rgb(63 63 70/1);
+        &:hover {
+            background-color: rgb(82 82 91/1);
+        }
+    }
+
+    .tag--list {
+        a {
+            background-color: rgba(39, 39, 42, 1);
+            color: #71717a;
+            --tw-ring-shadow: 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.1);
+            box-shadow: 0 0 #0000, var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+            &:hover {
+                --tw-ring-shadow: 0 0 0 calc(1px + 0px) hsla(0, 0%, 100%, 0.2);
+            }
+        }
+    }
+
+    .post--single__title,
+    .post--item .post--title {
+        color: rgba(244, 244, 245, 1);
+    }
+
+    .main {
+        &::after {
+            display: none;
+        }
+        box-shadow: hsla(240, 5%, 84%, 0.2) 0 0 0 1px;
+    }
+
+    .archive--list .archive--item {
+        &:hover {
+            background: linear-gradient(180deg, #1e1e1e, #121212);
+        }
+    }
+
+    .graph blockquote,
+    .graph ol li::before {
+        background: linear-gradient(180deg, #1e1e1e, #121212);
+    }
+    .post--single__related__item,
+    .post--single__related__status,
+    .post--item,
+    .link-item,
+    .post--card {
+        position: relative;
+        &:hover {
+            background: linear-gradient(180deg, #1e1e1e, #121212);
+            &::after {
+                content: '';
+                pointer-events: none;
+                position: absolute;
+                inset: 0;
+                border-radius: 12px;
+                border: 1px solid #333;
+            }
+        }
+    }
+
+    .nav-links .page-numbers.current:after,
+    .nav-links .post-page-numbers.current:after {
+        background-image: none;
+    }
+
+    .comment-form {
+        input,
+        textarea {
+            background-color: rgba(63, 63, 70, 0.15);
+            border-color: rgb(63 63 70/1);
+        }
+    }
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Medium.woff2') format('woff2'),
+        url('../fonts/OpenSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mrs_saint_delafieldregular';
+    src: url('../fonts/mrssaintdelafield-regular-webfont.woff2') format('woff2'),
+        url('../fonts/mrssaintdelafield-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

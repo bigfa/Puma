@@ -10,24 +10,26 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
+const ts = require('gulp-typescript');
 
-function css() {
-    return (
-        gulp
-            .src('./scss/app.scss')
-            .pipe(plumber())
-            .pipe(sass({ outputStyle: 'compressed' }))
-            .pipe(rename('misc.css'))
-            //.pipe(postcss([autoprefixer(), cssnano()]))
-            .pipe(gulp.dest('./build/css/'))
-    );
+function settingCss() {
+    return gulp
+        .src('./scss/setting.scss')
+        .pipe(plumber())
+        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(gulp.dest('./build/css/'));
 }
 
-function dark() {
+function css() {
     return gulp
-        .src('./scss/dark.scss')
+        .src('./scss/app.scss')
+        .pipe(plumber())
         .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(rename('app.css'))
         .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./build/css/'));
 }
 
@@ -40,33 +42,50 @@ function fonts() {
 }
 
 // Transpile, concatenate and minify scripts
-function scripts() {
+function typescripts() {
     return gulp
-        .src(['./js/app.js'])
-        .pipe(plumber())
-        .pipe(concat('all.bundle.js'))
+        .src(['./ts/extensions/*', './ts/app.ts', './ts/modules/*'])
         .pipe(
-            babel({
-                presets: ['@babel/preset-env'],
+            ts({
+                noImplicitAny: true,
+                outFile: 'app.js',
+                target: 'es5',
             })
         )
         .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(gulp.dest('./build/js/'));
+}
+
+function setting() {
+    return gulp
+        .src(['./ts/setting.ts'])
+        .pipe(plumber())
+        .pipe(
+            ts({
+                noImplicitAny: true,
+                outFile: 'setting.js',
+                target: 'es5',
+            })
+        )
+        .pipe(uglify())
+        .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('./build/js/'));
 }
 
 // Watch files
 function watchFiles() {
-    gulp.watch(['./js/app.js'], gulp.series(scripts));
-    gulp.watch(['./scss/app.scss', './scss/modules/*'], gulp.series(css));
-    gulp.watch(['./scss/dark.scss'], gulp.series(dark));
+    gulp.watch(['./ts/ts.js'], gulp.series(typescripts));
+    gulp.watch(['./scss/app.scss', './scss/modules/*', './scss/templates/*'], gulp.series(css));
+    gulp.watch(['./scss/setting.scss'], gulp.series(settingCss));
+    gulp.watch(['./js/setting.ts'], gulp.series(setting));
 }
 
 // define complex tasks
-const js = gulp.series(scripts);
+const js = gulp.series(typescripts);
 const watch = gulp.parallel(watchFiles);
-const build = gulp.parallel(watch, gulp.parallel(dark, css, js, images, fonts));
+const build = gulp.parallel(watch, gulp.parallel(css, js, images, settingCss, setting, fonts));
 
-exports.dark = dark;
 exports.css = css;
 exports.js = js;
 exports.build = build;

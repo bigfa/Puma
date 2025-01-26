@@ -1,0 +1,103 @@
+.block {
+    &--list {
+        border-bottom: 2px solid var(--text-border-color);
+        padding: 40px 0;
+        position: relative;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &-title {
+        font-size: 24px;
+        line-height: 1.4;
+        a {
+            transition: 0.5s;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+
+    &-postMetaWrap {
+        color: var(--text-light-color);
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    &-footer {
+        border-left: 2px solid var(--text-border-color);
+        color: var(--text-light-color);
+        font-size: 12px;
+        padding-left: 10px;
+        a {
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+.puma--dark {
+    .block {
+        &-title {
+            a {
+                &:hover {
+                    color: var(--dark-text-ligth);
+                }
+            }
+        }
+        &-postMetaWrap {
+            color: rgba(255, 255, 255, 0.43);
+        }
+
+        &-footer {
+            color: rgba(255, 255, 255, 0.43);
+            border-color: rgba(255, 255, 255, 0.05);
+        }
+    }
+}
+
+.post-status {
+    margin-bottom: 15px;
+    .avatar {
+        border: 1px solid var(--text-border-color);
+        border-radius: 100%;
+        float: left;
+        margin-right: 20px;
+        transition: all 0.5s ease 0s;
+    }
+    .puma--dark & {
+        .avatar {
+            border-color: var(--dark-border-color);
+        }
+    }
+}
+
+.status-footer {
+    font-size: 14px;
+    text-align: right;
+    span {
+        background-color: var(--primary-color);
+        border-radius: 3px;
+        color: #fff;
+        display: inline-block;
+        padding: 0 8px;
+    }
+    .puma--dark & {
+        span {
+            background-color: #cacfd2;
+        }
+    }
+}
+
+.more-link {
+    font-size: 12px;
+    color: var(--text-light-color);
+    &:hover {
+        color: var(--primary-color);
+    }
+    .puma--dark & {
+        color: var(--dark-text-ligth);
+    }
+}

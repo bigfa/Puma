@@ -60,6 +60,9 @@
         a {
             display: block;
             position: relative;
+            &:hover {
+                color: var(--puma-hover-color);
+            }
         }
     }
 
@@ -82,7 +85,7 @@
 .topNav {
     text-align: center;
     &-items {
-        border-bottom: 1px solid var(--text-border-heavy);
+        border-bottom: 1px solid var(--text-border-color);
         font-size: 14px;
         line-height: 50px;
         .menu-item {
@@ -94,6 +97,9 @@
             margin-left: 8px;
             position: relative;
             text-transform: uppercase;
+            &:hover {
+                color: var(--primary-color);
+            }
         }
     }
     .puma--dark &-items {

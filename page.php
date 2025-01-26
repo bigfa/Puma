@@ -1,13 +1,21 @@
 <?php get_header(); ?>
 <main class="main-content container">
-    <section class="section-body">
+    <section class="section-body" itemscope="itemscope" itemtype="http://schema.org/Article">
         <?php while (have_posts()) : the_post(); ?>
             <header class="section-header u-textAlignCenter">
-                <h2 class="grap--h2"><?php the_title(); ?></h2>
+                <h2 class="grap--h2" itemprop="headline"><?php the_title(); ?></h2>
             </header>
-            <div class="grap">
+            <div class="grap" itemprop="articleBody">
                 <?php the_content(); ?>
             </div>
+            <?php wp_link_pages(array(
+                'before'      => '<div class="page-links u-textAlignCenter comment-navigation">',
+                'after'       => '</div>',
+                'link_before' => '<span class="page-numbers">',
+                'link_after'  => '</span>',
+                'pagelink'    => '%',
+                'separator'   => '<span class="screen-reader-text">, </span>',
+            )); ?>
             <?php
             if (comments_open() || get_comments_number()) :
                 comments_template();

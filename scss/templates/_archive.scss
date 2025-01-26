@@ -1,0 +1,66 @@
+.archive-year {
+    position: relative;
+    &::after {
+        content: attr(data-year);
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 120px;
+        font-weight: 700;
+        color: var(--text-light-color);
+        font-style: italic;
+        opacity: 0.05;
+    }
+    padding: 50px 0;
+}
+
+.fancy-archive {
+    color: var(--text-gray-color);
+    font-size: 14px;
+    position: relative;
+
+    .puma--dark & {
+        color: var(--dark-text-ligth);
+        &:before {
+            background-color: var(--dark-border-color);
+        }
+    }
+}
+
+.fancy-ul {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 15px;
+    li {
+        padding-left: 15px;
+        position: relative;
+        line-height: 1.5;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+        &:hover {
+            &:after {
+                background-color: var(--primary-color);
+            }
+            color: var(--primary-color);
+        }
+    }
+}
+
+.archive-month {
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+
+    .puma--dark & {
+        &:after,
+        &:before {
+            background-color: #262626;
+        }
+
+        &:after {
+            background-color: var(--dark-border-color);
+        }
+    }
+}

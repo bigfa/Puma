@@ -27,10 +27,6 @@ Installing and customizing this theme is very easy. All required information are
 
 ## Configuration
 
-### auto dark mode
-
-edit `functions.php`, set `PUMA_DARKMODE` to `auto`, if set `PUMA_DARKMODE` to `dark`, this theme will always load dark mode, default value is `light`
-
 ### super wide image
 
 - set post thumbnail
@@ -46,13 +42,21 @@ edit `functions.php`, set `PUMA_DARKMODE` to `auto`, if set `PUMA_DARKMODE` to `
 
 replace banner.jpg under theme folder `build/images`, you can also replace favicon the same way.
 
-### set archive tempalte / link template
+### set archive tempalte / link template / category template
 
 new page,the choose custom template.
 
 If you want to show gravatar in link template,add email in the note blank when you add or edit link.
 
 ## Update logs
+
+### 5.0.0
+
+- rebuild
+- add category list template
+- remove recommend plugins
+- add theme setting panel
+- add post view and like
 
 ### 4.0.1
 

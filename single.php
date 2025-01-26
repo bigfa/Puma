@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="main-content container">
-    <section class="section-body">
+    <section class="section-body" itemscope="itemscope" itemtype="http://schema.org/Article">
         <?php while (have_posts()) : the_post(); ?>
             <header class="u-textAlignCenter">
                 <h2 class="block-title" itemprop="headline">
@@ -10,7 +10,7 @@
                     <time><?php echo get_the_date('Y/m/d'); ?></time>
                 </div>
             </header>
-            <div class="grap">
+            <div class="grap" itemprop="articleBody">
                 <?php the_content(); ?>
             </div>
             <?php wp_link_pages(array(

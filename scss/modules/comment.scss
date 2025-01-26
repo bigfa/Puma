@@ -33,6 +33,7 @@
     padding: 20px 0;
     text-align: center;
 }
+
 .comment-reply-title {
     color: var(--text-light-color);
     font-size: 18px;
@@ -45,12 +46,19 @@
     padding: 20px 0;
     p {
         margin-bottom: 15px;
+        &.logged-in-as {
+            font-size: 12px;
+            color: var(--text-light-color);
+        }
     }
     label {
         cursor: pointer;
         display: block;
         margin-bottom: 3px;
+        font-size: 14px;
+        color: var(--text-gray-color);
     }
+
     textarea {
         border: 1px solid var(--text-border-color);
         border-radius: 3px;
@@ -58,17 +66,18 @@
         padding: 10px;
         resize: none;
         width: 100%;
+        font-size: 14px;
+        height: 150px;
     }
 
     .submit {
-        background-color: #fff;
+        background-color: var(--primary-color);
         border: 2px solid var(--primary-color);
         border-radius: 3px;
-        color: var(--primary-color);
+        color: #fff;
         cursor: pointer;
-        display: inline-block;
         font-size: 14px;
-        padding: 3px 15px;
+        padding: 4px 18px;
         transition: 0.5s;
         &:hover {
             background-color: var(--primary-color);
@@ -138,15 +147,19 @@
 .comment-meta {
     font-size: 14px;
     overflow: hidden;
+    line-height: 1.6;
+
     .avatar {
         border-radius: 100%;
         float: left;
         margin-right: 10px;
         transition: all 0.5s ease 0s;
     }
+
     .says {
         display: none;
     }
+
     .comment-metadata {
         color: var(--text-light-color);
         font-size: 12px;
@@ -161,6 +174,8 @@
 
 .comment-content {
     margin-top: 10px;
+    padding-left: 5px;
+    font-size: 14px;
 }
 
 .responsesWrapper {

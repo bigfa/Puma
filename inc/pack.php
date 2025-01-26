@@ -136,28 +136,6 @@ function puma_get_the_term_list($id, $taxonomy)
 }
 
 /**
- * Social icons in header
- *
- * @since Puma 2.1.0
- *
- * @return social icons
- */
-
-function header_social_link()
-{
-    $socials = array('twitter', 'sina-weibo', 'instagram');
-    $output = '';
-    foreach ($socials as $key => $social) {
-        if (get_user_meta(1, $social, true) != '') {
-            $output .= '<span class="social-link"><a href="' . get_user_meta(1, $social, true) . '" target="_blank"><span class="icon-' . $social . '"></span></a></span>';
-        }
-    }
-    $output .= '<span class="social-link"><a href="' . get_bloginfo('rss2_url') . '" target="_blank"><span class="icon-rss"></span></a></span>';
-    $output .= '<span class="social-link"><a href="javascript:;" class="opensearch"><span class="icon-search"></span></a></span>';
-    return $output;
-}
-
-/**
  * Get link items by categroy id
  *
  * @since Puma 2.1.0
@@ -173,7 +151,7 @@ function get_the_link_items($id = null)
     if (!empty($bookmarks)) {
         $output .= '<ul class="link-items">';
         foreach ($bookmarks as $bookmark) {
-            $output .=  '<li class="link-item"><a class="link-item-inner effect-apollo" href="' . $bookmark->link_url . '" title="' . $bookmark->link_description . '" target="_blank" >' . get_avatar($bookmark->link_notes, 64) . '<span class="sitename"><strong>' . $bookmark->link_name . '</strong>' . $bookmark->link_description . '</span></a></li>';
+            $output .=  '<li class="link-item"><a class="link-item-inner effect-apollo" href="' . $bookmark->link_url . '" title="' . $bookmark->link_description . '" target="_blank" >' . get_avatar($bookmark->link_notes, 48) . '<span class="sitename"><strong>' . $bookmark->link_name . '</strong>' . $bookmark->link_description . '</span></a></li>';
         }
         $output .= '</ul>';
     } else {
@@ -218,52 +196,4 @@ function puma_get_site_created_year()
 {
     $admin_created = get_userdata(1);
     return date('Y', strtotime($admin_created->user_registered));
-}
-
-/**
- * Theme comment reply mail 
- * 
- * @since Puma 2.1.5
- *
- */
-
-function puma_comment_relay_mail()
-{
-    $content = '<table class="body-wrap" style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;line-height:150%;border-spacing:0;background-color:#f7f7f7;width:100%">
-    <tbody>
-    <tr style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
-<td style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif"></td>
-<td class="container" style="padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;display:block !important;margin:0 auto !important;clear:both !important;max-width:610px !important">
-<div class="content" style="font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;padding:15px;max-width:600px;margin:0 auto;display:block;padding-left:5px;padding-right:5px;padding-bottom:5px;padding-top:0px">
-<table class="head-wrap" style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;line-height:150%;border-spacing:0;margin-bottom:10px;margin-top:10px;width:100%">
-<tbody>
-<tr style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
-<td style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif"></td>
-<td class="container header" style="padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;display:block !important;margin:0 auto !important;clear:both !important;max-width:610px !important">
-<div class="content" style="font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;padding:15px;max-width:600px;margin:0 auto;display:block;padding-left:5px;padding-right:5px;padding-bottom:5px;padding-top:0px">
-</td>
-<td style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif"></td>
-</tr>
-</tbody>
-</table>
-<div class="section " style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
-<br style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
-<br style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif">
-</div>
-</td>
-<td style="margin:0;padding:0;font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif"></td>
-</tr>
-    </tbody>
-    </table>
-    ';
-}
-
-add_filter('the_content', 'puma_fancybox');
-function puma_fancybox($content)
-{
-    global $post;
-    $pattern = "/<a(.*?)href=('|\")([^>]*).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>(.*?)<\/a>/i";
-    $replacement = '<a$1href=$2$3.$4$5 class="zoomImg" $6>$7</a>';
-    $content = preg_replace($pattern, $replacement, $content);
-    return $content;
 }

@@ -1,0 +1,82 @@
+.collectionCard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 50px;
+
+    &--item {
+        transition: 0.5s;
+        padding: 8px;
+        border: 1px solid var(--puma-border-color);
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            .collectionCard--title {
+                color: var(--puma-hover-color);
+                text-decoration: underline;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: attr(data-count);
+            opacity: 0.15;
+            bottom: -8px;
+            right: -5px;
+            color: var(--puma-text-gray-lightest);
+            font-size: 60px;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 1;
+        }
+    }
+
+    &--image {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+
+    &--meta {
+        padding: 5px;
+    }
+
+    &--title {
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 8px;
+    }
+
+    &--description {
+        font-size: 12px;
+        color: var(--puma-text-gray);
+        line-height: 1.2;
+    }
+
+    &--count {
+        font-size: 12px;
+        color: var(--puma-text-gray);
+    }
+}
+
+@media (max-width: 920px) {
+    .template--terms {
+        padding: 50px 20px;
+    }
+
+    .collectionCard {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .collectionCard {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
