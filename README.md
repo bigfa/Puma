@@ -51,6 +51,10 @@ If you want to show gravatar in link template,add email in the note blank when y
 
 ## Update logs
 
+### 5.0.2
+
+- update translation
+
 ### 5.0.1
 
 - fixed theme auto update error
@@ -154,7 +158,3 @@ If you want to show gravatar in link template,add email in the note blank when y
 ### 2.0.0
 
 - init
-
-## Buy me a cup of coffee or 10
-
-![](http://static.fatesinger.com/2015/10/o3zg1edhrs8h8gom.JPG)![](http://static.fatesinger.com/2015/10/3knkyzswj5srf0xj.JPG)

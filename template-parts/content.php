@@ -15,14 +15,14 @@
                 <img src="<?php echo puma_get_background_image(get_the_ID()); ?>" />
             </p>
             <?php if (post_password_required()) : ?>
-                <?php the_content('Read More.'); ?>
+                <?php the_content(__('Read More.', 'Puma')); ?>
             <?php else : ?>
                 <?php if (has_excerpt()) : ?>
                     <p><?php the_excerpt(); ?></p>
                 <?php else : ?>
                     <p><?php echo mb_strimwidth(strip_shortcodes(strip_tags(apply_filters('the_content', $post->post_content))), 0, 220, "..."); ?></p>
                 <?php endif; ?>
-                <p><a class="more-link" href="<?php the_permalink(); ?>" rel="nofollow">Read More.</a></p>
+                <p><a class="more-link" href="<?php the_permalink(); ?>" rel="nofollow"><?php echo __('Read More.', 'Puma'); ?></a></p>
             <?php endif; ?>
         <?php else : ?>
             <?php the_content('Read More.'); ?>
@@ -31,7 +31,7 @@
     <div class="block-footer">
         By <?php the_author(); ?> . In <?php the_category(','); ?>.
         <div class="block-footer-inner">
-            <?php echo get_comments_number(); ?> <?php echo __('replies', 'puma'); ?>.
+            <?php echo get_comments_number(); ?> <?php echo __('replies.', 'Puma'); ?>
         </div>
     </div>
 </article>

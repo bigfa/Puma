@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 文章归档模版
+Template Name: Post Archive
 */
 ?>
 <?php get_header(); ?>

@@ -4,6 +4,9 @@ define('PUMA_SETTING_KEY', 'puma_setting');
 define('PUMA_POST_LIKE_KEY', '_postlike');
 define('PUMA_POST_VIEW_KEY', 'views');
 define('PUMA_ARCHIVE_VIEW_KEY', 'views');
+
+load_theme_textdomain('Puma', get_template_directory() . '/languages');
+
 require get_template_directory() . '/inc/setting.php';
 
 /**
@@ -126,7 +129,7 @@ add_filter('comment_form_fields', 'recover_comment_fields');
 function puma_get_search_form()
 {
     $form = '<form method="get" class="search-form" action="' . esc_url(home_url('/')) . '">
-                    <input type="search" class="search-field" placeholder="输入内容按回车搜索" value="' . get_search_query() . '" name="s" />
+                    <input type="search" class="search-field" placeholder="' . __('Enter to search..', 'Puma') . '" value="' . get_search_query() . '" name="s" />
             </form>';
     return $form;
 }

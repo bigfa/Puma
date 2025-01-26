@@ -4,14 +4,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Puma 5.0.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Puma\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2025-01-26T16:16:24+00:00\n"
+"PO-Revision-Date: 2025-01-27 00:26+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-26T16:16:24+00:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.11.0\n"
+"X-Generator: Poedit 3.5\n"
 "X-Domain: Puma\n"
 
 #. Theme Name of the theme
@@ -45,7 +46,7 @@ msgstr ""
 
 #: functions.php:129
 msgid "Enter to search.."
-msgstr ""
+msgstr "搜入内容回车搜索"
 
 #: inc/base.php:114
 msgid "Cover"
@@ -59,8 +60,7 @@ msgstr ""
 msgid "Category cover url."
 msgstr ""
 
-#: inc/base.php:121
-#: inc/base.php:125
+#: inc/base.php:121 inc/base.php:125
 msgid "Card Template"
 msgstr ""
 
@@ -68,43 +68,37 @@ msgstr ""
 msgid "Use Card Template"
 msgstr ""
 
-#: inc/base.php:173
-#: inc/setting.php:432
+#: inc/base.php:173 inc/setting.php:432
 msgid "Table of content"
 msgstr ""
 
 #: inc/base.php:196
 msgid "author"
-msgstr ""
+msgstr "作者"
 
 #: inc/base.php:196
 msgid "published on"
-msgstr ""
+msgstr "发布于"
 
-#: inc/base.php:233
-#: inc/base.php:235
+#: inc/base.php:233 inc/base.php:235
 msgid "Homepage Top"
 msgstr ""
 
-#: inc/base.php:243
-#: inc/base.php:245
+#: inc/base.php:243 inc/base.php:245
 msgid "Homepage Bottom"
 msgstr ""
 
-#: inc/base.php:253
-#: inc/base.php:255
+#: inc/base.php:253 inc/base.php:255
 msgid "Single Pgae Bottom"
 msgstr ""
 
-#: inc/base.php:296
-#: inc/setting.php:47
+#: inc/base.php:296 inc/setting.php:47
 msgid "Setting saved success!"
 msgstr ""
 
-#: inc/base.php:297
-#: inc/setting.php:48
+#: inc/base.php:297 inc/setting.php:48
 msgid "Upload Image"
-msgstr ""
+msgstr "上传图片"
 
 #: inc/base.php:298
 msgid "Set Category Image"
@@ -168,81 +162,77 @@ msgstr ""
 
 #: inc/comment.php:85
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
-#: inc/comment.php:143
-#: inc/comment.php:162
-#: inc/comment.php:192
-#: inc/comment.php:205
-#: inc/comment.php:231
-#: inc/setting.php:28
+#: inc/comment.php:143 inc/comment.php:162 inc/comment.php:192
+#: inc/comment.php:205 inc/comment.php:231 inc/setting.php:28
 msgid "Success"
-msgstr ""
+msgstr "成功"
 
 #: inc/pack.php:38
 msgid "Prev"
-msgstr ""
+msgstr "上一页"
 
 #: inc/pack.php:42
 msgid "Next"
-msgstr ""
+msgstr "下一页"
 
 #: inc/pack.php:90
 msgid "Add a menu"
-msgstr ""
+msgstr "添加菜单"
 
 #: inc/pack.php:158
 msgid "No links"
-msgstr ""
+msgstr "没有链接"
 
-#: inc/setting.php:56
-#: inc/setting.php:62
+#: inc/setting.php:56 inc/setting.php:62
 msgid "Theme Setting"
-msgstr ""
+msgstr "主题设置"
 
-#: inc/setting.php:63
-#: inc/setting.php:86
+#: inc/setting.php:63 inc/setting.php:86
 msgid "Documentation"
-msgstr ""
+msgstr "主题文档"
 
 #: inc/setting.php:113
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: inc/setting.php:202
 msgid "Basic Setting"
-msgstr ""
+msgstr "基础设置"
 
 #: inc/setting.php:207
 msgid "Feature Setting"
-msgstr ""
+msgstr "功能设置"
 
 #: inc/setting.php:213
 msgid "Singluar Setting"
-msgstr ""
+msgstr "文章设置"
 
 #: inc/setting.php:218
 msgid "SNS Setting"
-msgstr ""
+msgstr "社会化设置"
 
 #: inc/setting.php:223
 msgid "Custom Setting"
-msgstr ""
+msgstr "自定义设置"
 
 #: inc/setting.php:234
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: inc/setting.php:235
 msgid "Site description"
-msgstr ""
+msgstr "站点描述"
 
 #: inc/setting.php:240
 msgid "Headcode"
 msgstr ""
 
 #: inc/setting.php:241
-msgid "You can add content to the head tag, such as site verification tags, and so on."
+msgid ""
+"You can add content to the head tag, such as site verification tags, and so "
+"on."
 msgstr ""
 
 #: inc/setting.php:246
@@ -314,7 +304,9 @@ msgid "Upyun CDN"
 msgstr ""
 
 #: inc/setting.php:301
-msgid "Make sure all images are uploaded to Upyun, otherwise thumbnails may not display properly."
+msgid ""
+"Make sure all images are uploaded to Upyun, otherwise thumbnails may not "
+"display properly."
 msgstr ""
 
 #: inc/setting.php:306
@@ -322,7 +314,9 @@ msgid "Aliyun OSS CDN"
 msgstr ""
 
 #: inc/setting.php:307
-msgid "Make sure all images are uploaded to Aliyun OSS, otherwise thumbnails may not display properly."
+msgid ""
+"Make sure all images are uploaded to Aliyun OSS, otherwise thumbnails may "
+"not display properly."
 msgstr ""
 
 #: inc/setting.php:312
@@ -330,7 +324,9 @@ msgid "Qiniu OSS CDN"
 msgstr ""
 
 #: inc/setting.php:313
-msgid "Make sure all images are uploaded to Qiniu OSS, otherwise thumbnails may not display properly."
+msgid ""
+"Make sure all images are uploaded to Qiniu OSS, otherwise thumbnails may not "
+"display properly."
 msgstr ""
 
 #: inc/setting.php:318
@@ -397,8 +393,7 @@ msgstr ""
 msgid "Show image count of the post"
 msgstr ""
 
-#: inc/setting.php:366
-#: inc/setting.php:367
+#: inc/setting.php:366 inc/setting.php:367
 msgid "Hide home cover"
 msgstr ""
 
@@ -539,7 +534,9 @@ msgid "Footer SNS Icons"
 msgstr ""
 
 #: inc/setting.php:487
-msgid "Show sns icons in footer, if this setting is on, the footer menu won',t be displayed."
+msgid ""
+"Show sns icons in footer, if this setting is on, the footer menu won',t be "
+"displayed."
 msgstr ""
 
 #: inc/setting.php:492
@@ -628,42 +625,40 @@ msgstr ""
 
 #: inc/setting.php:558
 msgid "Custom Javascript"
-msgstr ""
+msgstr "自定义 Javascript 脚本"
 
 #: inc/setting.php:563
 msgid "Copyright"
-msgstr ""
+msgstr "版权信息"
 
 #: inc/setting.php:564
 msgid "Custom footer content"
-msgstr ""
+msgstr "自定义页脚内容"
 
 #: search.php:4
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "%s 的搜索结果"
 
-#: template-parts/content-status.php:8
-#: template-parts/content.php:34
+#: template-parts/content-status.php:8 template-parts/content.php:34
 msgid "replies."
-msgstr ""
+msgstr "条评论"
 
-#: template-parts/content.php:18
-#: template-parts/content.php:25
+#: template-parts/content.php:18 template-parts/content.php:25
 msgid "Read More."
-msgstr ""
+msgstr "阅读更多"
 
 #. Template Name of the theme
 msgid "Post Archive"
-msgstr ""
+msgstr "归档模版"
 
 #. Template Name of the theme
 msgid "Blogroll"
-msgstr ""
+msgstr "链接模版"
 
 #. Template Name of the theme
 msgid "Marker Pro"
-msgstr ""
+msgstr "地图模版"
 
 #. Template Name of the theme
 msgid "Categories"
-msgstr ""
+msgstr "分类模版"

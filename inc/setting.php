@@ -240,12 +240,12 @@ $pumaSetting = new pumaSetting(
                         'label' => __('Headcode', 'Puma'),
                         'description' => __('You can add content to the head tag, such as site verification tags, and so on.', 'Puma'),
                     ],
-                    [
-                        'type' => 'input',
-                        'name' => 'logo',
-                        'label' => __('Logo', 'Puma'),
-                        'description' => __('Logo address, preferably in a square shape.', 'Puma'),
-                    ],
+                    // [
+                    //     'type' => 'input',
+                    //     'name' => 'logo',
+                    //     'label' => __('Logo', 'Puma'),
+                    //     'description' => __('Logo address, preferably in a square shape.', 'Puma'),
+                    // ],
                     [
                         'type' => 'input',
                         'name' => 'og_default_thumb',
@@ -312,12 +312,12 @@ $pumaSetting = new pumaSetting(
                         'label' => __('Qiniu OSS CDN', 'Puma'),
                         'description' => __('Make sure all images are uploaded to Qiniu OSS, otherwise thumbnails may not display properly.', 'Puma')
                     ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'darkmode',
-                        'label' => __('Dark Mode', 'Puma'),
-                        'description' => __('Enable dark mode', 'Puma')
-                    ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'darkmode',
+                    //     'label' => __('Dark Mode', 'Puma'),
+                    //     'description' => __('Enable dark mode', 'Puma')
+                    // ],
                     [
                         'type' => 'input',
                         'name' => 'default_thumbnail',
@@ -330,36 +330,36 @@ $pumaSetting = new pumaSetting(
                         'label' => __('Back to top', 'Puma'),
                         'description' => __('Enable back to top', 'Puma')
                     ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'loadmore',
-                        'label' => __('Load more', 'Puma'),
-                        'description' => __('Enable load more', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'home_author',
-                        'label' => __('Author info', 'Puma'),
-                        'description' => __('Enable author info in homepage', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'home_cat',
-                        'label' => __('Category info', 'Puma'),
-                        'description' => __('Enable category info in homepage', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'home_like',
-                        'label' => __('Like info', 'Puma'),
-                        'description' => __('Enable like info in homepage', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'home_image_count',
-                        'label' => __('Image count', 'Puma'),
-                        'description' => __('Show image count of the post', 'Puma')
-                    ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'loadmore',
+                    //     'label' => __('Load more', 'Puma'),
+                    //     'description' => __('Enable load more', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'home_author',
+                    //     'label' => __('Author info', 'Puma'),
+                    //     'description' => __('Enable author info in homepage', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'home_cat',
+                    //     'label' => __('Category info', 'Puma'),
+                    //     'description' => __('Enable category info in homepage', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'home_like',
+                    //     'label' => __('Like info', 'Puma'),
+                    //     'description' => __('Enable like info in homepage', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'home_image_count',
+                    //     'label' => __('Image count', 'Puma'),
+                    //     'description' => __('Show image count of the post', 'Puma')
+                    // ],
                     [
                         'type' => 'switch',
                         'name' => 'hide_home_cover',
@@ -378,72 +378,72 @@ $pumaSetting = new pumaSetting(
             [
                 'id' => 'singluar',
                 'content' => [
-                    [
-                        'type' => 'switch',
-                        'name' => 'bio',
-                        'label' => __('Author bio', 'Puma'),
-                        'description' => __('Enable author bio', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'author_sns',
-                        'label' => __('Author sns icons', 'Puma'),
-                        'description' => __('Show author sns icons, will not show when author bio is off.', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'related',
-                        'label' => __('Related posts', 'Puma'),
-                        'description' => __('Enable related posts', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'postlike',
-                        'label' => __('Post like', 'Puma'),
-                        'description' => __('Enable post like', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'post_navigation',
-                        'label' => __('Post navigation', 'Puma'),
-                        'description' => __('Enable post navigation', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'show_copylink',
-                        'label' => __('Copy link', 'Puma'),
-                        'description' => __('Enable copy link', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'category_card',
-                        'label' => __('Category card', 'Puma'),
-                        'description' => __('Show post category info after post.', 'Puma')
-                    ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'bio',
+                    //     'label' => __('Author bio', 'Puma'),
+                    //     'description' => __('Enable author bio', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'author_sns',
+                    //     'label' => __('Author sns icons', 'Puma'),
+                    //     'description' => __('Show author sns icons, will not show when author bio is off.', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'related',
+                    //     'label' => __('Related posts', 'Puma'),
+                    //     'description' => __('Enable related posts', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'postlike',
+                    //     'label' => __('Post like', 'Puma'),
+                    //     'description' => __('Enable post like', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'post_navigation',
+                    //     'label' => __('Post navigation', 'Puma'),
+                    //     'description' => __('Enable post navigation', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'show_copylink',
+                    //     'label' => __('Copy link', 'Puma'),
+                    //     'description' => __('Enable copy link', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'category_card',
+                    //     'label' => __('Category card', 'Puma'),
+                    //     'description' => __('Show post category info after post.', 'Puma')
+                    // ],
                     [
                         'type' => 'switch',
                         'name' => 'show_parent',
                         'label' => __('Show parent comment', 'Puma'),
                         'description' => __('Enable show parent comment', 'Puma')
                     ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'toc',
-                        'label' => __('Table of content', 'Puma'),
-                        'description' => __('Enable table of content', 'Puma')
-                    ],
-                    [
-                        'type' => 'input',
-                        'name' => 'toc_start',
-                        'label' => __('Start heading', 'Puma'),
-                        'description' => __('Start heading,default h3', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'show_author',
-                        'label' => __('Post Author', 'Puma'),
-                        'description' => __('Show post author tip in comment', 'Puma')
-                    ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'toc',
+                    //     'label' => __('Table of content', 'Puma'),
+                    //     'description' => __('Enable table of content', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'input',
+                    //     'name' => 'toc_start',
+                    //     'label' => __('Start heading', 'Puma'),
+                    //     'description' => __('Start heading,default h3', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'show_author',
+                    //     'label' => __('Post Author', 'Puma'),
+                    //     'description' => __('Show post author tip in comment', 'Puma')
+                    // ],
                     [
                         'type' => 'switch',
                         'name' => 'disable_comment_link',
@@ -462,18 +462,18 @@ $pumaSetting = new pumaSetting(
                         'label' => __('Friend icon', 'Puma'),
                         'description' => __('Show icon when comment author url is in blogroll.', 'Puma')
                     ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'image_zoom',
-                        'label' => __('Post image zoom', 'Puma'),
-                        'description' => __('Zoom image when a tag link to image url.', 'Puma')
-                    ],
-                    [
-                        'type' => 'switch',
-                        'name' => 'update_time',
-                        'label' => __('Post update time', 'Puma'),
-                        'description' => __('Show the last update time of post.', 'Puma')
-                    ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'image_zoom',
+                    //     'label' => __('Post image zoom', 'Puma'),
+                    //     'description' => __('Zoom image when a tag link to image url.', 'Puma')
+                    // ],
+                    // [
+                    //     'type' => 'switch',
+                    //     'name' => 'update_time',
+                    //     'label' => __('Post update time', 'Puma'),
+                    //     'description' => __('Show the last update time of post.', 'Puma')
+                    // ],
                 ]
             ],
             [

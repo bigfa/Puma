@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Marker Pro 地图模版
+Template Name: Marker Pro
 */
 ?>
 <?php get_header(); ?>

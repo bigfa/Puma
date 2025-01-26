@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main class="main-content container">
     <header class="archive-header u-textAlignCenter">
-        <h1 class="archive-title"><?php printf(__('Search Results for: %s', 'puma'), '<span>' . esc_html(get_search_query()) . '</span>'); ?></h1>
+        <h1 class="archive-title"><?php printf(__('Search Results for: %s', 'Puma'), '<span>' . esc_html(get_search_query()) . '</span>'); ?></h1>
     </header>
     <section class="blockGroup">
         <?php if (have_posts()) :

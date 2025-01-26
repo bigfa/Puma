@@ -5,6 +5,6 @@
         </div>
     </a>
     <div class="status-footer">
-        <span><?php echo get_comments_number(); ?> replies.</span>
+        <span><?php echo get_comments_number(); ?> <?php _e('replies.', 'Puma'); ?></span>
     </div>
 </article>

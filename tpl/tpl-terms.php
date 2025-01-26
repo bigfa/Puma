@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 分类模版
+Template Name: Categories
 */
 get_header(); ?>
 

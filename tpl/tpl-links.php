@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: 友情链接模版
+Template Name: Blogroll
 */
 ?>
 <?php get_header(); ?>

@@ -5,7 +5,6 @@ class pumaBase
     public function __construct()
     {
         global $pumaSetting;
-        load_theme_textdomain('puma', get_template_directory() . '/languages');
         add_action('wp_enqueue_scripts', array($this, 'enqueue_styles'));
         add_action('wp_enqueue_scripts', array($this, 'enqueue_scripts'));
         add_filter('excerpt_length', array($this, 'excerpt_length'));
@@ -29,7 +28,7 @@ class pumaBase
         add_theme_support('post-thumbnails');
         add_filter('template_include', array($this, 'category_card_template'), 1);
         if ($pumaSetting->get_setting('toc'))
-            add_filter('the_content', array($this, 'farallon_toc'));
+            add_filter('the_content', array($this, 'puma_toc'));
         if ($pumaSetting->get_setting('gravatar_proxy'))
             add_filter('get_avatar_url', array($this, 'gravatar_proxy'), 10, 3);
 
@@ -111,20 +110,20 @@ class pumaBase
         $card  = get_term_meta($category->term_id, '_card', true); ?>
         <table class="form-table">
             <tr class="form-field">
-                <th scope="row" valign="top"><label for="_category_cover"><?php _e('Cover', 'Farallon'); ?></label></th>
+                <th scope="row" valign="top"><label for="_category_cover"><?php _e('Cover', 'Puma'); ?></label></th>
                 <td><input name="_category_cover" id="_category_cover" type="text" size="40" aria-required="false" value="<?php echo $cover; ?>" class="regular-text ltr" />
-                    <p class="description"><button id="upload-categoryCover" class="button"><?php _e('Upload', 'Farallon'); ?></button></p>
-                    <p class="description"><?php _e('Category cover url.', 'Farallon'); ?></p>
+                    <p class="description"><button id="upload-categoryCover" class="button"><?php _e('Upload', 'Puma'); ?></button></p>
+                    <p class="description"><?php _e('Category cover url.', 'Puma'); ?></p>
                 </td>
             </tr>
             <tr class="form-field">
-                <th scope="row"><?php _e('Card Template', 'Farallon'); ?></th>
+                <th scope="row"><?php _e('Card Template', 'Puma'); ?></th>
                 <td>
                     <fieldset>
                         <legend class="screen-reader-text"><span>
-                                <?php _e('Card Template', 'Farallon'); ?></span></legend><label for="_category_card">
+                                <?php _e('Card Template', 'Puma'); ?></span></legend><label for="_category_card">
                             <input name="_category_card" type="checkbox" id="_category_card" value="1" <?php if ($card) echo 'checked' ?>>
-                            <?php _e('Use Card Template', 'Farallon'); ?></label>
+                            <?php _e('Use Card Template', 'Puma'); ?></label>
                     </fieldset>
                 </td>
             </tr>
@@ -133,15 +132,15 @@ class pumaBase
 
     function gravatar_proxy($url, $id_or_email, $args)
     {
-        global $farallonSetting;
-        $url = str_replace(array("www.gravatar.com", "cn.gravatar.com", "0.gravatar.com", "1.gravatar.com", "2.gravatar.com", "secure.gravatar.com"), $farallonSetting->get_setting('gravatar_proxy'), $url);
+        global $pumaSetting;
+        $url = str_replace(array("www.gravatar.com", "cn.gravatar.com", "0.gravatar.com", "1.gravatar.com", "2.gravatar.com", "secure.gravatar.com"), $pumaSetting->get_setting('gravatar_proxy'), $url);
         return $url;
     }
 
-    function farallon_toc($content)
+    function puma_toc($content)
     {
-        global $farallonSetting;
-        $toc_start = $farallonSetting->get_setting('toc_start') ? $farallonSetting->get_setting('toc_start') : 3;
+        global $pumaSetting;
+        $toc_start = $pumaSetting->get_setting('toc_start') ? $pumaSetting->get_setting('toc_start') : 3;
         preg_match_all('/<h([' . $toc_start . '-6]).*?>(.*?)<\/h[' . $toc_start . '-6]>/i', $content, $matches, PREG_SET_ORDER);
 
         if ($matches && is_singular()) {
@@ -170,7 +169,7 @@ class pumaBase
             $toc .= str_repeat('</li></ul>', $previous_level - 2);
             $toc .= '</ul>';
 
-            $content = '<details class="farallon--toc" open><summary>' . __('Table of content', 'Farallon') . '</summary>' . $toc . '</details>' . $content;
+            $content = '<details class="puma--toc" open><summary>' . __('Table of content', 'Puma') . '</summary>' . $toc . '</details>' . $content;
         }
 
         return $content;
@@ -193,7 +192,7 @@ class pumaBase
             if (get_post_meta($ID, "_desription", true)) {
                 $description = get_post_meta($ID, "_desription", true);
             } else {
-                $description = $post->post_title . '，' . __('author', 'Farallon') . ':' . get_the_author_meta('nickname', $author) . '，' . __('published on', 'Farallon') . get_the_date('Y-m-d');
+                $description = $post->post_title . '，' . __('author', 'Puma') . ':' . get_the_author_meta('nickname', $author) . '，' . __('published on', 'Puma') . get_the_date('Y-m-d');
             }
             echo '<meta name="description" content="' . $description . '">';
             $ogmeta .= '<meta property="og:image" content="' . puma_get_background_image($ID) . '">';
@@ -230,9 +229,9 @@ class pumaBase
     {
 
         register_sidebar(array(
-            'name'          => __('Homepage Top', 'Farallon'),
+            'name'          => __('Homepage Top', 'Puma'),
             'id'            => 'topbar',
-            'description'   => __('Homepage Top', 'Farallon'),
+            'description'   => __('Homepage Top', 'Puma'),
             'before_widget' => '<aside id="%1$s" class="widget %2$s">',
             'after_widget'  => '</aside>',
             'before_title'  => '<h3 class="heading-title">',
@@ -240,9 +239,9 @@ class pumaBase
         ));
 
         register_sidebar(array(
-            'name'          => __('Homepage Bottom', 'Farallon'),
+            'name'          => __('Homepage Bottom', 'Puma'),
             'id'            => 'footerbar',
-            'description'   => __('Homepage Bottom', 'Farallon'),
+            'description'   => __('Homepage Bottom', 'Puma'),
             'before_widget' => '<aside id="%1$s" class="widget %2$s">',
             'after_widget'  => '</aside>',
             'before_title'  => '<h3 class="heading-title">',
@@ -250,9 +249,9 @@ class pumaBase
         ));
 
         register_sidebar(array(
-            'name'          => __('Single Pgae Bottom', 'Farallon'),
+            'name'          => __('Single Pgae Bottom', 'Puma'),
             'id'            => 'singlefooterbar',
-            'description'   => __('Single Pgae Bottom', 'Farallon'),
+            'description'   => __('Single Pgae Bottom', 'Puma'),
             'before_widget' => '<aside id="%1$s" class="widget %2$s">',
             'after_widget'  => '</aside>',
             'before_title'  => '<h3 class="heading-title">',
@@ -283,9 +282,9 @@ class pumaBase
         // check if is category edit page and enquenue wp media
         if (isset($_GET['taxonomy']) && $_GET['taxonomy'] == 'category') {
             wp_enqueue_media();
-            wp_enqueue_script('farallon-setting', get_template_directory_uri() . '/build/js/setting.min.js', ['jquery'], PUMA_VERSION, true);
+            wp_enqueue_script('puma-setting', get_template_directory_uri() . '/build/js/setting.min.js', ['jquery'], PUMA_VERSION, true);
             wp_localize_script(
-                'farallon-setting',
+                'puma-setting',
                 'obvInit',
                 [
                     'is_single' => is_singular(),
@@ -293,9 +292,9 @@ class pumaBase
                     'restfulBase' => esc_url_raw(rest_url()),
                     'nonce' => wp_create_nonce('wp_rest'),
                     'ajaxurl' => admin_url('admin-ajax.php'),
-                    'success_message' => __('Setting saved success!', 'Farallon'),
-                    'upload_title' => __('Upload Image', 'Farallon'),
-                    'upload_button' => __('Set Category Image', 'Farallon'),
+                    'success_message' => __('Setting saved success!', 'Puma'),
+                    'upload_title' => __('Upload Image', 'Puma'),
+                    'upload_button' => __('Set Category Image', 'Puma'),
                 ]
             );
         }
@@ -305,9 +304,9 @@ class pumaBase
     {
         global $pumaSetting;
         wp_dequeue_style('global-styles');
-        wp_enqueue_style('farallon-style', get_template_directory_uri() . '/build/css/app.min.css', array(), PUMA_VERSION, 'all');
+        wp_enqueue_style('puma-style', get_template_directory_uri() . '/build/css/app.min.css', array(), PUMA_VERSION, 'all');
         if ($pumaSetting->get_setting('css')) {
-            wp_add_inline_style('farallon-style', $pumaSetting->get_setting('css'));
+            wp_add_inline_style('puma-style', $pumaSetting->get_setting('css'));
         }
         if ($pumaSetting->get_setting('disable_block_css')) {
             wp_dequeue_style('wp-block-library');
@@ -319,9 +318,9 @@ class pumaBase
     function enqueue_scripts()
     {
         global $pumaSetting;
-        wp_enqueue_script('farallon-script', get_template_directory_uri() . '/build/js/app.min.js', [], PUMA_VERSION, true);
+        wp_enqueue_script('puma-script', get_template_directory_uri() . '/build/js/app.min.js', [], PUMA_VERSION, true);
         wp_localize_script(
-            'farallon-script',
+            'puma-script',
             'obvInit',
             [
                 'is_single' => is_singular(),
@@ -334,25 +333,25 @@ class pumaBase
                 'archive_id' => get_queried_object_id(),
                 'hide_home_cover' => !!$pumaSetting->get_setting('hide_home_cover'),
                 'timeFormat' => [
-                    'second' => __('second ago', 'Farallon'),
-                    'seconds' => __('seconds ago', 'Farallon'),
-                    'minute' => __('minute ago', 'Farallon'),
-                    'minutes' => __('minutes ago', 'Farallon'),
-                    'hour' => __('hour ago', 'Farallon'),
-                    'hours' => __('hours ago', 'Farallon'),
-                    'day' => __('day ago', 'Farallon'),
-                    'days' => __('days ago', 'Farallon'),
-                    'week' => __('week ago', 'Farallon'),
-                    'weeks' => __('weeks ago', 'Farallon'),
-                    'month' => __('month ago', 'Farallon'),
-                    'months' => __('months ago', 'Farallon'),
-                    'year' => __('year ago', 'Farallon'),
-                    'years' => __('years ago', 'Farallon'),
+                    'second' => __('second ago', 'Puma'),
+                    'seconds' => __('seconds ago', 'Puma'),
+                    'minute' => __('minute ago', 'Puma'),
+                    'minutes' => __('minutes ago', 'Puma'),
+                    'hour' => __('hour ago', 'Puma'),
+                    'hours' => __('hours ago', 'Puma'),
+                    'day' => __('day ago', 'Puma'),
+                    'days' => __('days ago', 'Puma'),
+                    'week' => __('week ago', 'Puma'),
+                    'weeks' => __('weeks ago', 'Puma'),
+                    'month' => __('month ago', 'Puma'),
+                    'months' => __('months ago', 'Puma'),
+                    'year' => __('year ago', 'Puma'),
+                    'years' => __('years ago', 'Puma'),
                 ]
             ]
         );
         if ($pumaSetting->get_setting('javascript')) {
-            wp_add_inline_script('farallon-script', $pumaSetting->get_setting('javascript'));
+            wp_add_inline_script('puma-script', $pumaSetting->get_setting('javascript'));
         }
         if (is_singular()) wp_enqueue_script("comment-reply");
     }

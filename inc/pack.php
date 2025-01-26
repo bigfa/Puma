@@ -35,11 +35,11 @@ function puma_comment_nav()
         <nav class="navigation comment-navigation u-textAlignCenter" role="navigation">
             <div class="nav-links">
                 <?php
-                if ($prev_link = get_previous_comments_link('上一页')) :
+                if ($prev_link = get_previous_comments_link(__('Prev', 'Puma'))) :
                     printf('<div class="nav-previous">%s</div>', $prev_link);
                 endif;
 
-                if ($next_link = get_next_comments_link('下一页')) :
+                if ($next_link = get_next_comments_link(__('Next', 'Puma'))) :
                     printf('<div class="nav-next">%s</div>', $next_link);
                 endif;
                 ?>
@@ -87,7 +87,7 @@ function link_to_menu_editor($args)
 
     extract($args);
 
-    $link = $link_before . '<a href="' . admin_url('nav-menus.php') . '">' . $before . 'Add a menu' . $after . '</a>' . $link_after;
+    $link = $link_before . '<a href="' . admin_url('nav-menus.php') . '">' . $before . __('Add a menu', 'Puma') . $after . '</a>' . $link_after;
 
     if (FALSE !== stripos($items_wrap, '<ul') or FALSE !== stripos($items_wrap, '<ol')) {
         $link = "<li>$link</li>";
@@ -155,7 +155,7 @@ function get_the_link_items($id = null)
         }
         $output .= '</ul>';
     } else {
-        $output = '暂无链接。';
+        $output =  __('No links', 'Puma');
     }
     return $output;
 }
