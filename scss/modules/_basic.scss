@@ -51,13 +51,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-font-feature-settings: 'liga' on;
-    color: var(--text-main-color);
+    color: var(--puma-text-color);
     line-height: 1.8;
-    background-color: #f0f0f0;
-    &.puma--dark {
-        background-color: #3c3c3c;
-        color: rgba(255, 255, 255, 0.6);
-    }
+    background-color: var(--puma-background-gray);
 }
 
 h1,
@@ -121,7 +117,7 @@ figcaption {
 input[disabled] {
     cursor: default;
     color: rgba(0, 0, 0, 0.8);
-    background-color: var(--text-border-color);
+    background-color: var(--puma-border-color-light);
 }
 audio:not([controls]) {
     display: none;
@@ -149,14 +145,11 @@ svg:not(:root) {
 }
 
 .surface-content {
-    background-color: #fff;
+    background-color: var(--puma-background-white);
     margin: 60px auto;
     max-width: var(--puma-content-width);
     border-radius: var(--puma-border-radius, 10px);
     overflow: hidden;
-    .puma--dark & {
-        background-color: #262626;
-    }
 }
 
 .backToTop {
@@ -178,17 +171,7 @@ svg:not(:root) {
 
     &:hover {
         .icon {
-            fill: var(--primary-color);
-        }
-    }
-    .puma--dark & {
-        .icon {
-            fill: rgba(255, 255, 255, 0.8);
-        }
-        &:hover {
-            .icon {
-                fill: rgba(255, 255, 255, 0.9);
-            }
+            fill: var(--puma-main-color);
         }
     }
 }

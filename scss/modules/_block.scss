@@ -1,6 +1,6 @@
 .block {
     &--list {
-        border-bottom: 2px solid var(--text-border-color);
+        border-bottom: 2px solid var(--puma-border-color-light);
         padding: 40px 0;
         position: relative;
         &:last-child {
@@ -14,46 +14,30 @@
         a {
             transition: 0.5s;
             &:hover {
-                color: var(--primary-color);
+                color: var(--puma-main-color);
             }
         }
     }
 
+    &-snippet {
+        color: var(--puma-text-light);
+    }
+
     &-postMetaWrap {
-        color: var(--text-light-color);
+        color: var(--puma-text-light);
         font-size: 14px;
         margin-bottom: 20px;
     }
 
     &-footer {
-        border-left: 2px solid var(--text-border-color);
-        color: var(--text-light-color);
+        border-left: 2px solid var(--puma-border-color-light);
+        color: var(--puma-text-light);
         font-size: 12px;
         padding-left: 10px;
         a {
             &:hover {
-                color: var(--primary-color);
+                color: var(--puma-main-color);
             }
-        }
-    }
-}
-
-.puma--dark {
-    .block {
-        &-title {
-            a {
-                &:hover {
-                    color: var(--dark-text-ligth);
-                }
-            }
-        }
-        &-postMetaWrap {
-            color: rgba(255, 255, 255, 0.43);
-        }
-
-        &-footer {
-            color: rgba(255, 255, 255, 0.43);
-            border-color: rgba(255, 255, 255, 0.05);
         }
     }
 }
@@ -61,16 +45,11 @@
 .post-status {
     margin-bottom: 15px;
     .avatar {
-        border: 1px solid var(--text-border-color);
+        border: 1px solid var(--puma-border-color-light);
         border-radius: 100%;
         float: left;
         margin-right: 20px;
         transition: all 0.5s ease 0s;
-    }
-    .puma--dark & {
-        .avatar {
-            border-color: var(--dark-border-color);
-        }
     }
 }
 
@@ -78,26 +57,18 @@
     font-size: 14px;
     text-align: right;
     span {
-        background-color: var(--primary-color);
+        background-color: var(--puma-main-color);
         border-radius: 3px;
         color: #fff;
         display: inline-block;
         padding: 0 8px;
     }
-    .puma--dark & {
-        span {
-            background-color: #cacfd2;
-        }
-    }
 }
 
 .more-link {
     font-size: 12px;
-    color: var(--text-light-color);
+    color: var(--puma-text-light);
     &:hover {
-        color: var(--primary-color);
-    }
-    .puma--dark & {
-        color: var(--dark-text-ligth);
+        color: var(--puma-main-color);
     }
 }

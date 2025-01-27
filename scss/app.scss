@@ -2,19 +2,6 @@
 @import 'modules/variable.scss';
 @import 'modules/header';
 
-:root {
-    --primary-color: #27ae60;
-    --text-main-color: rgba(0, 0, 0, 0.8);
-    --text-gray-color: rgba(0, 0, 0, 0.6);
-    --text-light-color: rgba(0, 0, 0, 0.5);
-    --text-border-color: rgba(0, 0, 0, 0.05);
-    --text-border-heavy: rgba(0, 0, 0, 0.15);
-    --dark-text-color: rgba(255, 255, 255, 0.6);
-    --dark-text-ligth: rgba(255, 255, 255, 0.44);
-    --dark-border-color: rgba(255, 255, 255, 0.05);
-    --dark-border-heavy: rgba(255, 255, 255, 0.15);
-}
-
 @import 'modules/basic';
 @import 'modules/block';
 
@@ -71,7 +58,7 @@
     .nav-links {
         div {
             &:first-child {
-                border-bottom: 1px solid var(--text-border-color);
+                border-bottom: 1px solid var(--puma-border-color-light);
             }
             &:only-child {
                 border-bottom: 0;

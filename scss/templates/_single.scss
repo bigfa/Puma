@@ -1,6 +1,6 @@
 .post--keyword {
     border-radius: 3px;
-    color: var(--text-light-color);
+    color: var(--puma-text-light);
     font-size: 12px;
     padding: 5px 10px;
     margin-right: 10px;
@@ -16,23 +16,15 @@
     &:hover {
         background-color: #ddd;
     }
-
-    .puma--dark & {
-        color: rgba(255, 255, 255, 0.44);
-        background-color: #3c3c3c;
-        &:hover {
-            background-color: #363636;
-        }
-    }
 }
 
 .postFooterinfo {
-    border-top: 1px solid var(--text-border-color);
+    border-top: 1px solid var(--puma-border-color-light);
     padding-bottom: 20px;
     padding-top: 20px;
 
     .avatar {
-        border: 1px solid var(--text-border-color);
+        border: 1px solid var(--puma-border-color-light);
         border-radius: 100%;
         padding: 3px;
     }
@@ -45,31 +37,15 @@
     }
 
     .author-description {
-        color: var(--text-gray-color);
+        color: var(--puma-text-gray);
         font-size: 14px;
         line-height: 1.8;
     }
 
     .author-meta {
-        color: var(--text-light-color);
+        color: var(--puma-text-light);
         font-size: 14px;
         font-style: italic;
         margin-top: 5px;
-    }
-
-    .puma--dark & {
-        border-color: var(--dark-border-color);
-
-        .avatar {
-            border-color: var(--dark-border-color);
-        }
-
-        .author-meta {
-            color: var(--dark-text-ligth);
-        }
-
-        .author-description {
-            color: var(--dark-text-color);
-        }
     }
 }

@@ -8,9 +8,7 @@
     color: rgba(255, 255, 255, 0.97);
     padding: 110px 40px;
     position: relative;
-    .puma--dark & {
-        color: var(--dark-text-color);
-    }
+
     &:before {
         background-color: rgba(0, 0, 0, 0.1);
         bottom: 0;
@@ -51,14 +49,6 @@
         }
         &::placeholder {
             color: rgba(255, 255, 255, 0.8);
-        }
-    }
-    .puma--dark & {
-        .search-field {
-            color: var(--dark-text-color);
-            &:focus {
-                color: var(--dark-text-color);
-            }
         }
     }
 }

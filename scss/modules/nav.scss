@@ -3,9 +3,9 @@
     text-align: center;
     .page-numbers {
         background-color: #fafafa;
-        border: 1px solid var(--text-border-color);
+        border: 1px solid var(--puma-border-color-light);
         border-radius: 3px;
-        color: var(--text-gray-color);
+        color: var(--puma-text-gray);
         display: inline-block;
         font-size: 12px;
         margin: 0 5px;
@@ -13,34 +13,21 @@
 
         &.current,
         &:hover {
-            background-color: var(--primary-color);
+            background-color: var(--puma-main-color);
             color: #fff;
         }
         &.current {
             cursor: not-allowed;
         }
     }
-
-    .puma--dark & {
-        .page-numbers {
-            background-color: #cacfd2;
-            color: #262626;
-            border: 0;
-            &.current,
-            &:hover {
-                background-color: #3c3c3c;
-                color: var(--dark-text-color);
-            }
-        }
-    }
 }
 
 .post-navigation {
-    border-top: 1px solid var(--text-border-color);
+    border-top: 1px solid var(--puma-border-color-light);
     overflow: hidden;
     padding: 3px 0;
     .meta-nav {
-        color: var(--text-light-color);
+        color: var(--puma-text-light);
         display: block;
         font-size: 12px;
         text-transform: uppercase;
@@ -73,23 +60,16 @@
         float: right;
         text-align: right;
     }
-
-    .puma--dark & {
-        border-color: var(--dark-border-color);
-        .meta-nav {
-            color: var(--dark-text-ligth);
-        }
-    }
 }
 
 .topNav {
     text-align: center;
     &-items {
-        border-bottom: 1px solid var(--text-border-color);
+        border-bottom: 1px solid var(--puma-border-color-light);
         font-size: 14px;
         line-height: 50px;
         .menu-item {
-            color: var(--text-gray-color);
+            color: var(--puma-text-gray);
             display: inline-block;
             font-size: 12px;
             letter-spacing: 1px;
@@ -98,14 +78,8 @@
             position: relative;
             text-transform: uppercase;
             &:hover {
-                color: var(--primary-color);
+                color: var(--puma-main-color);
             }
-        }
-    }
-    .puma--dark &-items {
-        border-color: var(--dark-border-heavy);
-        .menu-item {
-            color: var(--dark-text-ligth);
         }
     }
 }

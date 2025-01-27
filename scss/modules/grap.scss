@@ -3,16 +3,8 @@
         margin: 20px -60px;
         figcaption {
             font-size: 12px;
-            color: var(--text-gray-color);
+            color: var(--puma-text-gray);
             text-align: center;
-        }
-    }
-
-    .puma--dark & {
-        figure {
-            figcaption {
-                color: var(--dark-text-ligth);
-            }
         }
     }
 
@@ -69,25 +61,13 @@
     }
 
     h3 {
-        color: var(--text-light-color);
+        color: var(--puma-text-light);
         font-size: 20px;
     }
 
-    .puma--dark & {
-        h3 {
-            color: var(--dark-text-ligth);
-        }
-    }
-
     h4 {
-        color: --text-gray-color;
+        color: --puma-text-gray;
         font-size: 18px;
-    }
-
-    .puma--dark & {
-        h4 {
-            color: var(--dark-text-color);
-        }
     }
 
     hr {
@@ -100,19 +80,11 @@
             content: '...';
             display: inline-block;
             margin-left: 0.6em;
-            color: var(--text-gray-color);
+            color: var(--puma-text-gray);
             position: relative;
             top: -30px;
             font-size: 28px;
             letter-spacing: 0.6em;
-        }
-    }
-
-    .puma--dark & {
-        hr {
-            &:before {
-                color: var(--dark-text-ligth);
-            }
         }
     }
 

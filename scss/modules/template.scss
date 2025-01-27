@@ -1,25 +1,22 @@
 .archive-header {
-    border-bottom: 1px solid var(--text-border-color);
+    border-bottom: 1px solid var(--puma-border-color-light);
     padding: 30px 0;
     .archive-title {
         font-size: 20px;
         font-weight: 700;
         margin-bottom: 10px;
     }
-    .puma--dark & {
-        border-color: var(--dark-border-color);
-    }
 }
 
 .link {
     &-title {
         font-size: 18px;
-        color: var(--text-light-color);
+        color: var(--puma-text-light);
     }
 
     &-description {
         font-size: 14px;
-        color: var(--text-gray-color);
+        color: var(--puma-text-gray);
     }
 
     &-items {
@@ -51,23 +48,10 @@
             }
         }
     }
-
-    .puma--dark & {
-        &-title {
-            color: var(--dark-text-color);
-        }
-
-        &-description {
-            color: var(--puma-text-gray);
-        }
-    }
 }
 
 .taxonomy-description {
     font-size: 14px;
-    color: var(--text-light-color);
-    line-height: 1.6section-body;
-    .puma--dark & {
-        color: var(--dark-text-ligth);
-    }
+    color: var(--puma-text-light);
+    line-height: 1.6;
 }

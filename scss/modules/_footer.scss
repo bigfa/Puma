@@ -1,6 +1,6 @@
 .site-footer {
-    border-top: 1px solid var(--text-border-color);
-    color: var(--text-gray-color);
+    border-top: 1px solid var(--puma-border-color-light);
+    color: var(--puma-text-gray);
     font-size: 14px;
     margin-top: 20px;
     padding-bottom: 20px;
@@ -10,10 +10,6 @@
         &:hover {
             text-decoration: underline;
         }
-    }
-    .puma--dark & {
-        border-color: var(--dark-border-heavy);
-        color: var(--dark-text-color);
     }
 }
 
