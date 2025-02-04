@@ -40,21 +40,21 @@ class pumaComment extends pumaBase {
                             n = document.getElementById('wp-temp-form-div');
                         const comment = data.data;
                         const html = `<li class="comment" id="comment-${comment.comment_ID}">
-                        <div class="comment-body comment-body__fresh">
+                        <article class="comment-body comment-body__fresh">
                             <footer class="comment-meta">
-                                <div class="comment--avatar">
+                                <div class="comment-author vcard">
                                     <img alt="" src="${comment.author_avatar_urls}" class="avatar" height="42" width="42" />
+                                    <b class="fn">b${comment.comment_author}</b>
                                 </div>
-                                <div class="comment--meta">
-                                    <div class="comment--author">${comment.comment_author}<span class="dot"></span>
+                                <div class="comment-metadata">
                                     <time>刚刚</time>
-                                    </div>
+                                </div>
                                 </div>
                             </footer>
                             <div class="comment-content">
                                 ${comment.comment_content}
                             </div>
-                        </div>
+                        </article>
                     </li>`; // @ts-ignore
                         const parent_id = document.querySelector('#comment_parent')?.value;
                         // @ts-ignore

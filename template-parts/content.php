@@ -32,6 +32,8 @@
         By <?php the_author(); ?> . In <?php the_category(','); ?>.
         <div class="block-footer-inner">
             <?php echo get_comments_number(); ?> <?php echo __('replies.', 'Puma'); ?>
+            <span class="sep"></span>
+            <?php echo (int)get_post_meta(get_the_ID(), PUMA_POST_VIEW_KEY, true); ?> <?php echo __('views', 'Puma'); ?>
         </div>
     </div>
 </article>

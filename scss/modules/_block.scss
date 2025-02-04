@@ -44,24 +44,17 @@
 
 .post-status {
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--puma-text-light);
     .avatar {
         border: 1px solid var(--puma-border-color-light);
         border-radius: 100%;
-        float: left;
-        margin-right: 20px;
-        transition: all 0.5s ease 0s;
+        margin-right: 10px;
     }
-}
-
-.status-footer {
-    font-size: 14px;
-    text-align: right;
-    span {
-        background-color: var(--puma-main-color);
-        border-radius: 3px;
-        color: #fff;
-        display: inline-block;
-        padding: 0 8px;
+    &:hover {
+        color: var(--puma-hover-color);
     }
 }
 
@@ -69,6 +62,6 @@
     font-size: 12px;
     color: var(--puma-text-light);
     &:hover {
-        color: var(--puma-main-color);
+        color: var(--puma-hover-color);
     }
 }

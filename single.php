@@ -24,6 +24,7 @@
             <div class="post--keywords" itemprop="keywords">
                 <?php echo puma_get_the_term_list(get_the_ID(), 'post_tag'); ?>
             </div>
+            <?php get_template_part('template-parts/single', 'related'); ?>
             <?php the_post_navigation(array(
                 'next_text' => '<span class="meta-nav">Next</span><span class="post-title">%title</span>',
                 'prev_text' => '<span class="meta-nav">Previous</span><span class="post-title">%title</span>',
