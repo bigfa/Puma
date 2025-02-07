@@ -240,12 +240,12 @@ $pumaSetting = new pumaSetting(
                         'label' => __('Headcode', 'Puma'),
                         'description' => __('You can add content to the head tag, such as site verification tags, and so on.', 'Puma'),
                     ],
-                    // [
-                    //     'type' => 'input',
-                    //     'name' => 'logo',
-                    //     'label' => __('Logo', 'Puma'),
-                    //     'description' => __('Logo address, preferably in a square shape.', 'Puma'),
-                    // ],
+                    [
+                        'type' => 'input',
+                        'name' => 'banner',
+                        'label' => __('Banner', 'Puma'),
+                        'description' => __('Header banner address.', 'Puma'),
+                    ],
                     [
                         'type' => 'input',
                         'name' => 'og_default_thumb',
@@ -312,12 +312,12 @@ $pumaSetting = new pumaSetting(
                         'label' => __('Qiniu OSS CDN', 'Puma'),
                         'description' => __('Make sure all images are uploaded to Qiniu OSS, otherwise thumbnails may not display properly.', 'Puma')
                     ],
-                    // [
-                    //     'type' => 'switch',
-                    //     'name' => 'darkmode',
-                    //     'label' => __('Dark Mode', 'Puma'),
-                    //     'description' => __('Enable dark mode', 'Puma')
-                    // ],
+                    [
+                        'type' => 'switch',
+                        'name' => 'darkmode',
+                        'label' => __('Dark Mode', 'Puma'),
+                        'description' => __('Enable dark mode', 'Puma')
+                    ],
                     [
                         'type' => 'input',
                         'name' => 'default_thumbnail',

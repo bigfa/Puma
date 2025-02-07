@@ -51,6 +51,14 @@ If you want to show gravatar in link template,add email in the note blank when y
 
 ## Update logs
 
+### 5.0.6
+
+- add post gallery styles
+- add banner config
+- add related status style
+- add darkmode switch support
+- update translation
+
 ### 5.0.5
 
 - style improvement

@@ -77,6 +77,30 @@
             margin-top: 5px;
             font-size: 14px;
             line-height: 1.4;
+            &:hover {
+                color: var(--puma-hover-color);
+            }
+        }
+
+        .meta {
+            color: var(--puma-text-light);
+            font-size: 12px;
+        }
+    }
+
+    &__status {
+        color: var(--puma-text-light);
+        font-size: 14px;
+        margin-bottom: 20px;
+
+        p {
+            line-height: 1.6;
+            max-height: 3.2em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
 
         .meta {

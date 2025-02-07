@@ -2,10 +2,10 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Puma 5.0.2\n"
+"Project-Id-Version: Puma 5.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Puma\n"
-"POT-Creation-Date: 2025-01-26T16:16:24+00:00\n"
-"PO-Revision-Date: 2025-01-27 00:26+0800\n"
+"POT-Creation-Date: 2025-02-07T11:20:04+00:00\n"
+"PO-Revision-Date: 2025-02-07 19:22+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -42,188 +42,188 @@ msgstr ""
 
 #: 404.php:5
 msgid "Can not find any content"
-msgstr ""
+msgstr "找不到任何内容"
 
-#: functions.php:129
+#: functions.php:132
 msgid "Enter to search.."
-msgstr "搜入内容回车搜索"
+msgstr "输入内容回车搜索"
 
-#: inc/base.php:114
+#: inc/base.php:113
 msgid "Cover"
 msgstr ""
 
-#: inc/base.php:116
+#: inc/base.php:115
 msgid "Upload"
 msgstr ""
 
-#: inc/base.php:117
+#: inc/base.php:116
 msgid "Category cover url."
 msgstr ""
 
-#: inc/base.php:121 inc/base.php:125
+#: inc/base.php:120 inc/base.php:124
 msgid "Card Template"
 msgstr ""
 
-#: inc/base.php:127
+#: inc/base.php:126
 msgid "Use Card Template"
 msgstr ""
 
-#: inc/base.php:173 inc/setting.php:432
+#: inc/base.php:172
 msgid "Table of content"
+msgstr "文章菜单"
+
+#: inc/base.php:195
+msgid "author"
 msgstr ""
 
-#: inc/base.php:196
-msgid "author"
-msgstr "作者"
-
-#: inc/base.php:196
+#: inc/base.php:195
 msgid "published on"
 msgstr "发布于"
 
-#: inc/base.php:233 inc/base.php:235
+#: inc/base.php:232 inc/base.php:234
 msgid "Homepage Top"
 msgstr ""
 
-#: inc/base.php:243 inc/base.php:245
+#: inc/base.php:242 inc/base.php:244
 msgid "Homepage Bottom"
 msgstr ""
 
-#: inc/base.php:253 inc/base.php:255
+#: inc/base.php:252 inc/base.php:254
 msgid "Single Pgae Bottom"
 msgstr ""
 
-#: inc/base.php:296 inc/setting.php:47
+#: inc/base.php:295 inc/setting.php:47
 msgid "Setting saved success!"
 msgstr ""
 
-#: inc/base.php:297 inc/setting.php:48
+#: inc/base.php:296 inc/setting.php:48
 msgid "Upload Image"
-msgstr "上传图片"
+msgstr ""
 
-#: inc/base.php:298
+#: inc/base.php:297
 msgid "Set Category Image"
 msgstr ""
 
-#: inc/base.php:337
+#: inc/base.php:341
 msgid "second ago"
 msgstr ""
 
-#: inc/base.php:338
+#: inc/base.php:342
 msgid "seconds ago"
 msgstr ""
 
-#: inc/base.php:339
+#: inc/base.php:343
 msgid "minute ago"
 msgstr ""
 
-#: inc/base.php:340
+#: inc/base.php:344
 msgid "minutes ago"
 msgstr ""
 
-#: inc/base.php:341
+#: inc/base.php:345
 msgid "hour ago"
 msgstr ""
 
-#: inc/base.php:342
+#: inc/base.php:346
 msgid "hours ago"
 msgstr ""
 
-#: inc/base.php:343
+#: inc/base.php:347
 msgid "day ago"
 msgstr ""
 
-#: inc/base.php:344
+#: inc/base.php:348
 msgid "days ago"
 msgstr ""
 
-#: inc/base.php:345
+#: inc/base.php:349
 msgid "week ago"
 msgstr ""
 
-#: inc/base.php:346
+#: inc/base.php:350
 msgid "weeks ago"
 msgstr ""
 
-#: inc/base.php:347
+#: inc/base.php:351
 msgid "month ago"
 msgstr ""
 
-#: inc/base.php:348
+#: inc/base.php:352
 msgid "months ago"
 msgstr ""
 
-#: inc/base.php:349
+#: inc/base.php:353
 msgid "year ago"
 msgstr ""
 
-#: inc/base.php:350
+#: inc/base.php:354
 msgid "years ago"
 msgstr ""
 
 #: inc/comment.php:85
 msgid "Author"
-msgstr "作者"
+msgstr ""
 
 #: inc/comment.php:143 inc/comment.php:162 inc/comment.php:192
 #: inc/comment.php:205 inc/comment.php:231 inc/setting.php:28
 msgid "Success"
-msgstr "成功"
+msgstr ""
 
 #: inc/pack.php:38
 msgid "Prev"
-msgstr "上一页"
+msgstr ""
 
 #: inc/pack.php:42
 msgid "Next"
-msgstr "下一页"
+msgstr ""
 
 #: inc/pack.php:90
 msgid "Add a menu"
-msgstr "添加菜单"
+msgstr ""
 
 #: inc/pack.php:158
 msgid "No links"
-msgstr "没有链接"
+msgstr ""
 
 #: inc/setting.php:56 inc/setting.php:62
 msgid "Theme Setting"
-msgstr "主题设置"
+msgstr ""
 
 #: inc/setting.php:63 inc/setting.php:86
 msgid "Documentation"
-msgstr "主题文档"
+msgstr ""
 
 #: inc/setting.php:113
 msgid "Save"
-msgstr "保存"
+msgstr ""
 
 #: inc/setting.php:202
 msgid "Basic Setting"
-msgstr "基础设置"
+msgstr ""
 
 #: inc/setting.php:207
 msgid "Feature Setting"
-msgstr "功能设置"
+msgstr ""
 
 #: inc/setting.php:213
 msgid "Singluar Setting"
-msgstr "文章设置"
+msgstr ""
 
 #: inc/setting.php:218
 msgid "SNS Setting"
-msgstr "社会化设置"
+msgstr ""
 
 #: inc/setting.php:223
 msgid "Custom Setting"
-msgstr "自定义设置"
+msgstr ""
 
 #: inc/setting.php:234
 msgid "Description"
-msgstr "描述"
+msgstr ""
 
 #: inc/setting.php:235
 msgid "Site description"
-msgstr "站点描述"
+msgstr ""
 
 #: inc/setting.php:240
 msgid "Headcode"
@@ -236,11 +236,11 @@ msgid ""
 msgstr ""
 
 #: inc/setting.php:246
-msgid "Logo"
+msgid "Banner"
 msgstr ""
 
 #: inc/setting.php:247
-msgid "Logo address, preferably in a square shape."
+msgid "Header banner address."
 msgstr ""
 
 #: inc/setting.php:252
@@ -353,46 +353,6 @@ msgstr ""
 msgid "Enable back to top"
 msgstr ""
 
-#: inc/setting.php:336
-msgid "Load more"
-msgstr ""
-
-#: inc/setting.php:337
-msgid "Enable load more"
-msgstr ""
-
-#: inc/setting.php:342
-msgid "Author info"
-msgstr ""
-
-#: inc/setting.php:343
-msgid "Enable author info in homepage"
-msgstr ""
-
-#: inc/setting.php:348
-msgid "Category info"
-msgstr ""
-
-#: inc/setting.php:349
-msgid "Enable category info in homepage"
-msgstr ""
-
-#: inc/setting.php:354
-msgid "Like info"
-msgstr ""
-
-#: inc/setting.php:355
-msgid "Enable like info in homepage"
-msgstr ""
-
-#: inc/setting.php:360
-msgid "Image count"
-msgstr ""
-
-#: inc/setting.php:361
-msgid "Show image count of the post"
-msgstr ""
-
 #: inc/setting.php:366 inc/setting.php:367
 msgid "Hide home cover"
 msgstr ""
@@ -405,88 +365,12 @@ msgstr ""
 msgid "Exclude post type status in homepage"
 msgstr ""
 
-#: inc/setting.php:384
-msgid "Author bio"
-msgstr ""
-
-#: inc/setting.php:385
-msgid "Enable author bio"
-msgstr ""
-
-#: inc/setting.php:390
-msgid "Author sns icons"
-msgstr ""
-
-#: inc/setting.php:391
-msgid "Show author sns icons, will not show when author bio is off."
-msgstr ""
-
-#: inc/setting.php:396
-msgid "Related posts"
-msgstr ""
-
-#: inc/setting.php:397
-msgid "Enable related posts"
-msgstr ""
-
-#: inc/setting.php:402
-msgid "Post like"
-msgstr ""
-
-#: inc/setting.php:403
-msgid "Enable post like"
-msgstr ""
-
-#: inc/setting.php:408
-msgid "Post navigation"
-msgstr ""
-
-#: inc/setting.php:409
-msgid "Enable post navigation"
-msgstr ""
-
-#: inc/setting.php:414
-msgid "Copy link"
-msgstr ""
-
-#: inc/setting.php:415
-msgid "Enable copy link"
-msgstr ""
-
-#: inc/setting.php:420
-msgid "Category card"
-msgstr ""
-
-#: inc/setting.php:421
-msgid "Show post category info after post."
-msgstr ""
-
 #: inc/setting.php:426
 msgid "Show parent comment"
 msgstr ""
 
 #: inc/setting.php:427
 msgid "Enable show parent comment"
-msgstr ""
-
-#: inc/setting.php:433
-msgid "Enable table of content"
-msgstr ""
-
-#: inc/setting.php:438
-msgid "Start heading"
-msgstr ""
-
-#: inc/setting.php:439
-msgid "Start heading,default h3"
-msgstr ""
-
-#: inc/setting.php:444
-msgid "Post Author"
-msgstr ""
-
-#: inc/setting.php:445
-msgid "Show post author tip in comment"
 msgstr ""
 
 #: inc/setting.php:450
@@ -511,22 +395,6 @@ msgstr ""
 
 #: inc/setting.php:463
 msgid "Show icon when comment author url is in blogroll."
-msgstr ""
-
-#: inc/setting.php:468
-msgid "Post image zoom"
-msgstr ""
-
-#: inc/setting.php:469
-msgid "Zoom image when a tag link to image url."
-msgstr ""
-
-#: inc/setting.php:474
-msgid "Post update time"
-msgstr ""
-
-#: inc/setting.php:475
-msgid "Show the last update time of post."
 msgstr ""
 
 #: inc/setting.php:486
@@ -625,40 +493,49 @@ msgstr ""
 
 #: inc/setting.php:558
 msgid "Custom Javascript"
-msgstr "自定义 Javascript 脚本"
+msgstr ""
 
 #: inc/setting.php:563
 msgid "Copyright"
-msgstr "版权信息"
+msgstr ""
 
 #: inc/setting.php:564
 msgid "Custom footer content"
-msgstr "自定义页脚内容"
+msgstr ""
 
 #: search.php:4
 msgid "Search Results for: %s"
-msgstr "%s 的搜索结果"
+msgstr ""
 
-#: template-parts/content-status.php:8 template-parts/content.php:34
+#: template-parts/content-status.php:4 template-parts/content.php:34
 msgid "replies."
-msgstr "条评论"
+msgstr ""
 
 #: template-parts/content.php:18 template-parts/content.php:25
+#: template-parts/content.php:28
 msgid "Read More."
-msgstr "阅读更多"
+msgstr ""
+
+#: template-parts/content.php:36
+msgid "views"
+msgstr ""
+
+#: template-parts/single-related.php:11
+msgid "Related Posts"
+msgstr ""
 
 #. Template Name of the theme
 msgid "Post Archive"
-msgstr "归档模版"
+msgstr ""
 
 #. Template Name of the theme
 msgid "Blogroll"
-msgstr "链接模版"
+msgstr ""
 
 #. Template Name of the theme
 msgid "Marker Pro"
-msgstr "地图模版"
+msgstr ""
 
 #. Template Name of the theme
 msgid "Categories"
-msgstr "分类模版"
+msgstr ""

@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Puma 5.0.2\n"
+"Project-Id-Version: Puma 5.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Puma\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-01-26T16:16:24+00:00\n"
+"POT-Creation-Date: 2025-02-07T11:20:04+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: Puma\n"
@@ -43,126 +43,125 @@ msgstr ""
 msgid "Can not find any content"
 msgstr ""
 
-#: functions.php:129
+#: functions.php:132
 msgid "Enter to search.."
 msgstr ""
 
-#: inc/base.php:114
+#: inc/base.php:113
 msgid "Cover"
 msgstr ""
 
-#: inc/base.php:116
+#: inc/base.php:115
 msgid "Upload"
 msgstr ""
 
-#: inc/base.php:117
+#: inc/base.php:116
 msgid "Category cover url."
 msgstr ""
 
-#: inc/base.php:121
-#: inc/base.php:125
+#: inc/base.php:120
+#: inc/base.php:124
 msgid "Card Template"
 msgstr ""
 
-#: inc/base.php:127
+#: inc/base.php:126
 msgid "Use Card Template"
 msgstr ""
 
-#: inc/base.php:173
-#: inc/setting.php:432
+#: inc/base.php:172
 msgid "Table of content"
 msgstr ""
 
-#: inc/base.php:196
+#: inc/base.php:195
 msgid "author"
 msgstr ""
 
-#: inc/base.php:196
+#: inc/base.php:195
 msgid "published on"
 msgstr ""
 
-#: inc/base.php:233
-#: inc/base.php:235
+#: inc/base.php:232
+#: inc/base.php:234
 msgid "Homepage Top"
 msgstr ""
 
-#: inc/base.php:243
-#: inc/base.php:245
+#: inc/base.php:242
+#: inc/base.php:244
 msgid "Homepage Bottom"
 msgstr ""
 
-#: inc/base.php:253
-#: inc/base.php:255
+#: inc/base.php:252
+#: inc/base.php:254
 msgid "Single Pgae Bottom"
 msgstr ""
 
-#: inc/base.php:296
+#: inc/base.php:295
 #: inc/setting.php:47
 msgid "Setting saved success!"
 msgstr ""
 
-#: inc/base.php:297
+#: inc/base.php:296
 #: inc/setting.php:48
 msgid "Upload Image"
 msgstr ""
 
-#: inc/base.php:298
+#: inc/base.php:297
 msgid "Set Category Image"
 msgstr ""
 
-#: inc/base.php:337
+#: inc/base.php:341
 msgid "second ago"
 msgstr ""
 
-#: inc/base.php:338
+#: inc/base.php:342
 msgid "seconds ago"
 msgstr ""
 
-#: inc/base.php:339
+#: inc/base.php:343
 msgid "minute ago"
 msgstr ""
 
-#: inc/base.php:340
+#: inc/base.php:344
 msgid "minutes ago"
 msgstr ""
 
-#: inc/base.php:341
+#: inc/base.php:345
 msgid "hour ago"
 msgstr ""
 
-#: inc/base.php:342
+#: inc/base.php:346
 msgid "hours ago"
 msgstr ""
 
-#: inc/base.php:343
+#: inc/base.php:347
 msgid "day ago"
 msgstr ""
 
-#: inc/base.php:344
+#: inc/base.php:348
 msgid "days ago"
 msgstr ""
 
-#: inc/base.php:345
+#: inc/base.php:349
 msgid "week ago"
 msgstr ""
 
-#: inc/base.php:346
+#: inc/base.php:350
 msgid "weeks ago"
 msgstr ""
 
-#: inc/base.php:347
+#: inc/base.php:351
 msgid "month ago"
 msgstr ""
 
-#: inc/base.php:348
+#: inc/base.php:352
 msgid "months ago"
 msgstr ""
 
-#: inc/base.php:349
+#: inc/base.php:353
 msgid "year ago"
 msgstr ""
 
-#: inc/base.php:350
+#: inc/base.php:354
 msgid "years ago"
 msgstr ""
 
@@ -246,11 +245,11 @@ msgid "You can add content to the head tag, such as site verification tags, and 
 msgstr ""
 
 #: inc/setting.php:246
-msgid "Logo"
+msgid "Banner"
 msgstr ""
 
 #: inc/setting.php:247
-msgid "Logo address, preferably in a square shape."
+msgid "Header banner address."
 msgstr ""
 
 #: inc/setting.php:252
@@ -357,46 +356,6 @@ msgstr ""
 msgid "Enable back to top"
 msgstr ""
 
-#: inc/setting.php:336
-msgid "Load more"
-msgstr ""
-
-#: inc/setting.php:337
-msgid "Enable load more"
-msgstr ""
-
-#: inc/setting.php:342
-msgid "Author info"
-msgstr ""
-
-#: inc/setting.php:343
-msgid "Enable author info in homepage"
-msgstr ""
-
-#: inc/setting.php:348
-msgid "Category info"
-msgstr ""
-
-#: inc/setting.php:349
-msgid "Enable category info in homepage"
-msgstr ""
-
-#: inc/setting.php:354
-msgid "Like info"
-msgstr ""
-
-#: inc/setting.php:355
-msgid "Enable like info in homepage"
-msgstr ""
-
-#: inc/setting.php:360
-msgid "Image count"
-msgstr ""
-
-#: inc/setting.php:361
-msgid "Show image count of the post"
-msgstr ""
-
 #: inc/setting.php:366
 #: inc/setting.php:367
 msgid "Hide home cover"
@@ -410,88 +369,12 @@ msgstr ""
 msgid "Exclude post type status in homepage"
 msgstr ""
 
-#: inc/setting.php:384
-msgid "Author bio"
-msgstr ""
-
-#: inc/setting.php:385
-msgid "Enable author bio"
-msgstr ""
-
-#: inc/setting.php:390
-msgid "Author sns icons"
-msgstr ""
-
-#: inc/setting.php:391
-msgid "Show author sns icons, will not show when author bio is off."
-msgstr ""
-
-#: inc/setting.php:396
-msgid "Related posts"
-msgstr ""
-
-#: inc/setting.php:397
-msgid "Enable related posts"
-msgstr ""
-
-#: inc/setting.php:402
-msgid "Post like"
-msgstr ""
-
-#: inc/setting.php:403
-msgid "Enable post like"
-msgstr ""
-
-#: inc/setting.php:408
-msgid "Post navigation"
-msgstr ""
-
-#: inc/setting.php:409
-msgid "Enable post navigation"
-msgstr ""
-
-#: inc/setting.php:414
-msgid "Copy link"
-msgstr ""
-
-#: inc/setting.php:415
-msgid "Enable copy link"
-msgstr ""
-
-#: inc/setting.php:420
-msgid "Category card"
-msgstr ""
-
-#: inc/setting.php:421
-msgid "Show post category info after post."
-msgstr ""
-
 #: inc/setting.php:426
 msgid "Show parent comment"
 msgstr ""
 
 #: inc/setting.php:427
 msgid "Enable show parent comment"
-msgstr ""
-
-#: inc/setting.php:433
-msgid "Enable table of content"
-msgstr ""
-
-#: inc/setting.php:438
-msgid "Start heading"
-msgstr ""
-
-#: inc/setting.php:439
-msgid "Start heading,default h3"
-msgstr ""
-
-#: inc/setting.php:444
-msgid "Post Author"
-msgstr ""
-
-#: inc/setting.php:445
-msgid "Show post author tip in comment"
 msgstr ""
 
 #: inc/setting.php:450
@@ -516,22 +399,6 @@ msgstr ""
 
 #: inc/setting.php:463
 msgid "Show icon when comment author url is in blogroll."
-msgstr ""
-
-#: inc/setting.php:468
-msgid "Post image zoom"
-msgstr ""
-
-#: inc/setting.php:469
-msgid "Zoom image when a tag link to image url."
-msgstr ""
-
-#: inc/setting.php:474
-msgid "Post update time"
-msgstr ""
-
-#: inc/setting.php:475
-msgid "Show the last update time of post."
 msgstr ""
 
 #: inc/setting.php:486
@@ -642,14 +509,23 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: template-parts/content-status.php:8
+#: template-parts/content-status.php:4
 #: template-parts/content.php:34
 msgid "replies."
 msgstr ""
 
 #: template-parts/content.php:18
 #: template-parts/content.php:25
+#: template-parts/content.php:28
 msgid "Read More."
+msgstr ""
+
+#: template-parts/content.php:36
+msgid "views"
+msgstr ""
+
+#: template-parts/single-related.php:11
+msgid "Related Posts"
 msgstr ""
 
 #. Template Name of the theme

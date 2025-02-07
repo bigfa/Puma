@@ -308,6 +308,11 @@ class pumaBase
         if ($pumaSetting->get_setting('css')) {
             wp_add_inline_style('puma-style', $pumaSetting->get_setting('css'));
         }
+
+        if ($pumaSetting->get_setting('banner')) {
+            wp_add_inline_style('puma-style', '.site-header{background-image:url(' . $pumaSetting->get_setting('banner') . ');}');
+        }
+
         if ($pumaSetting->get_setting('disable_block_css')) {
             wp_dequeue_style('wp-block-library');
             wp_dequeue_style('wp-block-library-theme');

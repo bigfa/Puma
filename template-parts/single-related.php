@@ -4,7 +4,7 @@
  * The template for displaying posts related to the current post
  *
  * @package Bigfa
- * @subpackage Hera
+ * @subpackage Puma
  * @since Puma 5.0.4
  */
 ?>
@@ -33,9 +33,6 @@
                 <a href="<?php the_permalink(); ?>" aria-label="<?php the_title(); ?>">
                     <?php the_excerpt(); ?>
                     <div class="meta">
-                        <svg class="icon" viewBox="0 0 1024 1024" width="16" height="16">
-                            <path d="M512 97.52381c228.912762 0 414.47619 185.563429 414.47619 414.47619s-185.563429 414.47619-414.47619 414.47619S97.52381 740.912762 97.52381 512 283.087238 97.52381 512 97.52381z m0 73.142857C323.486476 170.666667 170.666667 323.486476 170.666667 512s152.81981 341.333333 341.333333 341.333333 341.333333-152.81981 341.333333-341.333333S700.513524 170.666667 512 170.666667z m36.571429 89.697523v229.86362h160.865523v73.142857H512a36.571429 36.571429 0 0 1-36.571429-36.571429V260.388571h73.142858z"></path>
-                        </svg>
                         <time itemprop="datePublished" datetime="<?php echo get_the_date('c'); ?>" class="humane--time">
                             <?php echo get_the_date('Y-m-d'); ?>
                         </time>
@@ -45,11 +42,11 @@
         <?php else : ?>
             <div class="post--single__related__item">
                 <a href="<?php the_permalink(); ?>" aria-label="<?php the_title(); ?>">
-                    <div class="post--single__related__item__img">
-                        <?php if (puma_is_has_image(get_the_ID())) : ?>
+                    <?php if (puma_is_has_image(get_the_ID())) : ?>
+                        <div class="post--single__related__item__img">
                             <img src="<?php echo puma_get_background_image(get_the_ID(), 400, 200); ?>" class="cover" alt="<?php the_title(); ?>" />
-                        <?php endif; ?>
-                    </div>
+                        </div>
+                    <?php endif; ?>
                     <div class="post--single__related__item__title">
                         <?php the_title(); ?>
                     </div>

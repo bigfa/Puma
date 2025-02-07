@@ -10,6 +10,22 @@
 </head>
 
 <body <?php body_class(); ?>>
+    <?php
+    global $pumaSetting;
+    if ($pumaSetting->get_setting('darkmode')) : ?>
+        <script>
+            window.DEFAULT_THEME = "auto";
+            if (localStorage.getItem("theme") == null) {
+                localStorage.setItem("theme", window.DEFAULT_THEME);
+            }
+            if (localStorage.getItem("theme") == "dark") {
+                document.querySelector("body").classList.add("dark");
+            }
+            if (localStorage.getItem("theme") == "auto") {
+                document.querySelector("body").classList.add("auto");
+            }
+        </script>
+    <?php endif; ?>
     <div class="surface-content">
         <header class="site-header">
             <div class="header-inner">

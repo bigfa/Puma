@@ -10,9 +10,9 @@
     <div class="block-snippet grap" itemprop="about">
         <?php
         global $pumaSetting;
-        if (has_post_thumbnail() || !$pumaSetting->get_setting('hide_home_cover')) : ?>
+        if ((has_post_thumbnail() || !$pumaSetting->get_setting('hide_home_cover')) && puma_is_has_image(get_the_ID())) : ?>
             <p class="with-img">
-                <img src="<?php echo puma_get_background_image(get_the_ID()); ?>" alt="<?php the_title(); ?>" />
+                <img src="<?php echo puma_get_background_image(get_the_ID()); ?>" alt="<?php the_title(); ?>" class="home--cover" />
             </p>
             <?php if (post_password_required()) : ?>
                 <?php the_content(__('Read More.', 'Puma')); ?>
@@ -25,7 +25,7 @@
                 <p><a class="more-link" href="<?php the_permalink(); ?>" rel="nofollow" title="<?php the_title(); ?>"><?php echo __('Read More.', 'Puma'); ?></a></p>
             <?php endif; ?>
         <?php else : ?>
-            <?php the_content('Read More.'); ?>
+            <?php the_content(__('Read More.', 'Puma')); ?>
         <?php endif; ?>
     </div>
     <div class="block-footer">

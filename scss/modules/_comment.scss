@@ -14,7 +14,7 @@
     .comment-reply-link {
         background-color: var(--puma-main-color);
         border-radius: 2px;
-        color: #fff;
+        color: var(--puma-background-white);
         font-size: 12px;
         padding: 3px 8px;
     }
@@ -69,7 +69,7 @@
         transition: 0.5s;
         &:hover {
             background-color: var(--puma-main-color);
-            color: #fff;
+            color: var(--puma-background-white);
         }
     }
 

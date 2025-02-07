@@ -1,19 +1,17 @@
-@import 'node_modules/normalize.scss/normalize.scss';
-@import 'modules/variable.scss';
-@import 'modules/header';
+@use 'modules/variable';
+@use 'modules/basic';
+@use 'modules/normalize';
+@use 'modules/header';
+@use 'modules/block';
+@use 'modules/grap';
+@use 'modules/comment';
+@use 'modules/nav';
+@use 'modules/footer';
 
-@import 'modules/basic';
-@import 'modules/block';
-
-@import 'modules/grap.scss';
-@import 'modules/template.scss';
-@import 'modules/comment.scss';
-@import 'modules/nav.scss';
-@import 'templates/single';
-@import 'modules/footer';
-
-@import 'templates/term';
-@import 'templates/archive';
+@use 'templates/template';
+@use 'templates/single';
+@use 'templates/term';
+@use 'templates/archive';
 
 @media (max-width: 600px) {
     .surface-content {
