@@ -4,7 +4,7 @@
         <?php while (have_posts()) : the_post(); ?>
             <header class="u-textAlignCenter">
                 <h2 class="block-title" itemprop="headline">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    <?php the_title(); ?>
                 </h2>
                 <div class="block-postMetaWrap">
                     <time><?php echo get_the_date('Y/m/d'); ?></time>
@@ -14,10 +14,8 @@
                 <?php the_content(); ?>
             </div>
             <?php wp_link_pages(array(
-                'before'      => '<div class="page-links u-textAlignCenter comment-navigation">',
+                'before'      => '<div class="page-links">',
                 'after'       => '</div>',
-                'link_before' => '<span class="page-link-item">',
-                'link_after'  => '</span>',
                 'pagelink'    => '%',
                 'separator'   => '<span class="screen-reader-text">, </span>',
             )); ?>

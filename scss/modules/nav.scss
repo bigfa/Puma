@@ -1,13 +1,15 @@
 .posts-nav,
-.comment-navigation {
+.comment-navigation,
+.page-links {
     padding: 30px 0;
-    text-align: center;
-    .page-numbers {
-        background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    .page-numbers,
+    .post-page-numbers {
+        background-color: var(--puma-background-gray);
         border: 1px solid var(--puma-border-color-light);
         border-radius: 3px;
         color: var(--puma-text-gray);
-        display: inline-block;
         font-size: 12px;
         margin: 0 5px;
         padding: 3px 10px;
@@ -15,11 +17,14 @@
         &.current,
         &:hover {
             background-color: var(--puma-main-color);
-            color: #fff;
+            color: var(--puma-background-white);
         }
         &.current {
             cursor: not-allowed;
         }
+    }
+    .post-page-numbers {
+        padding: 1px 8px;
     }
 }
 

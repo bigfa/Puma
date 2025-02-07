@@ -9,10 +9,8 @@
                 <?php the_content(); ?>
             </div>
             <?php wp_link_pages(array(
-                'before'      => '<div class="page-links u-textAlignCenter comment-navigation">',
+                'before'      => '<div class="page-links">',
                 'after'       => '</div>',
-                'link_before' => '<span class="page-numbers">',
-                'link_after'  => '</span>',
                 'pagelink'    => '%',
                 'separator'   => '<span class="screen-reader-text">, </span>',
             )); ?>
