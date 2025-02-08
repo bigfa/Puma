@@ -11,6 +11,7 @@
     position: absolute;
     right: 0;
     top: 20px;
+
     .comment-reply-link {
         background-color: var(--puma-main-color);
         border-radius: 2px;
@@ -32,6 +33,7 @@
 
 .comment-form {
     padding: 20px 0;
+
     p {
         margin-bottom: 15px;
         &.logged-in-as {
@@ -39,6 +41,7 @@
             color: var(--puma-text-light);
         }
     }
+
     label {
         cursor: pointer;
         display: block;
@@ -67,6 +70,7 @@
         font-size: 14px;
         padding: 4px 18px;
         transition: 0.5s;
+
         &:hover {
             background-color: var(--puma-main-color);
             color: var(--puma-background-white);
@@ -167,6 +171,7 @@
     display: flex;
     align-items: center;
     font-size: 14px;
+
     small {
         margin-left: auto;
         color: #c00;

@@ -18,24 +18,27 @@
         right: 0;
         top: 0;
     }
+
     .header-inner {
         position: relative;
     }
+
     .site-title {
         font-size: 32px;
     }
+
     .site-description {
         font-size: 14px;
     }
 }
 
 .search-form {
-    padding-top: 15px;
+    padding-top: 12px;
     .search-field {
         background-color: rgba(0, 0, 0, 0.15);
         border: 0;
-        border-radius: 8px;
-        padding: 5px 10px;
+        border-radius: 5px;
+        padding: 7px 10px;
         color: rgba(255, 255, 255, 0.8);
         box-shadow: none;
         width: 200px;

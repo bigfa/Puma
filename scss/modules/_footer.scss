@@ -6,6 +6,7 @@
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
+
     a {
         &:hover {
             text-decoration: underline;
@@ -27,7 +28,7 @@
         }
 
         svg {
-            fill: var(--puma-background-white);
+            fill: #fff;
             width: 24px;
             height: 24px;
             opacity: 0.9;
@@ -38,7 +39,7 @@
 
             &.sns {
                 fill: none;
-                stroke: var(--puma-background-white);
+                stroke: #fff;
 
                 &:hover {
                     stroke: var(--puma-hover-color);
@@ -63,6 +64,7 @@
     flex-direction: column;
     box-shadow: 0 0 0 1px var(--puma-border-color);
     border-radius: 999rem;
+
     span {
         width: 28px;
         height: 28px;
@@ -72,6 +74,7 @@
         align-items: center;
         justify-content: center;
         color: var(--puma-text-gray-lightest);
+        margin-bottom: 5px;
 
         &:hover {
             color: var(--puma-text-color);
@@ -81,8 +84,6 @@
             color: var(--puma-text-color);
             background-color: var(--puma-background-gray);
         }
-
-        margin-bottom: 5px;
 
         &:last-child {
             margin-bottom: 0;
@@ -96,12 +97,13 @@
     bottom: 50px;
     cursor: pointer;
     transform: translate3d(200px, 0, 0);
+    transition: 0.5s;
+
     .icon {
         fill: var(--puma-text-gray);
         width: 18px;
         height: 18px;
     }
-    transition: 0.5s;
 
     &.is-active {
         transform: translate3d(0, 0, 0);

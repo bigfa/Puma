@@ -9,17 +9,12 @@
 
     --puma-background-white: rgba(255, 255, 255, 1);
     --puma-background-gray: #f0f0f0;
+    --puma-background-gray-light: #f9f9f9;
     --puma-background-opacity: 0.9;
     --puma-background-white-opacity: rgba(255, 255, 255, var(--puma-background-opacity));
 
-    --puma-griedent-start: #007cf0;
-    --puma-griedent-end: #00dfd8;
-
     --puma-border-color: rgba(0, 0, 0, 0.1);
     --puma-border-color-light: rgba(0, 0, 0, 0.05);
-
-    --block-separator-color: #244654;
-    --article-target-color: #283c50;
 
     --puma-text-size-small: 14px;
     --puma-text-size-normal: 16px;
@@ -52,10 +47,8 @@
 
         --puma-background-white: #1e1e1e;
         --puma-background-gray: #000;
+        --puma-background-gray-light: #121212;
         --puma-background-white-opacity: rgba(30, 30, 30, var(--puma-background-opacity));
-
-        --puma-griedent-start: #007cf0;
-        --puma-griedent-end: #00dfd8;
 
         --puma-border-color: rgba(63, 63, 70, 0.6);
         --puma-border-color-light: rgba(63, 63, 70, 0.4);
@@ -73,27 +66,6 @@
             }
         }
 
-        .post--single__title,
-        .post--item .post--title {
-            color: rgba(244, 244, 245, 1);
-        }
-
-        .archive--list .archive--item {
-            &:hover {
-                background: linear-gradient(180deg, #1e1e1e, #121212);
-            }
-        }
-
-        .grap blockquote,
-        .grap ol li::before {
-            background: linear-gradient(180deg, #1e1e1e, #121212);
-        }
-
-        .nav-links .page-numbers.current:after,
-        .nav-links .post-page-numbers.current:after {
-            background-image: none;
-        }
-
         .doulist-item {
             border-color: var(--db-border-color);
         }
@@ -102,7 +74,7 @@
             input,
             textarea {
                 background-color: rgba(63, 63, 70, 0.15);
-                border-color: rgb(63 63 70/1);
+                border-color: rgba(63, 63, 70, 1);
             }
         }
     }
@@ -118,10 +90,8 @@
 
     --puma-background-white: #1e1e1e;
     --puma-background-gray: #000;
+    --puma-background-gray-light: #121212;
     --puma-background-white-opacity: rgba(30, 30, 30, var(--puma-background-opacity));
-
-    --puma-griedent-start: #007cf0;
-    --puma-griedent-end: #00dfd8;
 
     --puma-border-color: rgba(63, 63, 70, 0.6);
     --puma-border-color-light: rgba(63, 63, 70, 0.4);
@@ -143,32 +113,11 @@
         border-color: var(--db-border-color);
     }
 
-    .post--single__title,
-    .post--item .post--title {
-        color: rgba(244, 244, 245, 1);
-    }
-
-    .archive--list .archive--item {
-        &:hover {
-            background: linear-gradient(180deg, #1e1e1e, #121212);
-        }
-    }
-
-    .grap blockquote,
-    .grap ol li::before {
-        background: linear-gradient(180deg, #1e1e1e, #121212);
-    }
-
-    .nav-links .page-numbers.current:after,
-    .nav-links .post-page-numbers.current:after {
-        background-image: none;
-    }
-
     .comment-form {
         input,
         textarea {
             background-color: rgba(63, 63, 70, 0.15);
-            border-color: rgb(63 63 70/1);
+            border-color: rgba(63, 63, 70, 1);
         }
     }
 }
@@ -207,12 +156,4 @@
     font-weight: 500;
     font-style: normal;
     font-display: swap;
-}
-
-@font-face {
-    font-family: 'mrs_saint_delafieldregular';
-    src: url('../fonts/mrssaintdelafield-regular-webfont.woff2') format('woff2'),
-        url('../fonts/mrssaintdelafield-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 }

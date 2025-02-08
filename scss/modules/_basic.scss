@@ -83,14 +83,17 @@ input[disabled] {
     color: rgba(0, 0, 0, 0.8);
     background-color: var(--puma-border-color-light);
 }
+
 audio:not([controls]) {
     display: none;
     height: 0;
 }
+
 [hidden],
 template {
     display: none;
 }
+
 svg:not(:root) {
     overflow: hidden;
 }

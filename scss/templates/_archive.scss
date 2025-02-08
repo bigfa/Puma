@@ -1,5 +1,7 @@
 .archive-year {
     position: relative;
+    padding: 50px 0;
+
     &::after {
         content: attr(data-year);
         position: absolute;
@@ -11,7 +13,6 @@
         font-style: italic;
         opacity: 0.05;
     }
-    padding: 50px 0;
 }
 
 .fancy-archive {
@@ -25,6 +26,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 15px;
+
     li {
         padding-left: 15px;
         position: relative;
@@ -32,11 +34,13 @@
         padding: 0;
         position: relative;
         z-index: 2;
+
         &:hover {
+            color: var(--puma-main-color);
+
             &:after {
                 background-color: var(--puma-main-color);
             }
-            color: var(--puma-main-color);
         }
     }
 }

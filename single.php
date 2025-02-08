@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="main-content container">
+<main class="main-content">
     <section class="section-body" itemscope="itemscope" itemtype="http://schema.org/Article">
         <?php while (have_posts()) : the_post(); ?>
             <header class="u-textAlignCenter">
@@ -27,10 +27,10 @@
                 'next_text' => '<span class="meta-nav">Next</span><span class="post-title">%title</span>',
                 'prev_text' => '<span class="meta-nav">Previous</span><span class="post-title">%title</span>',
             )); ?>
-            <div class="postFooterinfo u-textAlignCenter">
+            <div class="post--authorInfo">
                 <?php echo get_avatar(get_the_author_meta('email'), 64); ?>
-                <h3 class="author-name"><?php the_author(); ?></h3>
-                <div class="author-description"><?php echo get_the_author_meta('description') ?></div>
+                <h3 class="author--name"><?php the_author(); ?></h3>
+                <div class="author--description"><?php echo get_the_author_meta('description') ?></div>
             </div>
             <?php
             if (comments_open() || get_comments_number()) :

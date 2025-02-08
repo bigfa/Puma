@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Puma 5.0.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Puma\n"
 "POT-Creation-Date: 2025-02-07T11:20:04+00:00\n"
-"PO-Revision-Date: 2025-02-07 19:22+0800\n"
+"PO-Revision-Date: 2025-02-08 20:44+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -50,23 +50,23 @@ msgstr "输入内容回车搜索"
 
 #: inc/base.php:113
 msgid "Cover"
-msgstr ""
+msgstr "封面"
 
 #: inc/base.php:115
 msgid "Upload"
-msgstr ""
+msgstr "上传"
 
 #: inc/base.php:116
 msgid "Category cover url."
-msgstr ""
+msgstr "分类封面地址"
 
 #: inc/base.php:120 inc/base.php:124
 msgid "Card Template"
-msgstr ""
+msgstr "卡片模版"
 
 #: inc/base.php:126
 msgid "Use Card Template"
-msgstr ""
+msgstr "使用卡片模式"
 
 #: inc/base.php:172
 msgid "Table of content"
@@ -74,7 +74,7 @@ msgstr "文章菜单"
 
 #: inc/base.php:195
 msgid "author"
-msgstr ""
+msgstr "作者"
 
 #: inc/base.php:195
 msgid "published on"
@@ -94,140 +94,140 @@ msgstr ""
 
 #: inc/base.php:295 inc/setting.php:47
 msgid "Setting saved success!"
-msgstr ""
+msgstr "设置保存成功"
 
 #: inc/base.php:296 inc/setting.php:48
 msgid "Upload Image"
-msgstr ""
+msgstr "上传图片"
 
 #: inc/base.php:297
 msgid "Set Category Image"
-msgstr ""
+msgstr "设置分类图片"
 
 #: inc/base.php:341
 msgid "second ago"
-msgstr ""
+msgstr "秒前"
 
 #: inc/base.php:342
 msgid "seconds ago"
-msgstr ""
+msgstr "秒前"
 
 #: inc/base.php:343
 msgid "minute ago"
-msgstr ""
+msgstr "分钟前"
 
 #: inc/base.php:344
 msgid "minutes ago"
-msgstr ""
+msgstr "分钟前"
 
 #: inc/base.php:345
 msgid "hour ago"
-msgstr ""
+msgstr "小时前"
 
 #: inc/base.php:346
 msgid "hours ago"
-msgstr ""
+msgstr "小时前"
 
 #: inc/base.php:347
 msgid "day ago"
-msgstr ""
+msgstr "天前"
 
 #: inc/base.php:348
 msgid "days ago"
-msgstr ""
+msgstr "天前"
 
 #: inc/base.php:349
 msgid "week ago"
-msgstr ""
+msgstr "周前"
 
 #: inc/base.php:350
 msgid "weeks ago"
-msgstr ""
+msgstr "周前"
 
 #: inc/base.php:351
 msgid "month ago"
-msgstr ""
+msgstr "月前"
 
 #: inc/base.php:352
 msgid "months ago"
-msgstr ""
+msgstr "月前"
 
 #: inc/base.php:353
 msgid "year ago"
-msgstr ""
+msgstr "年前"
 
 #: inc/base.php:354
 msgid "years ago"
-msgstr ""
+msgstr "年前"
 
 #: inc/comment.php:85
 msgid "Author"
-msgstr ""
+msgstr "作者"
 
 #: inc/comment.php:143 inc/comment.php:162 inc/comment.php:192
 #: inc/comment.php:205 inc/comment.php:231 inc/setting.php:28
 msgid "Success"
-msgstr ""
+msgstr "成功"
 
 #: inc/pack.php:38
 msgid "Prev"
-msgstr ""
+msgstr "前一篇"
 
 #: inc/pack.php:42
 msgid "Next"
-msgstr ""
+msgstr "下一篇"
 
 #: inc/pack.php:90
 msgid "Add a menu"
-msgstr ""
+msgstr "添加菜单"
 
 #: inc/pack.php:158
 msgid "No links"
-msgstr ""
+msgstr "没有链接"
 
 #: inc/setting.php:56 inc/setting.php:62
 msgid "Theme Setting"
-msgstr ""
+msgstr "主题设置"
 
 #: inc/setting.php:63 inc/setting.php:86
 msgid "Documentation"
-msgstr ""
+msgstr "文档"
 
 #: inc/setting.php:113
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: inc/setting.php:202
 msgid "Basic Setting"
-msgstr ""
+msgstr "基础设置"
 
 #: inc/setting.php:207
 msgid "Feature Setting"
-msgstr ""
+msgstr "功能设置"
 
 #: inc/setting.php:213
 msgid "Singluar Setting"
-msgstr ""
+msgstr "文章设置"
 
 #: inc/setting.php:218
 msgid "SNS Setting"
-msgstr ""
+msgstr "社会化设置"
 
 #: inc/setting.php:223
 msgid "Custom Setting"
-msgstr ""
+msgstr "自定义设置"
 
 #: inc/setting.php:234
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: inc/setting.php:235
 msgid "Site description"
-msgstr ""
+msgstr "站点描述"
 
 #: inc/setting.php:240
 msgid "Headcode"
-msgstr ""
+msgstr "头部代码"
 
 #: inc/setting.php:241
 msgid ""
@@ -237,15 +237,15 @@ msgstr ""
 
 #: inc/setting.php:246
 msgid "Banner"
-msgstr ""
+msgstr "顶部背景图"
 
 #: inc/setting.php:247
 msgid "Header banner address."
-msgstr ""
+msgstr "顶部背景图片地址"
 
 #: inc/setting.php:252
 msgid "Og default thumb"
-msgstr ""
+msgstr "默认缩略图"
 
 #: inc/setting.php:253
 msgid "Og meta default thumb address."
@@ -253,23 +253,23 @@ msgstr ""
 
 #: inc/setting.php:258
 msgid "Favicon"
-msgstr ""
+msgstr "Favicon"
 
 #: inc/setting.php:259
 msgid "Favicon address"
-msgstr ""
+msgstr "Favicon 地址"
 
 #: inc/setting.php:264
 msgid "Title sep"
-msgstr ""
+msgstr "标题分隔符"
 
 #: inc/setting.php:265
 msgid "Default is"
-msgstr ""
+msgstr "默认是"
 
 #: inc/setting.php:270
 msgid "Disable block css"
-msgstr ""
+msgstr "禁用区块样式"
 
 #: inc/setting.php:271
 msgid "Do not load block-style files."
@@ -277,11 +277,11 @@ msgstr ""
 
 #: inc/setting.php:276
 msgid "Gravatar proxy"
-msgstr ""
+msgstr "头像代理"
 
 #: inc/setting.php:277
 msgid "Gravatar proxy domain,like <code>cravatar.cn</code>"
-msgstr ""
+msgstr "头像代理域名，比如<code>cravatar.cn</code>"
 
 #: inc/setting.php:282
 msgid "RSS Tag"
@@ -293,15 +293,15 @@ msgstr ""
 
 #: inc/setting.php:294
 msgid "Update notice"
-msgstr ""
+msgstr "更新提示"
 
 #: inc/setting.php:295
 msgid "Get theme update notice."
-msgstr ""
+msgstr "当主题有新版本时可获取提示"
 
 #: inc/setting.php:300
 msgid "Upyun CDN"
-msgstr ""
+msgstr "又拍云CDN"
 
 #: inc/setting.php:301
 msgid ""
@@ -311,7 +311,7 @@ msgstr ""
 
 #: inc/setting.php:306
 msgid "Aliyun OSS CDN"
-msgstr ""
+msgstr "阿里云OSS"
 
 #: inc/setting.php:307
 msgid ""
@@ -321,7 +321,7 @@ msgstr ""
 
 #: inc/setting.php:312
 msgid "Qiniu OSS CDN"
-msgstr ""
+msgstr "七牛云CDN"
 
 #: inc/setting.php:313
 msgid ""
@@ -331,11 +331,11 @@ msgstr ""
 
 #: inc/setting.php:318
 msgid "Dark Mode"
-msgstr ""
+msgstr "暗黑模式"
 
 #: inc/setting.php:319
 msgid "Enable dark mode"
-msgstr ""
+msgstr "暗黑模式切换开关"
 
 #: inc/setting.php:324
 msgid "Default thumbnail"
@@ -347,7 +347,7 @@ msgstr ""
 
 #: inc/setting.php:330
 msgid "Back to top"
-msgstr ""
+msgstr "返回顶部"
 
 #: inc/setting.php:331
 msgid "Enable back to top"
@@ -355,11 +355,11 @@ msgstr ""
 
 #: inc/setting.php:366 inc/setting.php:367
 msgid "Hide home cover"
-msgstr ""
+msgstr "隐藏缩略图"
 
 #: inc/setting.php:372
 msgid "Exclude status"
-msgstr ""
+msgstr "排除状态"
 
 #: inc/setting.php:373
 msgid "Exclude post type status in homepage"
@@ -367,7 +367,7 @@ msgstr ""
 
 #: inc/setting.php:426
 msgid "Show parent comment"
-msgstr ""
+msgstr "展示父评论"
 
 #: inc/setting.php:427
 msgid "Enable show parent comment"
@@ -375,7 +375,7 @@ msgstr ""
 
 #: inc/setting.php:450
 msgid "Disable comment link"
-msgstr ""
+msgstr "禁用评论链接"
 
 #: inc/setting.php:451
 msgid "Disable comment author url"
@@ -391,7 +391,7 @@ msgstr ""
 
 #: inc/setting.php:462
 msgid "Friend icon"
-msgstr ""
+msgstr "友链标识"
 
 #: inc/setting.php:463
 msgid "Show icon when comment author url is in blogroll."
@@ -399,7 +399,7 @@ msgstr ""
 
 #: inc/setting.php:486
 msgid "Footer SNS Icons"
-msgstr ""
+msgstr "SNS图标"
 
 #: inc/setting.php:487
 msgid ""
@@ -497,45 +497,45 @@ msgstr ""
 
 #: inc/setting.php:563
 msgid "Copyright"
-msgstr ""
+msgstr "版权信息"
 
 #: inc/setting.php:564
 msgid "Custom footer content"
-msgstr ""
+msgstr "自定义底部信息"
 
 #: search.php:4
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "%s 的搜索结果"
 
 #: template-parts/content-status.php:4 template-parts/content.php:34
 msgid "replies."
-msgstr ""
+msgstr "回复"
 
 #: template-parts/content.php:18 template-parts/content.php:25
 #: template-parts/content.php:28
 msgid "Read More."
-msgstr ""
+msgstr "阅读更多"
 
 #: template-parts/content.php:36
 msgid "views"
-msgstr ""
+msgstr "浏览"
 
 #: template-parts/single-related.php:11
 msgid "Related Posts"
-msgstr ""
+msgstr "相关文章"
 
 #. Template Name of the theme
 msgid "Post Archive"
-msgstr ""
+msgstr "文章归档"
 
 #. Template Name of the theme
 msgid "Blogroll"
-msgstr ""
+msgstr "友情链接"
 
 #. Template Name of the theme
 msgid "Marker Pro"
-msgstr ""
+msgstr "地图"
 
 #. Template Name of the theme
 msgid "Categories"
-msgstr ""
+msgstr "分类列表"
