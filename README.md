@@ -39,10 +39,6 @@ Installing and customizing this theme is very easy. All required information are
 - set post thumbnail
 - use `<!--more-->`
 
-### Change header banner
-
-replace banner.jpg under theme folder `build/images`, you can also replace favicon the same way.
-
 ### set archive tempalte / link template / category template
 
 new page,the choose custom template.
@@ -50,6 +46,10 @@ new page,the choose custom template.
 If you want to show gravatar in link template,add email in the note blank when you add or edit link.
 
 ## Update logs
+
+### 5.0.7
+
+- add table and code style
 
 ### 5.0.6
 

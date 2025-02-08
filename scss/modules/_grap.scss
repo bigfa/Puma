@@ -9,6 +9,64 @@
         }
     }
 
+    table {
+        border: 1px solid var(--puma-border-color);
+        border-collapse: collapse;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12px;
+        color: var(--puma-text-light);
+
+        thead {
+            tr {
+                background-color: var(--puma-background-gray-light);
+            }
+        }
+
+        tr {
+            background-color: var(--puma-background-white);
+
+            &:hover {
+                & > td {
+                    background-color: var(--puma-background-gray-light);
+                    background-clip: padding-box;
+                }
+            }
+        }
+
+        td,
+        th {
+            border-bottom: 1px solid var(--puma-border-color);
+            border-right: 1px solid var(--puma-border-color);
+            transition: background-color 0.25s ease;
+            height: 40px;
+            min-width: 0;
+            box-sizing: border-box;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            position: relative;
+            margin: 0;
+            padding: 0 10px;
+        }
+    }
+
+    code {
+        background-color: var(--puma-background-gray);
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    pre {
+        word-break: break-all;
+        white-space: break-spaces;
+        background-color: var(--puma-background-gray);
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
     .gallery {
         display: grid;
         grid-gap: 10px;
