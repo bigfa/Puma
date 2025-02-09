@@ -6,7 +6,10 @@
     background-size: cover;
     box-sizing: border-box;
     color: rgba(255, 255, 255, 0.97);
-    padding: 110px 40px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
 
     &:before {
