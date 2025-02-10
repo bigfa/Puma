@@ -73,10 +73,36 @@
     .collectionCard {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .template--tags {
+        padding: 50px 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .collectionCard {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.postTag {
+    &--list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+
+    &--item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 3px 15px;
+        border-radius: 5px;
+        background-color: var(--puma-background-gray-light);
+        color: var(--puma-text-light);
+        font-size: 14px;
+
+        &:hover {
+            background-color: var(--puma-background-gray);
+        }
     }
 }
