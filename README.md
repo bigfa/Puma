@@ -47,10 +47,16 @@ If you want to show gravatar in link template,add email in the note blank when y
 
 ## Update logs
 
-### 5.0.8
+### 5.0.9
 
 - add post tags archive template
 - add `blockquote` style
+
+### 5.0.8
+
+- add postlike button
+- add copy post permalink
+- add config for related post
 
 ### 5.0.7
 

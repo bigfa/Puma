@@ -39,6 +39,7 @@
         font-weight: 700;
         line-height: 1.2;
         margin-bottom: 2px;
+        margin-top: 5px;
     }
 
     .author--description {
@@ -116,5 +117,87 @@
             color: var(--puma-text-light);
             font-size: 12px;
         }
+    }
+}
+
+.post--single {
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 20px;
+
+        .button--like {
+            svg {
+                fill: var(--puma-text-gray);
+            }
+
+            &:hover,
+            &.is-active {
+                svg {
+                    fill: var(--puma-hover-color);
+                }
+            }
+        }
+    }
+}
+
+.button--like {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    &.is-active {
+        svg {
+            fill: var(--puma-main-color);
+        }
+
+        .icon--active {
+            display: block;
+        }
+
+        .icon--default {
+            display: none;
+        }
+    }
+
+    .icon--active {
+        display: none;
+    }
+
+    .icon--block {
+        display: none;
+    }
+}
+
+.post--share {
+    margin-bottom: 20px;
+    svg {
+        height: 16px;
+        width: 16px;
+        fill: var(--puma-text-gray);
+        margin-right: 4px;
+        flex: 0 0 auto;
+    }
+
+    .text {
+        flex: 0 0 auto;
+    }
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 15px;
+    font-size: 14px;
+    color: var(--puma-text-gray);
+    line-height: 1.2;
+
+    .link {
+        margin-left: 5px;
+        border-bottom: 1px dotted var(--puma-hover-color);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }

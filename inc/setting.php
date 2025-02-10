@@ -390,30 +390,30 @@ $pumaSetting = new pumaSetting(
                     //     'label' => __('Author sns icons', 'Puma'),
                     //     'description' => __('Show author sns icons, will not show when author bio is off.', 'Puma')
                     // ],
-                    // [
-                    //     'type' => 'switch',
-                    //     'name' => 'related',
-                    //     'label' => __('Related posts', 'Puma'),
-                    //     'description' => __('Enable related posts', 'Puma')
-                    // ],
-                    // [
-                    //     'type' => 'switch',
-                    //     'name' => 'postlike',
-                    //     'label' => __('Post like', 'Puma'),
-                    //     'description' => __('Enable post like', 'Puma')
-                    // ],
-                    // [
-                    //     'type' => 'switch',
-                    //     'name' => 'post_navigation',
-                    //     'label' => __('Post navigation', 'Puma'),
-                    //     'description' => __('Enable post navigation', 'Puma')
-                    // ],
-                    // [
-                    //     'type' => 'switch',
-                    //     'name' => 'show_copylink',
-                    //     'label' => __('Copy link', 'Puma'),
-                    //     'description' => __('Enable copy link', 'Puma')
-                    // ],
+                    [
+                        'type' => 'switch',
+                        'name' => 'related',
+                        'label' => __('Related posts', 'Puma'),
+                        'description' => __('Enable related posts', 'Puma')
+                    ],
+                    [
+                        'type' => 'switch',
+                        'name' => 'postlike',
+                        'label' => __('Post like', 'Puma'),
+                        'description' => __('Enable post like', 'Puma')
+                    ],
+                    [
+                        'type' => 'switch',
+                        'name' => 'post_navigation',
+                        'label' => __('Post navigation', 'Puma'),
+                        'description' => __('Enable post navigation', 'Puma')
+                    ],
+                    [
+                        'type' => 'switch',
+                        'name' => 'show_copylink',
+                        'label' => __('Copy link', 'Puma'),
+                        'description' => __('Enable copy link', 'Puma')
+                    ],
                     // [
                     //     'type' => 'switch',
                     //     'name' => 'category_card',
