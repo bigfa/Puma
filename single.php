@@ -14,14 +14,16 @@
                 <?php the_content(); ?>
             </div>
             <?php wp_link_pages(array(
-                'before'      => '<div class="page-links">',
+                'before'      => '<div class="page-links article--nav">',
                 'after'       => '</div>',
                 'pagelink'    => '%',
                 'separator'   => '<span class="screen-reader-text">, </span>',
             )); ?>
-            <div class="post--keywords" itemprop="keywords">
-                <?php echo puma_get_the_term_list(get_the_ID(), 'post_tag'); ?>
-            </div>
+            <?php if (has_tag()) : ?>
+                <div class="post--keywords" itemprop="keywords">
+                    <?php echo puma_get_the_term_list(get_the_ID(), 'post_tag'); ?>
+                </div>
+            <?php endif; ?>
             <?php
             global $pumaSetting;
             if ($pumaSetting->get_setting('postlike')) : ?>

@@ -5,6 +5,10 @@
     display: flex;
     justify-content: center;
 
+    &.article--nav {
+        padding: 15px 0;
+    }
+
     .page-numbers,
     .post-page-numbers {
         background-color: var(--puma-background-gray-light);

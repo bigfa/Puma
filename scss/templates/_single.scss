@@ -8,11 +8,10 @@
     line-height: 1.6;
 
     &s {
-        margin-bottom: 20px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
-        padding-bottom: 10px;
+        padding: 15px 0;
     }
 
     &:hover {
@@ -125,7 +124,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 20px 0 20px;
+        padding: 15px 0;
+
+        .post--keywords,
+        .article--nav + & {
+            padding-top: 5px;
+        }
 
         .button--like {
             svg {
@@ -172,6 +176,11 @@
 
 .post--share {
     margin-bottom: 20px;
+
+    .post--single__action + & {
+        padding-top: 0;
+    }
+
     svg {
         height: 16px;
         width: 16px;

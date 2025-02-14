@@ -18,6 +18,9 @@
         color: var(--puma-background-white);
         font-size: 12px;
         padding: 3px 8px;
+        &:hover {
+            background-color: var(--puma-hover-color);
+        }
     }
 }
 
@@ -140,7 +143,7 @@
     margin-bottom: 30px;
 }
 
-.parent > .children {
+.depth-1 > .children {
     margin-left: 50px;
 }
 
@@ -175,5 +178,22 @@
     small {
         margin-left: auto;
         color: #c00;
+    }
+}
+
+.friend--icon {
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
+
+.comment-author {
+    .fn {
+        display: flex;
+        align-items: center;
+        a {
+            display: flex;
+            align-items: center;
+        }
     }
 }
