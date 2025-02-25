@@ -42,6 +42,7 @@ class pumaBase {
 
         document.querySelector('body')!.insertAdjacentHTML('beforeend', html);
         document.querySelector('.notice--wrapper')!.classList.add('is-active');
+
         setTimeout(() => {
             document.querySelector('.notice--wrapper')!.remove();
         }, 3000);

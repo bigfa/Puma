@@ -44,7 +44,7 @@ class pumaComment extends pumaBase {
                             <footer class="comment-meta">
                                 <div class="comment-author vcard">
                                     <img alt="" src="${comment.author_avatar_urls}" class="avatar" height="42" width="42" />
-                                    <b class="fn">b${comment.comment_author}</b>
+                                    <b class="fn">${comment.comment_author}</b>
                                 </div>
                                 <div class="comment-metadata">
                                     <time>刚刚</time>
