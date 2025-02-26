@@ -47,6 +47,11 @@ If you want to show gravatar in link template,add email in the note blank when y
 
 ## Update logs
 
+### 5.0.12
+
+- bug fixed
+- update translation
+
 ### 5.0.11
 
 - bug fixed

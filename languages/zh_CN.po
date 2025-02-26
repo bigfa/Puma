@@ -339,11 +339,11 @@ msgstr "暗黑模式切换开关"
 
 #: inc/setting.php:324
 msgid "Default thumbnail"
-msgstr ""
+msgstr "默认缩略图"
 
 #: inc/setting.php:325
 msgid "Default thumbnail address"
-msgstr ""
+msgstr "默认缩略图地址"
 
 #: inc/setting.php:330
 msgid "Back to top"
@@ -351,7 +351,7 @@ msgstr "返回顶部"
 
 #: inc/setting.php:331
 msgid "Enable back to top"
-msgstr ""
+msgstr "开启返回顶部"
 
 #: inc/setting.php:366 inc/setting.php:367
 msgid "Hide home cover"
@@ -363,7 +363,7 @@ msgstr "排除状态"
 
 #: inc/setting.php:373
 msgid "Exclude post type status in homepage"
-msgstr ""
+msgstr "首页不展示状态格式文章"
 
 #: inc/setting.php:426
 msgid "Show parent comment"
@@ -371,7 +371,7 @@ msgstr "展示父评论"
 
 #: inc/setting.php:427
 msgid "Enable show parent comment"
-msgstr ""
+msgstr "评论内容显示父评论链接"
 
 #: inc/setting.php:450
 msgid "Disable comment link"
@@ -379,15 +379,15 @@ msgstr "禁用评论链接"
 
 #: inc/setting.php:451
 msgid "Disable comment author url"
-msgstr ""
+msgstr "禁用评论人链接"
 
 #: inc/setting.php:456
 msgid "No reply text"
-msgstr ""
+msgstr "无评论文案"
 
 #: inc/setting.php:457
 msgid "Text display when no comment in current post."
-msgstr ""
+msgstr "当文章没有评论时展示的文案"
 
 #: inc/setting.php:462
 msgid "Friend icon"
@@ -395,7 +395,7 @@ msgstr "友链标识"
 
 #: inc/setting.php:463
 msgid "Show icon when comment author url is in blogroll."
-msgstr ""
+msgstr "当评论者在友情链接中时展示专属标识"
 
 #: inc/setting.php:486
 msgid "Footer SNS Icons"
