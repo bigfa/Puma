@@ -8,6 +8,8 @@
                 </h2>
                 <div class="block-postMetaWrap">
                     <time><?php echo get_the_date('Y/m/d'); ?></time>
+                    <span class="sep"></span>
+                    <?php echo puma_get_post_views_text(false, false, false, get_the_ID()); ?>
                 </div>
             </header>
             <div class="grap" itemprop="articleBody">

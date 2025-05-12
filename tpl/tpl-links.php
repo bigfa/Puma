@@ -1,6 +1,7 @@
 <?php
 /*
 Template Name: Blogroll
+Template Post Type: page
 */
 ?>
 <?php get_header(); ?>

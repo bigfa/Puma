@@ -197,3 +197,38 @@ function puma_get_site_created_year()
     $admin_created = get_userdata(1);
     return date('Y', strtotime($admin_created->user_registered));
 }
+
+
+function puma_get_post_views($post_id = 0)
+{
+
+    $views_number = (int)get_post_meta($post_id, PUMA_POST_VIEW_KEY, true);
+
+    /**
+     * Filters the returned views for a post.
+     *
+     * @since Puma 5.1.0
+     */
+    return apply_filters('puma_get_post_views', $views_number, $post_id);
+}
+
+/**
+ * Get post views
+ *
+ * @since Puma 5.1.0
+ *
+ * @param post id
+ * @return post views
+ */
+
+function puma_get_post_views_text($zero = false, $one = false, $more = false, $post = 0)
+{
+    $views = puma_get_post_views($post);
+    if ($views == 0) {
+        return $zero ? $zero : __('No views yet', 'Puma');
+    } elseif ($views == 1) {
+        return $one ? $one : __('1 view', 'Puma');
+    } else {
+        return $more ? str_replace('%d', $views, $more) : sprintf(__('%d views', 'Puma'), $views);
+    }
+}

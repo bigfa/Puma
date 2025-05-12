@@ -1,6 +1,7 @@
 <?php
 /*
 Template Name: Post Archive
+Template Post Type: page
 */
 ?>
 <?php get_header(); ?>

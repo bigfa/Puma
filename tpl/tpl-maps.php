@@ -1,6 +1,7 @@
 <?php
 /*
 Template Name: Marker Pro
+Template Post Type: page
 */
 ?>
 <?php get_header(); ?>

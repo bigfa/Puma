@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Puma 5.0.6\n"
+"Project-Id-Version: Puma 5.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Puma\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-02-07T11:20:04+00:00\n"
+"POT-Creation-Date: 2025-05-12T16:43:39+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: Puma\n"
@@ -194,6 +194,18 @@ msgstr ""
 msgid "No links"
 msgstr ""
 
+#: inc/pack.php:228
+msgid "No views yet"
+msgstr ""
+
+#: inc/pack.php:230
+msgid "1 view"
+msgstr ""
+
+#: inc/pack.php:232
+msgid "%d views"
+msgstr ""
+
 #: inc/setting.php:56
 #: inc/setting.php:62
 msgid "Theme Setting"
@@ -369,6 +381,38 @@ msgstr ""
 msgid "Exclude post type status in homepage"
 msgstr ""
 
+#: inc/setting.php:396
+msgid "Related posts"
+msgstr ""
+
+#: inc/setting.php:397
+msgid "Enable related posts"
+msgstr ""
+
+#: inc/setting.php:402
+msgid "Post like"
+msgstr ""
+
+#: inc/setting.php:403
+msgid "Enable post like"
+msgstr ""
+
+#: inc/setting.php:408
+msgid "Post navigation"
+msgstr ""
+
+#: inc/setting.php:409
+msgid "Enable post navigation"
+msgstr ""
+
+#: inc/setting.php:414
+msgid "Copy link"
+msgstr ""
+
+#: inc/setting.php:415
+msgid "Enable copy link"
+msgstr ""
+
 #: inc/setting.php:426
 msgid "Show parent comment"
 msgstr ""
@@ -509,7 +553,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: template-parts/content-status.php:4
+#: template-parts/content-status.php:13
 #: template-parts/content.php:34
 msgid "replies."
 msgstr ""
@@ -518,10 +562,6 @@ msgstr ""
 #: template-parts/content.php:25
 #: template-parts/content.php:28
 msgid "Read More."
-msgstr ""
-
-#: template-parts/content.php:36
-msgid "views"
 msgstr ""
 
 #: template-parts/single-related.php:11
@@ -538,6 +578,10 @@ msgstr ""
 
 #. Template Name of the theme
 msgid "Marker Pro"
+msgstr ""
+
+#. Template Name of the theme
+msgid "Tags Template"
 msgstr ""
 
 #. Template Name of the theme

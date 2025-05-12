@@ -1,6 +1,7 @@
 <?php
 /*
 Template Name: Categories
+Template Post Type: page
 */
 get_header(); ?>
 

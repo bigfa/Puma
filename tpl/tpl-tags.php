@@ -1,6 +1,8 @@
 <?php
-// Template Name: Tags Template
-
+/*
+ Template Name: Tags Template
+ Template Post Type: page
+*/
 get_header(); ?>
 <main class="main-content container">
     <section class="section-body">

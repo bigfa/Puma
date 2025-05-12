@@ -33,7 +33,7 @@
         <div class="block-footer-inner">
             <?php echo get_comments_number(); ?> <?php echo __('replies.', 'Puma'); ?>
             <span class="sep"></span>
-            <?php echo (int)get_post_meta(get_the_ID(), PUMA_POST_VIEW_KEY, true); ?> <?php echo __('views', 'Puma'); ?>
+            <?php echo puma_get_post_views_text(false, false, false, get_the_ID()); ?>
         </div>
     </div>
 </article>
