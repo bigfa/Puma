@@ -7,9 +7,11 @@
                     <?php the_title(); ?>
                 </h2>
                 <div class="block-postMetaWrap">
-                    <time><?php echo get_the_date('Y/m/d'); ?></time>
+                    <time><?php echo human_time_diff(get_the_time('U'), current_time('U')) . __(' ago', 'Puma'); ?></time>
                     <span class="sep"></span>
                     <?php echo puma_get_post_views_text(false, false, false, get_the_ID()); ?>
+                    <span class="sep"></span>
+                    <?php echo puma_get_post_read_time_text(get_the_ID()); ?>
                 </div>
             </header>
             <div class="grap" itemprop="articleBody">

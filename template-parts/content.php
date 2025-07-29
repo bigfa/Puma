@@ -4,7 +4,7 @@
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
         </h2>
         <div class="block-postMetaWrap">
-            <time><?php echo get_the_date('Y/m/d'); ?></time>
+            <time><?php echo human_time_diff(get_the_time('U'), current_time('U')) . __(' ago', 'Puma'); ?></time>
         </div>
     </header>
     <div class="block-snippet grap" itemprop="about">
@@ -34,6 +34,8 @@
             <?php echo get_comments_number(); ?> <?php echo __('replies.', 'Puma'); ?>
             <span class="sep"></span>
             <?php echo puma_get_post_views_text(false, false, false, get_the_ID()); ?>
+            <span class="sep"></span>
+            <?php echo puma_get_post_read_time_text(get_the_ID()); ?>
         </div>
     </div>
 </article>

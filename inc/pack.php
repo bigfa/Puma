@@ -232,3 +232,36 @@ function puma_get_post_views_text($zero = false, $one = false, $more = false, $p
         return $more ? str_replace('%d', $views, $more) : sprintf(__('%d views', 'Puma'), $views);
     }
 }
+
+function puma_get_post_image_count($post_id)
+{
+    $content = get_post_field('post_content', $post_id);
+    $content = apply_filters('the_content', $content);
+    preg_match_all('/<img.*?(?: |\\t|\\r|\\n)?src=[\'"]?(.+?)[\'"]?(?:(?: |\\t|\\r|\\n)+.*?)?>/sim', $content, $strResult, PREG_PATTERN_ORDER);
+    return count($strResult[1]);
+}
+
+
+function puma_get_post_read_time($post_id)
+{
+    $content = get_post_field('post_content', $post_id);
+    $word_count = str_word_count(strip_tags($content));
+    $reading_time = ceil($word_count / 200); // Average reading speed is 200 wpm
+
+    $image_count = puma_get_post_image_count($post_id);
+    if ($image_count > 0) {
+        $reading_time += ceil($image_count / 10); // Add extra time for images
+    }
+
+    return $reading_time;
+}
+
+function puma_get_post_read_time_text($post_id)
+{
+    $reading_time = puma_get_post_read_time($post_id);
+    if ($reading_time <= 1) {
+        return __('1 min read', 'Puma');
+    } else {
+        return sprintf(__('%d min read', 'Puma'), $reading_time);
+    }
+}

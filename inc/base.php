@@ -337,22 +337,6 @@ class pumaBase
                 'is_archive' => is_archive(),
                 'archive_id' => get_queried_object_id(),
                 'hide_home_cover' => !!$pumaSetting->get_setting('hide_home_cover'),
-                'timeFormat' => [
-                    'second' => __('second ago', 'Puma'),
-                    'seconds' => __('seconds ago', 'Puma'),
-                    'minute' => __('minute ago', 'Puma'),
-                    'minutes' => __('minutes ago', 'Puma'),
-                    'hour' => __('hour ago', 'Puma'),
-                    'hours' => __('hours ago', 'Puma'),
-                    'day' => __('day ago', 'Puma'),
-                    'days' => __('days ago', 'Puma'),
-                    'week' => __('week ago', 'Puma'),
-                    'weeks' => __('weeks ago', 'Puma'),
-                    'month' => __('month ago', 'Puma'),
-                    'months' => __('months ago', 'Puma'),
-                    'year' => __('year ago', 'Puma'),
-                    'years' => __('years ago', 'Puma'),
-                ]
             ]
         );
         if ($pumaSetting->get_setting('javascript')) {
