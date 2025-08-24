@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <main class="main-content">
-    <section class="section-body" itemscope="itemscope" itemtype="http://schema.org/Article">
+    <article class="pArticle" itemscope="itemscope" itemtype="http://schema.org/Article">
         <?php while (have_posts()) : the_post(); ?>
-            <header class="u-textAlignCenter">
-                <h2 class="block-title" itemprop="headline">
+            <header class="pArticle--header">
+                <h2 class="pArticle--title" itemprop="headline">
                     <?php the_title(); ?>
                 </h2>
-                <div class="block-postMetaWrap">
+                <div class="pArticle--meta">
                     <time><?php echo human_time_diff(get_the_time('U'), current_time('U')) . __(' ago', 'Puma'); ?></time>
                     <span class="sep"></span>
                     <?php echo puma_get_post_views_text(false, false, false, get_the_ID()); ?>
@@ -14,7 +14,7 @@
                     <?php echo puma_get_post_read_time_text(get_the_ID()); ?>
                 </div>
             </header>
-            <div class="grap" itemprop="articleBody">
+            <div class="pGraph pArticle--content" itemprop="articleBody">
                 <?php the_content(); ?>
             </div>
             <?php wp_link_pages(array(
@@ -24,14 +24,14 @@
                 'separator'   => '<span class="screen-reader-text">, </span>',
             )); ?>
             <?php if (has_tag()) : ?>
-                <div class="post--keywords" itemprop="keywords">
+                <div class="pArticle--tags" itemprop="keywords">
                     <?php echo puma_get_the_term_list(get_the_ID(), 'post_tag'); ?>
                 </div>
             <?php endif; ?>
             <?php
             global $pumaSetting;
             if ($pumaSetting->get_setting('postlike')) : ?>
-                <div class="post--single__action">
+                <div class="pArticle--actions">
                     <button class="button--like like-btn" aria-label="like the post">
                         <svg class="icon--active" viewBox="0 0 1024 1024" width="32" height="32">
                             <path d="M780.8 204.8c-83.2-44.8-179.2-19.2-243.2 44.8L512 275.2 486.4 249.6c-64-64-166.4-83.2-243.2-44.8C108.8 275.2 89.6 441.6 185.6 537.6l32 32 153.6 153.6 102.4 102.4c25.6 25.6 57.6 25.6 83.2 0l102.4-102.4 153.6-153.6 32-32C934.4 441.6 915.2 275.2 780.8 204.8z"></path>
@@ -43,7 +43,7 @@
                 </div>
             <?php endif; ?>
             <?php if ($pumaSetting->get_setting('show_copylink')) : ?>
-                <div class="post--share">
+                <div class="pArticle--share">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
                         <g>
                             <path d="M18.36 5.64c-1.95-1.96-5.11-1.96-7.07 0L9.88 7.05 8.46 5.64l1.42-1.42c2.73-2.73 7.16-2.73 9.9 0 2.73 2.74 2.73 7.17 0 9.9l-1.42 1.42-1.41-1.42 1.41-1.41c1.96-1.96 1.96-5.12 0-7.07zm-2.12 3.53l-7.07 7.07-1.41-1.41 7.07-7.07 1.41 1.41zm-12.02.71l1.42-1.42 1.41 1.42-1.41 1.41c-1.96 1.96-1.96 5.12 0 7.07 1.95 1.96 5.11 1.96 7.07 0l1.41-1.41 1.42 1.41-1.42 1.42c-2.73 2.73-7.16 2.73-9.9 0-2.73-2.74-2.73-7.17 0-9.9z"></path>
@@ -57,7 +57,7 @@
                 'next_text' => '<span class="meta-nav">Next</span><span class="post-title">%title</span>',
                 'prev_text' => '<span class="meta-nav">Previous</span><span class="post-title">%title</span>',
             )); ?>
-            <div class="post--authorInfo">
+            <div class="pArticle--authorInfo">
                 <?php echo get_avatar(get_the_author_meta('email'), 64); ?>
                 <h3 class="author--name"><?php the_author(); ?></h3>
                 <div class="author--description"><?php echo get_the_author_meta('description') ?></div>
@@ -68,6 +68,6 @@
             endif;
             ?>
         <?php endwhile; ?>
-    </section>
+    </article>
 </main>
 <?php get_footer(); ?>

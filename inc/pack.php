@@ -149,11 +149,11 @@ function get_the_link_items($id = null)
     $bookmarks = get_bookmarks('orderby=date&category=' . $id);
     $output = '';
     if (!empty($bookmarks)) {
-        $output .= '<ul class="link-items">';
+        $output .= '<div class="pLink--list">';
         foreach ($bookmarks as $bookmark) {
-            $output .=  '<li class="link-item"><a class="link-item-inner effect-apollo" href="' . $bookmark->link_url . '" title="' . $bookmark->link_description . '" target="_blank" >' . get_avatar($bookmark->link_notes, 48) . '<span class="sitename"><strong>' . $bookmark->link_name . '</strong>' . $bookmark->link_description . '</span></a></li>';
+            $output .=  '<div class="pLink--item"><a href="' . $bookmark->link_url . '" title="' . $bookmark->link_description . '" target="_blank" >' . get_avatar($bookmark->link_notes, 32) . '<strong>' . $bookmark->link_name . '</strong><span class="sitename">' . $bookmark->link_description . '</span></a></div>';
         }
-        $output .= '</ul>';
+        $output .= '</div>';
     } else {
         $output =  __('No links', 'Puma');
     }
@@ -174,8 +174,8 @@ function get_link_items()
     $result = '';
     if (!empty($linkcats)) {
         foreach ($linkcats as $linkcat) {
-            $result .=  '<h3 class="link-title">' . $linkcat->name . '</h3>';
-            if ($linkcat->description) $result .= '<div class="link-description">' . $linkcat->description . '</div>';
+            $result .=  '<h3 class="pLink--title">' . $linkcat->name . '</h3>';
+            if ($linkcat->description) $result .= '<div class="pLink--subtitle">' . $linkcat->description . '</div>';
             $result .=  get_the_link_items($linkcat->term_id);
         }
     } else {

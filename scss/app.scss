@@ -7,60 +7,10 @@
 @use 'modules/comment';
 @use 'modules/nav';
 @use 'modules/footer';
+@use 'modules/relatedPost';
 
-@use 'templates/template';
 @use 'templates/single';
 @use 'templates/term';
 @use 'templates/archive';
 
-@media (max-width: 600px) {
-    .surface-content {
-        margin: 0;
-    }
-
-    .site-header {
-        padding: 40px 0;
-    }
-
-    .main-content {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .block--list {
-        padding: 15px 0;
-    }
-
-    .block-title {
-        font-size: 20px;
-        line-height: 1.4;
-    }
-
-    .section-body {
-        padding-top: 15px;
-    }
-
-    .back-to-top {
-        display: none;
-    }
-
-    .post-navigation {
-        .nav-next,
-        .nav-previous {
-            float: none;
-            width: 100%;
-            text-align: center;
-        }
-    }
-
-    .nav-links {
-        div {
-            &:first-child {
-                border-bottom: 1px solid var(--puma-border-color-light);
-            }
-            &:only-child {
-                border-bottom: 0;
-            }
-        }
-    }
-}
+@use 'utilities/wp';

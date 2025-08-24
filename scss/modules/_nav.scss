@@ -79,26 +79,3 @@
         text-align: right;
     }
 }
-
-.topNav {
-    &-items {
-        border-bottom: 1px solid var(--puma-border-color-light);
-        font-size: 14px;
-        line-height: 50px;
-        display: flex;
-        justify-content: center;
-
-        .menu-item {
-            color: var(--puma-text-gray);
-            font-size: 12px;
-            letter-spacing: 1px;
-            margin-right: 8px;
-            margin-left: 8px;
-            position: relative;
-            text-transform: uppercase;
-            &:hover {
-                color: var(--puma-main-color);
-            }
-        }
-    }
-}

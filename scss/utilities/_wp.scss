@@ -1,0 +1,122 @@
+.aligncenter {
+    text-align: center;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.comment-form {
+    padding: 20px 0;
+
+    .comment-form-cookies-consent {
+        #wp-comment-cookies-consent {
+            display: none;
+        }
+
+        label {
+            font-size: 14px;
+            color: var(--puma-text-gray);
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-weight: normal;
+
+            &::before {
+                background-color: var(--puma-background-white);
+                border: 1px solid var(--puma-main-color);
+                border-radius: 100%;
+                height: 16px;
+                margin-right: 6px;
+                vertical-align: middle;
+                width: 16px;
+                content: '';
+                flex: 0 0 auto;
+            }
+        }
+
+        input:checked + label {
+            &::after {
+                background-color: var(--puma-main-color);
+                border-radius: 100%;
+                content: '';
+                position: absolute;
+                left: 1px;
+                height: 12px;
+                margin: 2px;
+                width: 12px;
+                flex: 0 0 auto;
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 15px;
+        &.logged-in-as {
+            font-size: 12px;
+            color: var(--puma-text-light);
+        }
+    }
+
+    label {
+        cursor: pointer;
+        display: block;
+        margin-bottom: 3px;
+        font-size: 14px;
+        color: var(--puma-text-gray);
+    }
+
+    textarea {
+        border: 1px solid var(--puma-border-color-light);
+        border-radius: 3px;
+        box-sizing: border-box;
+        padding: 10px;
+        resize: none;
+        width: 100%;
+        font-size: 14px;
+        height: 150px;
+    }
+
+    .submit {
+        background-color: var(--puma-main-color);
+        border: 1px solid var(--puma-main-color);
+        border-radius: 999rem;
+        color: var(--puma-background-white);
+        cursor: pointer;
+        font-size: 14px;
+        padding: 8px 25px;
+        font-size: 14px;
+
+        &:hover {
+            background-color: var(--puma-hover-color);
+            border-color: var(--puma-hover-color);
+        }
+    }
+
+    .comment-form-author input,
+    .comment-form-email input,
+    .comment-form-url input {
+        border: 1px solid var(--puma-border-color-light);
+        border-radius: 3px;
+        color: var(--puma-text-gray);
+        font-size: 14px;
+        height: 30px;
+        padding: 0 10px;
+        width: 280px;
+    }
+}
+
+.required {
+    color: #c00;
+}
+
+.comment-notes {
+    font-size: 14px;
+    color: var(--puma-text-light);
+}

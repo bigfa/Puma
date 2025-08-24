@@ -14,62 +14,26 @@
     }
 }
 
-.site--footer {
-    &__sns {
-        display: flex;
-        align-items: center;
-        position: relative;
-        justify-content: center;
-        padding-top: 20px;
-
-        a {
-            margin: 0 12px 0 0;
-            display: flex;
-        }
-
-        svg {
-            fill: #fff;
-            width: 24px;
-            height: 24px;
-            opacity: 0.9;
-
-            &:hover {
-                fill: var(--puma-hover-color);
-            }
-
-            &.sns {
-                fill: none;
-                stroke: #fff;
-
-                &:hover {
-                    stroke: var(--puma-hover-color);
-                    fill: none;
-                }
-            }
-        }
-    }
-}
-
 .fixed--theme {
     position: fixed;
-    right: 20px;
+    right: 0px;
     bottom: 50%;
+    transform: translate3d(0, 50%, 0);
     display: flex;
     height: max-content;
     background-color: var(--puma-background-white);
-    border-radius: 0 10px 0 10px;
+    border-radius: 10px 0 0 10px;
     width: max-content;
     padding: 3px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 0 1px var(--puma-border-color);
-    border-radius: 999rem;
 
     span {
         width: 28px;
         height: 28px;
         cursor: pointer;
-        border-radius: 100%;
+        border-radius: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -93,16 +57,26 @@
 
 .backToTop {
     position: fixed;
-    right: 60px;
+    right: 0px;
     bottom: 50px;
     cursor: pointer;
     transform: translate3d(200px, 0, 0);
     transition: 0.5s;
+    background-color: var(--puma-background-white);
+    box-shadow: 0 0 0 1px var(--puma-border-color);
+    border-radius: 10px 0 0 10px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .icon {
-        fill: var(--puma-text-gray);
-        width: 18px;
-        height: 18px;
+        fill: var(--puma-text-gray-lightest);
+        width: 14px;
+        height: 14px;
+        padding: 7px;
+        border-radius: 8px;
     }
 
     &.is-active {
@@ -111,7 +85,8 @@
 
     &:hover {
         .icon {
-            fill: var(--puma-main-color);
+            background-color: var(--puma-background-gray);
+            fill: var(--puma-text-color);
         }
     }
 }

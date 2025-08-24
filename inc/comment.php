@@ -244,3 +244,41 @@ class pumaComment
 }
 
 new pumaComment();
+
+
+// comment template
+function puma_comment($comment, $args, $depth)
+
+{
+    $GLOBALS['comment'] = $comment;
+    switch ($comment->comment_type):
+        case 'pingback':
+        case 'trackback':
+?>
+            <li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+                <div class="pingback-content"><?php comment_author_link(); ?></div>
+            <?php
+            break;
+        default:
+            global $post;
+            ?>
+            <li <?php comment_class('pComment--item'); ?> itemtype="http://schema.org/Comment" data-id="<?php comment_ID() ?>" itemscope="" itemprop="comment" id="comment-<?php comment_ID() ?>">
+                <div class="pComment--body">
+                    <div class="pComment--header">
+                        <?php echo get_avatar($comment, 42); ?>
+                        <div class="pComment--author" itemprop="author">
+                            <?php echo get_comment_author_link(); ?>
+                        </div>
+                        <?php echo '<span class="comment-reply-link" onclick="return addComment.moveForm(\'comment-' . $comment->comment_ID . '\', \'' . $comment->comment_ID . '\', \'respond\', \'' . $post->ID . '\')">' . __('Reply', 'Puma') . '</span>'; ?>
+                    </div>
+                    <div class="pComment--content" itemprop="description">
+                        <?php comment_text(); ?>
+                    </div>
+                    <footer class="pComment--footer">
+                        <span class="pComment--time" itemprop="datePublished" datetime="<?php echo get_comment_date('c'); ?>"><?php echo human_time_diff(get_comment_time('U'), current_time('U')) . __(' ago', 'Puma'); ?></span>
+                    </footer>
+                </div>
+    <?php
+            break;
+    endswitch;
+}

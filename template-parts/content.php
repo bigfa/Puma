@@ -1,13 +1,13 @@
-<article class="block--list<?php if (is_sticky()) echo ' sticky'; ?>">
-    <header class="u-textAlignCenter">
-        <h2 class="block-title post-featured" itemprop="headline">
+<article class="pBlock--item<?php if (is_sticky()) echo ' sticky'; ?>">
+    <header class="pBlock--header">
+        <h2 class="pBlock--title" itemprop="headline">
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
         </h2>
-        <div class="block-postMetaWrap">
+        <div class="pBlock--postMetaWrap">
             <time><?php echo human_time_diff(get_the_time('U'), current_time('U')) . __(' ago', 'Puma'); ?></time>
         </div>
     </header>
-    <div class="block-snippet grap" itemprop="about">
+    <div class="pBlock--snippet pGraph" itemprop="about">
         <?php
         global $pumaSetting;
         if ((has_post_thumbnail() || !$pumaSetting->get_setting('hide_home_cover')) && puma_is_has_image(get_the_ID())) : ?>
@@ -28,14 +28,11 @@
             <?php the_content(__('Read More.', 'Puma')); ?>
         <?php endif; ?>
     </div>
-    <div class="block-footer">
-        By <?php the_author(); ?> . In <?php the_category(','); ?>.
-        <div class="block-footer-inner">
-            <?php echo get_comments_number(); ?> <?php echo __('replies.', 'Puma'); ?>
-            <span class="sep"></span>
-            <?php echo puma_get_post_views_text(false, false, false, get_the_ID()); ?>
-            <span class="sep"></span>
-            <?php echo puma_get_post_read_time_text(get_the_ID()); ?>
-        </div>
+    <div class="pBlock--footer">
+        <?php the_category(','); ?>
+        <span class="sep"></span>
+        <?php echo puma_get_post_views_text(false, false, false, get_the_ID()); ?>
+        <span class="sep"></span>
+        <?php echo puma_get_post_read_time_text(get_the_ID()); ?>
     </div>
 </article>

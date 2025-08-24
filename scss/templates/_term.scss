@@ -1,46 +1,73 @@
-.collectionCard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15px;
-    padding-top: 20px;
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 50px;
+.pTerm {
+    &--header {
+        padding: 30px 0;
+        border-bottom: 1px solid var(--puma-border-color-light);
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+            padding: 15px 0;
+        }
+    }
+
+    &--title {
+        font-size: 24px;
+        font-weight: bold;
+
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
+    }
+
+    &--description {
+        font-size: 14px;
+        color: var(--puma-text-gray);
+        line-height: 1.5;
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.pCategory {
+    &--list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        padding-top: 20px;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 50px;
+
+        @media (max-width: 920px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 
     &--item {
-        transition: 0.5s;
         padding: 8px;
-        border: 1px solid var(--puma-border-color);
         border-radius: 5px;
         position: relative;
         overflow: hidden;
+        background-color: var(--puma-background-gray-light);
 
         &:hover {
-            .collectionCard--title {
+            .pCategory--title {
                 color: var(--puma-hover-color);
                 text-decoration: underline;
             }
         }
-
-        &::after {
-            position: absolute;
-            content: attr(data-count);
-            opacity: 0.15;
-            bottom: -8px;
-            right: -5px;
-            color: var(--puma-text-gray-lightest);
-            font-size: 60px;
-            font-style: italic;
-            font-weight: bold;
-            line-height: 1;
-        }
     }
 
     &--image {
-        height: 150px;
+        height: 120px;
         width: 100%;
         object-fit: cover;
-        border-radius: 3px;
+        border-radius: 8px;
     }
 
     &--meta {
@@ -65,44 +92,42 @@
     }
 }
 
-@media (max-width: 920px) {
-    .template--terms {
-        padding: 50px 20px;
-    }
+.archive--tagList {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
 
-    .collectionCard {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.archive--tagItem {
+    margin: 10px;
+    background-color: var(--puma-background-gray-light);
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--puma-text-gray-light);
 
-    .template--tags {
-        padding: 50px 20px;
+    &:hover {
+        background-color: var(--puma-hover-color);
+        color: #fff;
     }
 }
 
-@media (max-width: 480px) {
-    .collectionCard {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-.postTag {
-    &--list {
+.pSearch {
+    &--form {
         display: flex;
-        flex-wrap: wrap;
-        padding: 20px 0;
+        justify-content: center;
     }
 
-    &--item {
-        margin-right: 10px;
-        margin-bottom: 10px;
-        padding: 3px 15px;
-        border-radius: 5px;
-        background-color: var(--puma-background-gray-light);
-        color: var(--puma-text-light);
-        font-size: 14px;
+    &--submit {
+        display: none;
+    }
 
-        &:hover {
-            background-color: var(--puma-background-gray);
-        }
+    &--input {
+        padding: 10px 25px;
+        border: 1px solid var(--puma-border-color);
+        border-radius: 10px;
+        outline: none;
+        font-size: 14px;
+        color: var(--puma-text-color-light);
     }
 }

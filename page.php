@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 <main class="main-content container">
-    <section class="section-body" itemscope="itemscope" itemtype="http://schema.org/Article">
+    <section class="pArticle" itemscope="itemscope" itemtype="http://schema.org/Article">
         <?php while (have_posts()) : the_post(); ?>
-            <header class="section-header u-textAlignCenter">
-                <h2 class="grap--h2" itemprop="headline"><?php the_title(); ?></h2>
+            <header class="pArticle--header">
+                <h2 class="pArticle--title" itemprop="headline"><?php the_title(); ?></h2>
             </header>
-            <div class="grap" itemprop="articleBody">
+            <div class="pGraph pArticle--content" itemprop="articleBody">
                 <?php the_content(); ?>
             </div>
             <?php wp_link_pages(array(

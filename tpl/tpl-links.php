@@ -5,15 +5,16 @@ Template Post Type: page
 */
 ?>
 <?php get_header(); ?>
-<main class="main-content container">
-    <section class="section-body">
+<main class="main-content">
+    <section class="pArticle">
         <?php while (have_posts()) : the_post(); ?>
-            <header class="section-header u-textAlignCenter">
-                <h2 class="block-title"><?php the_title(); ?></h2>
+            <header class="pArticle--header">
+                <h2 class="pArticle--title"><?php the_title(); ?></h2>
             </header>
         <?php endwhile; ?>
-        <div class="page-wrapper">
-            <?php echo get_link_items(); ?>
+        <?php echo get_link_items(); ?>
+        <div class="pGraph pArticle--content" itemprop="articleBody">
+            <?php the_content(); ?>
         </div>
     </section>
 </main>

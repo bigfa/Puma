@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 <main class="main-content container">
-    <header class="archive-header u-textAlignCenter">
+    <header class="pTerm--header">
         <?php
-        the_archive_title('<h1 class="archive-title">', '</h1>');
-        the_archive_description('<div class="taxonomy-description">', '</div>');
+        the_archive_title('<h1 class="pTerm--title">', '</h1>');
+        the_archive_description('<div class="pTerm--description">', '</div>');
         ?>
     </header>
-    <section class="blockGroup">
+    <section class="pBlock--list">
         <?php if (have_posts()) :
             while (have_posts()) : the_post();
                 get_template_part('template-parts/content', get_post_format());

@@ -27,14 +27,14 @@
         </script>
     <?php endif; ?>
     <div class="surface-content">
-        <header class="site-header">
+        <header class="pHeader">
             <div class="header-inner">
                 <h1 class="site-title">
                     <a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
                         <?php if (!get_option('header_logo_image')) {
                             bloginfo('name');
                         } else {
-                            echo '<img src="' . get_option('header_logo_image') . '">';
+                            echo '<img src="' . get_option('header_logo_image') . '" alt="' . esc_attr(get_bloginfo('name')) . '">';
                         } ?>
                     </a>
                 </h1>
@@ -43,11 +43,11 @@
                     <p class="site-description"><?php echo $description; ?></p>
                 <?php endif; ?>
                 <?php echo get_search_form(); ?>
-                <div class=site--footer__sns>
+                <div class="pHeader--icons">
                     <?php get_template_part('template-parts/sns'); ?>
                 </div>
             </div>
         </header>
-        <nav class="topNav">
-            <?php wp_nav_menu(array('theme_location' => 'puma', 'menu_class' => 'topNav-items', 'container' => 'ul', 'fallback_cb' => 'link_to_menu_editor')); ?>
+        <nav class="pNav">
+            <?php wp_nav_menu(array('theme_location' => 'puma', 'menu_class' => 'pNav--list', 'container' => 'ul', 'fallback_cb' => 'link_to_menu_editor')); ?>
         </nav>

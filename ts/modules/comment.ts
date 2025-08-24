@@ -39,21 +39,21 @@ class pumaComment extends pumaBase {
                             i = document.getElementById('respond'),
                             n = document.getElementById('wp-temp-form-div');
                         const comment = data.data;
-                        const html = `<li class="comment" id="comment-${comment.comment_ID}">
-                        <article class="comment-body comment-body__fresh">
-                            <footer class="comment-meta">
-                                <div class="comment-author vcard">
-                                    <img alt="" src="${comment.author_avatar_urls}" class="avatar" height="42" width="42" />
-                                    <b class="fn">${comment.comment_author}</b>
-                                </div>
-                                <div class="comment-metadata">
-                                    <time>刚刚</time>
+                        const html = `<li class="comment pComment--item" id="comment-${comment.comment_ID}">
+                        <article class="pComment--body comment-body__fresh">
+                            <header class="pComment--header">
+                                <img alt="" src="${comment.author_avatar_urls}" class="avatar" height="42" width="42" />
+                                <div class="pComment--author">
+                                    ${comment.comment_author}
                                 </div>
                                 </div>
-                            </footer>
-                            <div class="comment-content">
+                            </header>
+                            <div class="pComment--content">
                                 ${comment.comment_content}
                             </div>
+                            <footer class="pComment--footer">
+                            <time>刚刚</time>
+                            </footer>
                         </article>
                     </li>`; // @ts-ignore
                         const parent_id = document.querySelector('#comment_parent')?.value;
@@ -87,7 +87,7 @@ class pumaComment extends pumaBase {
                                 document.querySelector('.no--comment')?.remove();
                             }
                             document
-                                .querySelector('.commentlist')
+                                .querySelector('.pComment--list')
                                 ?.insertAdjacentHTML('beforeend', html);
                         }
 

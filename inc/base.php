@@ -169,7 +169,7 @@ class pumaBase
             $toc .= str_repeat('</li></ul>', $previous_level - 2);
             $toc .= '</ul>';
 
-            $content = '<details class="puma--toc" open><summary>' . __('Table of content', 'Puma') . '</summary>' . $toc . '</details>' . $content;
+            $content = '<details class="pArticle--toc" open><summary>' . __('Table of content', 'Puma') . '</summary>' . $toc . '</details>' . $content;
         }
 
         return $content;

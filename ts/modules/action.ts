@@ -72,27 +72,24 @@ class pumaAction extends pumaBase {
                     document.querySelector('body')!.classList.remove('auto');
                     document.querySelector('body')!.classList.add('dark');
                     item.classList.add('is-active');
-                    //this.showNotice('夜间模式已开启');
                     // @ts-ignore
                 } else if (item.dataset.actionValue == 'light') {
                     localStorage.setItem('theme', 'light');
                     document.querySelector('body')!.classList.remove('auto');
                     document.querySelector('body')!.classList.remove('dark');
                     item.classList.add('is-active');
-                    //this.showNotice('夜间模式已关闭');
                     // @ts-ignore
                 } else if (item.dataset.actionValue == 'auto') {
                     localStorage.setItem('theme', 'auto');
                     document.querySelector('body')!.classList.remove('dark');
                     document.querySelector('body')!.classList.add('auto');
                     item.classList.add('is-active');
-                    //this.showNotice('夜间模式已关闭');
                 }
             });
         });
 
-        if (document.querySelector('.post--share')) {
-            document.querySelector('.post--share')!.addEventListener('click', () => {
+        if (document.querySelector('.pArticle--share')) {
+            document.querySelector('.pArticle--share')!.addEventListener('click', () => {
                 navigator.clipboard.writeText(document.location.href).then(() => {
                     this.showNotice('复制成功');
                 });
@@ -132,30 +129,18 @@ class pumaAction extends pumaBase {
     }
 
     trackArchiveView() {
-        if (document.querySelector('.archive-header')) {
+        if (document.querySelector('.pTerm-header')) {
             // @ts-ignore
             const id = obvInit.archive_id;
             // @ts-ignore
             fetch(`${obvInit.restfulBase}puma/v1/archive/${id}`, {
                 method: 'POST',
-                // body: JSON.stringify({
-                //     // @ts-ignore
-                //     id: this.post_id,
-                // }),
                 headers: {
                     // @ts-ignore
                     'X-WP-Nonce': obvInit.nonce,
                     'Content-Type': 'application/json',
                 },
-            })
-                .then((response) => {
-                    return response.json();
-                })
-                .then((data) => {
-                    //this.showNotice('Thanks for your like');
-                    // @ts-ignore
-                    //this.setCookie('like_' + this.post_id, '1', 1);
-                });
+            });
         }
     }
 

@@ -1,7 +1,6 @@
 :root {
-    // --puma-main-color: #27ae60;
-    --puma-main-color: #27ae60; //#4370f5;
-    --puma-hover-color: #0f730c; // #3a5f9a;
+    --puma-main-color: #27ae60;
+    --puma-hover-color: #0f730c;
     --puma-text-color: rgba(0, 0, 0, 0.84);
     --puma-text-light: rgba(0, 0, 0, 0.68);
     --puma-text-gray: rgba(0, 0, 0, 0.6);
@@ -28,18 +27,10 @@
     --db--text-color-light: var(--puma-text-light);
     --db--background-gray: var(--puma-background-gray);
     --db-border-color: var(--puma-border-color);
-
-    .db--genreItem {
-        &:hover {
-            color: var(--puma-backgroud-white);
-        }
-    }
 }
 
 @media (prefers-color-scheme: dark) {
     .auto {
-        --puma-main-color: rgba(253, 186, 116, 1);
-        --puma-hover-color: rgba(255, 237, 213, 1);
         --puma-text-color: #a1a1aa;
         --puma-text-light: rgba(161, 161, 170, 1);
         --puma-text-gray: rgba(113, 113, 122, 1);
@@ -59,30 +50,10 @@
         --db--text-color-light: var(--puma-text-light);
         --db--background-gray: var(--puma-background-gray);
         --db-border-color: var(--puma-border-color);
-
-        .db--genreItem {
-            &:hover {
-                color: var(--puma-backgroud-white);
-            }
-        }
-
-        .doulist-item {
-            border-color: var(--db-border-color);
-        }
-
-        .comment-form {
-            input,
-            textarea {
-                background-color: rgba(63, 63, 70, 0.15);
-                border-color: rgba(63, 63, 70, 1);
-            }
-        }
     }
 }
 
 .dark {
-    --puma-main-color: rgba(253, 186, 116, 1);
-    --puma-hover-color: rgba(255, 237, 213, 1);
     --puma-text-color: #a1a1aa;
     --puma-text-light: rgba(161, 161, 170, 1);
     --puma-text-gray: rgba(113, 113, 122, 1);
@@ -102,24 +73,6 @@
     --db--text-color-light: var(--puma-text-light);
     --db--background-gray: var(--puma-background-gray);
     --db-border-color: var(--puma-border-color);
-
-    .db--genreItem {
-        &:hover {
-            color: var(--puma-backgroud-white);
-        }
-    }
-
-    .doulist-item {
-        border-color: var(--db-border-color);
-    }
-
-    .comment-form {
-        input,
-        textarea {
-            background-color: rgba(63, 63, 70, 0.15);
-            border-color: rgba(63, 63, 70, 1);
-        }
-    }
 }
 
 @font-face {

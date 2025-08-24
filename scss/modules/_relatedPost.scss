@@ -1,0 +1,54 @@
+.pRelated {
+    &--list {
+        padding: 15px 0 25px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+
+    &--heroTitle {
+        font-weight: 700;
+    }
+
+    &--area {
+        padding-top: 20px;
+    }
+
+    &--title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &--image {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    &--item {
+        line-height: 1.8;
+    }
+
+    &--title {
+        margin-top: 5px;
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 0 5px;
+
+        &:hover {
+            color: var(--puma-hover-color);
+        }
+    }
+
+    &--meta {
+        color: var(--puma-text-light);
+        font-size: 12px;
+        padding: 0 5px;
+    }
+}

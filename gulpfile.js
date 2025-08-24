@@ -1,9 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
-const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');

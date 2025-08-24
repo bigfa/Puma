@@ -1,4 +1,4 @@
-.site-header {
+.pHeader {
     text-align: center;
     background-color: #f0f0f0;
     background-image: url(../images/banner.jpg);
@@ -6,11 +6,15 @@
     background-size: cover;
     box-sizing: border-box;
     color: rgba(255, 255, 255, 0.97);
-    height: 360px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
+
+    @media screen and (max-width: 768px) {
+        height: 240px;
+    }
 
     &:before {
         background-color: rgba(0, 0, 0, 0.15);
@@ -22,21 +26,69 @@
         top: 0;
     }
 
+    &--icons {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        padding-top: 20px;
+
+        a {
+            margin: 0 12px 0 0;
+            display: flex;
+        }
+
+        svg {
+            fill: #fff;
+            width: 24px;
+            height: 24px;
+            opacity: 0.9;
+
+            @media screen and (max-width: 768px) {
+                width: 20px;
+                height: 20px;
+            }
+
+            &:hover {
+                fill: var(--puma-hover-color);
+            }
+
+            &.sns {
+                fill: none;
+                stroke: #fff;
+
+                &:hover {
+                    stroke: var(--puma-hover-color);
+                    fill: none;
+                }
+            }
+        }
+    }
+
     .header-inner {
         position: relative;
     }
 
     .site-title {
         font-size: 32px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
     }
 
     .site-description {
         font-size: 14px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
     }
 }
 
 .search-form {
     padding-top: 12px;
+
     .search-field {
         background-color: rgba(0, 0, 0, 0.15);
         border: 0;
@@ -47,14 +99,43 @@
         width: 200px;
         text-align: center;
         font-size: 12px;
+
         &:focus {
             color: #fff;
+
             &::placeholder {
                 color: rgba(255, 255, 255, 0.8);
             }
         }
+
         &::placeholder {
             color: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+.pNav {
+    &--list {
+        border-bottom: 1px solid var(--puma-border-color-light);
+        font-size: 14px;
+        line-height: 50px;
+        display: flex;
+        justify-content: center;
+        overflow-x: auto;
+
+        .menu-item {
+            color: var(--puma-text-gray);
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin-right: 8px;
+            margin-left: 8px;
+            position: relative;
+            text-transform: uppercase;
+            flex: 0 0 auto;
+
+            &:hover {
+                color: var(--puma-main-color);
+            }
         }
     }
 }
