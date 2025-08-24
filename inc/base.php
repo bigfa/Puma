@@ -337,6 +337,11 @@ class pumaBase
                 'is_archive' => is_archive(),
                 'archive_id' => get_queried_object_id(),
                 'hide_home_cover' => !!$pumaSetting->get_setting('hide_home_cover'),
+                'comment_submit_success_text' => __('Comment submitted successfully!', 'Puma'),
+                'copy_success_text' => __('Copy success.', 'Puma'),
+                'loading_text' => __('Loading...', 'Puma'),
+                'now_text' => __('Just now', 'Puma'),
+                'like_success_message' => __('You liked this post!', 'Puma'),
             ]
         );
         if ($pumaSetting->get_setting('javascript')) {

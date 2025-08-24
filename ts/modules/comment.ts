@@ -98,8 +98,8 @@ class pumaComment extends pumaBase {
                         if (newComment) {
                             newComment.scrollIntoView({ behavior: 'smooth' });
                         }
-
-                        this.showNotice('评论成功');
+                        // @ts-ignore
+                        this.showNotice(obvInit.comment_submit_success_text);
                     });
             });
         }

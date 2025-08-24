@@ -276,6 +276,7 @@ function puma_comment($comment, $args, $depth)
                     </div>
                     <footer class="pComment--footer">
                         <span class="pComment--time" itemprop="datePublished" datetime="<?php echo get_comment_date('c'); ?>"><?php echo human_time_diff(get_comment_time('U'), current_time('U')) . __(' ago', 'Puma'); ?></span>
+                        <?php do_action('easy_location'); ?>
                     </footer>
                 </div>
     <?php

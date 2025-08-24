@@ -6,7 +6,7 @@
         </a>
     </div>
     <div class="pBlock--snippet pGraph" itemprop="about">
-        <?php the_content(''); ?>
+        <p><?php echo mb_strimwidth(strip_shortcodes(strip_tags(apply_filters('the_content', $post->post_content))), 0, 220, "..."); ?></p>
     </div>
     <div class="pBlock--footer">
         <?php the_category(','); ?>

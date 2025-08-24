@@ -1,0 +1,32 @@
+.pStatus {
+    &--item {
+        padding: 25px 0;
+        border-bottom: 2px solid var(--puma-border-color-light);
+
+        @media screen {
+            @media (max-width: 768px) {
+                padding: 20px 0;
+            }
+        }
+    }
+
+    &--header {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: var(--puma-text-light);
+
+        .avatar {
+            border-radius: 100%;
+            margin-right: 10px;
+            width: 32px;
+            height: 32px;
+            fill: var(--puma-text-light);
+        }
+
+        &:hover {
+            color: var(--puma-hover-color);
+        }
+    }
+}

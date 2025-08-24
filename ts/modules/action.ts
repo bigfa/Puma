@@ -91,7 +91,8 @@ class pumaAction extends pumaBase {
         if (document.querySelector('.pArticle--share')) {
             document.querySelector('.pArticle--share')!.addEventListener('click', () => {
                 navigator.clipboard.writeText(document.location.href).then(() => {
-                    this.showNotice('复制成功');
+                    // @ts-ignore
+                    this.showNotice(obvInit.copy_success_text);
                 });
             });
         }
@@ -167,7 +168,8 @@ class pumaAction extends pumaBase {
                 return response.json();
             })
             .then((data) => {
-                this.showNotice('Thanks for your like');
+                // @ts-ignore
+                this.showNotice(obvInit.like_success_message);
                 // @ts-ignore
                 this.setCookie('like_' + this.post_id, '1', 1);
             });
