@@ -8,6 +8,10 @@
                 padding: 20px 0;
             }
         }
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
     }
 
     &--header {
@@ -28,5 +32,15 @@
         &:hover {
             color: var(--puma-hover-color);
         }
+    }
+}
+
+.status--archiveLink {
+    border-radius: 999rem;
+    font-size: 14px;
+    color: var(--puma-text-gray);
+
+    &:hover {
+        color: var(--puma-hover-color);
     }
 }

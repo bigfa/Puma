@@ -1,12 +1,18 @@
 <article class="pStatus--item">
     <div class="pStatus--header">
         <?php echo get_avatar(get_the_author_meta('user_email'), 32) ?>
-        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="post-status__link">
+        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
             <?php echo human_time_diff(get_the_time('U'), current_time('U')) . __(' ago', 'Puma'); ?>
         </a>
     </div>
     <div class="pBlock--snippet pGraph" itemprop="about">
-        <p><?php echo mb_strimwidth(strip_shortcodes(strip_tags(apply_filters('the_content', $post->post_content))), 0, 220, "..."); ?></p>
+        <p>
+            <?php echo mb_strimwidth(strip_shortcodes(strip_tags(apply_filters('the_content', $post->post_content))), 0, 220, "..."); ?>
+        </p>
+        <p>
+            <a class="more-link" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo __('Read More.', 'Puma'); ?>
+            </a>
+        </p>
     </div>
     <div class="pBlock--footer">
         <?php the_category(','); ?>

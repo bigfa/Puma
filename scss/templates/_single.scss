@@ -61,9 +61,13 @@
             }
 
             li {
+                margin-bottom: 0;
+                margin-left: 25px;
+
                 &::before {
                     content: '·';
                     margin-right: 5px;
+                    padding-right: 5px;
                 }
 
                 a {

@@ -414,36 +414,30 @@ $pumaSetting = new pumaSetting(
                         'label' => __('Copy link', 'Puma'),
                         'description' => __('Enable copy link', 'Puma')
                     ],
-                    // [
-                    //     'type' => 'switch',
-                    //     'name' => 'category_card',
-                    //     'label' => __('Category card', 'Puma'),
-                    //     'description' => __('Show post category info after post.', 'Puma')
-                    // ],
                     [
                         'type' => 'switch',
                         'name' => 'show_parent',
                         'label' => __('Show parent comment', 'Puma'),
                         'description' => __('Enable show parent comment', 'Puma')
                     ],
-                    // [
-                    //     'type' => 'switch',
-                    //     'name' => 'toc',
-                    //     'label' => __('Table of content', 'Puma'),
-                    //     'description' => __('Enable table of content', 'Puma')
-                    // ],
-                    // [
-                    //     'type' => 'input',
-                    //     'name' => 'toc_start',
-                    //     'label' => __('Start heading', 'Puma'),
-                    //     'description' => __('Start heading,default h3', 'Puma')
-                    // ],
-                    // [
-                    //     'type' => 'switch',
-                    //     'name' => 'show_author',
-                    //     'label' => __('Post Author', 'Puma'),
-                    //     'description' => __('Show post author tip in comment', 'Puma')
-                    // ],
+                    [
+                        'type' => 'switch',
+                        'name' => 'toc',
+                        'label' => __('Table of content', 'Puma'),
+                        'description' => __('Enable table of content', 'Puma')
+                    ],
+                    [
+                        'type' => 'input',
+                        'name' => 'toc_start',
+                        'label' => __('Start heading', 'Puma'),
+                        'description' => __('Start heading,default h3', 'Puma')
+                    ],
+                    [
+                        'type' => 'switch',
+                        'name' => 'show_author',
+                        'label' => __('Post Author', 'Puma'),
+                        'description' => __('Show post author tip in comment', 'Puma')
+                    ],
                     [
                         'type' => 'switch',
                         'name' => 'disable_comment_link',

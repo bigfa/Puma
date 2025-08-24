@@ -21,11 +21,6 @@ Installing and customizing this theme is very easy. All required information are
 - Ajax comment submit
 - And more…
 
-## Installation
-
-- Download the zip file from the rep.
-- upload the zip file from the dashboad then active.
-
 ## Configuration
 
 ### super wide image
@@ -47,7 +42,16 @@ If you want to show gravatar in link template,add email in the note blank when y
 
 ## Update logs
 
+### 6.0.1
+
+- add microdata
+- style improvements
+- update translation
+
 ### 6.0.0
+
+> [!IMPORTANT]
+> scss class name has breaking changes
 
 - style improvements
 - add japanese support

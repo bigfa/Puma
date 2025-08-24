@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Puma 6.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/Puma\n"
 "POT-Creation-Date: 2025-08-24T12:04:08+00:00\n"
-"PO-Revision-Date: 2025-08-24 21:01+0800\n"
+"PO-Revision-Date: 2025-08-24 23:29+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -516,6 +516,10 @@ msgstr "自定义底部内容"
 #: search.php:4
 msgid "Search Results for: %s"
 msgstr "搜索结果：%s"
+
+#: single.php:35 single.php:36
+msgid "View all status posts"
+msgstr "查看所有状态帖子"
 
 #: single.php:10 template-parts/content-status.php:5
 #: template-parts/content.php:7

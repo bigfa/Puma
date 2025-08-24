@@ -2,6 +2,11 @@
     figure {
         margin: 20px -60px;
 
+        @media (min-width: 768px) {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
         figcaption {
             font-size: 12px;
             color: var(--puma-text-gray);
@@ -82,34 +87,6 @@
         font-size: 14px;
     }
 
-    .gallery {
-        display: grid;
-        grid-gap: 10px;
-        margin-bottom: 25px;
-        .gallery-item {
-            margin: 0;
-            .gallery-caption {
-                text-align: center;
-                font-size: 12px;
-                color: var(--puma-text-light);
-            }
-        }
-
-        &-columns-2,
-        &-columns-4,
-        &-columns-5,
-        &-columns-7,
-        &-columns-8 {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        &-columns-3,
-        &-columns-6,
-        &-columns-9 {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
     ol,
     p,
     ul {
@@ -126,6 +103,7 @@
 
     a {
         text-decoration: underline;
+
         .svgIcon {
             margin-right: 4px;
         }
@@ -196,23 +174,14 @@
     p.with-img {
         margin-left: -60px;
         margin-right: -60px;
-    }
-}
 
-p.with-img img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-@media (max-width: 600px) {
-    p.with-img {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-
-    .grap {
-        figure {
+        @media (max-width: 600px) {
             margin-left: -15px;
             margin-right: -15px;
         }

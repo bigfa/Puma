@@ -18,6 +18,8 @@
 
     &--author {
         font-size: 14px;
+        display: flex;
+        align-items: center;
 
         .url {
             color: var(--puma-main-color);
@@ -75,11 +77,6 @@
     }
 }
 
-.comment-navigation {
-    padding: 20px 0;
-    text-align: center;
-}
-
 .comment-reply-title {
     color: var(--puma-text-light);
     font-size: 18px;
@@ -122,6 +119,11 @@
     }
 }
 
+.comment-navigation {
+    padding: 20px 0;
+    text-align: center;
+}
+
 .friend--icon {
     margin-left: 5px;
     width: 16px;
@@ -142,4 +144,14 @@
     .pingback-content {
         color: var(--puma-text-light);
     }
+}
+
+.comment--author__tip {
+    font-size: 12px;
+    background-color: var(--puma-main-color);
+    padding: 4px 10px;
+    border-radius: 8px;
+    line-height: 1;
+    color: #fff;
+    margin-left: 5px;
 }

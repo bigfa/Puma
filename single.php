@@ -7,7 +7,7 @@
                     <?php the_title(); ?>
                 </h2>
                 <div class="pArticle--meta">
-                    <time><?php echo human_time_diff(get_the_time('U'), current_time('U')) . __(' ago', 'Puma'); ?></time>
+                    <time itemprop="datePublished" content="<?php echo get_the_date('c'); ?>"><?php echo human_time_diff(get_the_time('U'), current_time('U')) . __(' ago', 'Puma'); ?></time>
                     <span class="sep"></span>
                     <?php echo puma_get_post_views_text(false, false, false, get_the_ID()); ?>
                     <span class="sep"></span>
@@ -26,6 +26,15 @@
             <?php if (has_tag()) : ?>
                 <div class="pArticle--tags" itemprop="keywords">
                     <?php echo puma_get_the_term_list(get_the_ID(), 'post_tag'); ?>
+                </div>
+            <?php endif; ?>
+            <?php
+            // link to status post format arvhive page
+            if (get_post_format() == 'status') : ?>
+                <div class="status--archiveLink">
+                    <a href="<?php echo get_post_format_link('status'); ?>" class="status--link" title="<?php _e('View all status posts', 'Puma'); ?>">
+                        <?php _e('View all status posts', 'Puma'); ?>
+                    </a>
                 </div>
             <?php endif; ?>
             <?php
